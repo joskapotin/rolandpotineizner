@@ -10,7 +10,7 @@ function ItemList() {
   if (isLoading) return <Loader />
 
   return (
-    <div>
+    <div className="flex flex-wrap">
       {works?.map(work => (
         <Item key={work.id} work={work} />
       ))}

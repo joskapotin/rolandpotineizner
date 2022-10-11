@@ -20,6 +20,8 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": {},
+  "rules": {
+    "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }]
+  },
   "ignorePatterns": ["src/**/*.test.ts", "*.config.cjs"]
 }
