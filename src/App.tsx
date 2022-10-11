@@ -1,33 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { lazy, Suspense } from "react"
+import { Routes, Route } from "react-router-dom"
+import Layout from "./components/layout/layout"
+
+import { ROUTES } from "./constants/constants"
+
+const Loader = lazy(() => import("./components/loader/loader"))
+const NotFound = lazy(() => import("./components/not-found/not-found"))
+const About = lazy(() => import("./pages/about/about"))
+const Home = lazy(() => import("./pages/home/home"))
+const Work = lazy(() => import("./pages/work/work"))
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <Routes>
+      <Route path={ROUTES.HOME} element={<Layout />}>
+        <Route
+          index
+          element={
+            <Suspense fallback={<Loader />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.ABOUT}
+          element={
+            <Suspense fallback={<Loader />}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.WORK}
+          element={
+            <Suspense fallback={<Loader />}>
+              <Work />
+            </Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<Loader />}>
+              <NotFound />
+            </Suspense>
+          }
+        />
+      </Route>
+    </Routes>
   )
 }
 
