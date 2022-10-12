@@ -1,14 +1,14 @@
-import useSWR from 'swr'
-import getImages from '../services/api'
+import useSWR from "swr"
+import getWorks from "../services/api"
 
-function useWorks () {
-    const { data, error } = useSWR("api", getImages)
-  
-    return {
-      works: data,
-      isLoading: !error && !data,
-      isError: error
-    }
+function useWorks() {
+  const { data, error } = useSWR("api", getWorks)
+
+  return {
+    works: data,
+    isLoading: !error && !data,
+    isError: error,
   }
+}
 
-  export default useWorks
+export default useWorks

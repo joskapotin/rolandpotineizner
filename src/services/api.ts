@@ -11,10 +11,10 @@ export interface WorkInterface {
   visible: boolean
 }
 
-const getWorkss = async () => {
+const getWorks = async () => {
   const response = await fetch(API.URL)
   const data = await response.json()
   return data as Promise<WorkInterface[]>
 }
 
-export default getWorkss
+export default getWorks
