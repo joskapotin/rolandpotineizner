@@ -1,8 +1,8 @@
 import useSWR from "swr"
-import getWorks from "../services/api"
+import { getWorks } from "../services/api"
 
 function useWorks() {
-  const { data, error } = useSWR("api", getWorks)
+  const { data, error } = useSWR("getWorks", getWorks)
 
   return {
     works: data,
