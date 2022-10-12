@@ -1,17 +1,17 @@
 import useWorks from "../../hooks/useWorks"
-import Item from "./item"
 import Loader from "../loader/loader"
+import NotFound from "../not-found"
+import Item from "./item"
 
 function ItemList() {
   const { works, isLoading, isError } = useWorks()
 
-  if (isError) return <div>Oups, something went wrong</div>
-
+  if (isError) return <NotFound />
   if (isLoading) return <Loader />
 
   return (
     <div className="flex flex-wrap">
-      {works?.map(work => (
+      {works.map(work => (
         <Item key={work.id} work={work} />
       ))}
     </div>
