@@ -12,7 +12,7 @@ function Header() {
           <NavLink to={ROUTES.ABOUT}>About</NavLink>
         </li>
         <li>
-          <NavLink to={ROUTES.WORK}>Work</NavLink>
+          <NavLink to={ROUTES.WORKS}>Works</NavLink>
         </li>
       </ul>
     </div>

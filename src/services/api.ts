@@ -1,17 +1,6 @@
 import { API } from "../constants/constants"
 import { setWithExpiry, getWithExpiry } from "../helpers/storage"
-
-export interface WorkInterface {
-  id: number
-  slug: string
-  title: string
-  year: number
-  height: number
-  width: number
-  filename: string
-  order: number
-  visible: boolean
-}
+import type { WorkInterface } from "../hooks/useWork"
 
 export const getWorks = async () => {
   // return local data if present and not expired
@@ -33,5 +22,14 @@ export const getWorks = async () => {
 
 export const getWorkById = async (id: number) => {
   const works = await getWorks()
-  return works.find(work => work.id === id)
+  const work = works.find(item => item.id === id)
+  if (!work) throw new Error("Introuvable")
+  return work
+}
+
+export const getWorkBySlug = async (slug: string) => {
+  const works = await getWorks()
+  const work = works.find(item => item.slug === slug)
+  if (!work) throw new Error("Introuvable")
+  return work
 }
