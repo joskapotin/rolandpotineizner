@@ -19,9 +19,9 @@ function Item({ work }: Props) {
         loading="lazy"
       />
       <h2>Titre: {title}</h2>
-      <time dateTime={year}>Année: {year}</time>
+      <time dateTime={year.toString() ?? undefined}>Année: {year ?? "nc"}</time>
       <p>
-        Format: {height}&#8593; / {width}&#8594;
+        Format: {height ?? "nc"}&#8593; / {width ?? "nc"}&#8594;
       </p>
     </article>
   )

@@ -3,13 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb-typescript",
-    "plugin:react/jsx-runtime",
-    "prettier"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "airbnb-typescript", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -21,7 +15,10 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-uses-react": ["off"],
+    "react/jsx-props-no-spreading": ["warn"],
     "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }]
   },
-  "ignorePatterns": ["src/**/*.test.ts", "*.config.cjs"]
+  "ignorePatterns": ["src/**/*.test.ts", "*.config.cjs", "utils/**/*"]
 }

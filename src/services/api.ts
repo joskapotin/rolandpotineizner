@@ -2,8 +2,9 @@ import { API } from "../constants/constants"
 
 export interface WorkInterface {
   id: number
+  slug: string
   title: string
-  year: string
+  year: number
   height: number
   width: number
   filename: string

@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "slug": "acte-premier",
     "title": "Acte premier",
     "year": "1996",
     "height": "91",
@@ -11,6 +12,7 @@
   },
   {
     "id": 1,
+    "slug": "alternative",
     "title": "Alternative",
     "year": "2000",
     "height": "81",
@@ -21,6 +23,7 @@
   },
   {
     "id": 2,
+    "slug": "annonciata-d-apres-antonnello",
     "title": "Annonciata d apres antonnello",
     "year": "1969",
     "height": "33",
@@ -31,6 +34,7 @@
   },
   {
     "id": 3,
+    "slug": "antagonisme-d-andrea",
     "title": "Antagonisme d andrea",
     "year": "1994",
     "height": "120",
@@ -41,6 +45,7 @@
   },
   {
     "id": 4,
+    "slug": "antropoide",
     "title": "Antropoide",
     "year": "2010",
     "height": "100",
@@ -51,6 +56,7 @@
   },
   {
     "id": 5,
+    "slug": "attitude-politique",
     "title": "Attitude politique",
     "year": "2001",
     "height": "46",
@@ -61,16 +67,16 @@
   },
   {
     "id": 6,
+    "slug": "au-kaleidoscope",
     "title": "Au kaleidoscope",
     "year": "1968",
-    "height": "NC",
-    "width": "NC",
     "filename": "au_kaleidoscope-1968-grand.jpg",
     "order": 7,
     "visible": true
   },
   {
     "id": 7,
+    "slug": "auberge-des-trois-freres-yanis-amorgos",
     "title": "Auberge des trois freres yanis amorgos",
     "year": "2000",
     "height": "162",
@@ -81,6 +87,7 @@
   },
   {
     "id": 8,
+    "slug": "autoportrait",
     "title": "Autoportrait",
     "year": "2006",
     "height": "50",
@@ -91,6 +98,7 @@
   },
   {
     "id": 9,
+    "slug": "azulejo-lisbonne",
     "title": "Azulejo lisbonne",
     "year": "1992",
     "height": "60",
@@ -101,6 +109,7 @@
   },
   {
     "id": 10,
+    "slug": "azulejo-lisbonne-numero-2",
     "title": "Azulejo lisbonne numero 2",
     "year": "1992",
     "height": "60",
@@ -111,6 +120,7 @@
   },
   {
     "id": 11,
+    "slug": "balade-dans-l-egot",
     "title": "Balade dans l egot",
     "year": "1972",
     "height": "72",
@@ -121,6 +131,7 @@
   },
   {
     "id": 12,
+    "slug": "belzebuth",
     "title": "Belzebuth",
     "year": "1969",
     "height": "59",
@@ -131,6 +142,7 @@
   },
   {
     "id": 13,
+    "slug": "bertha",
     "title": "Bertha",
     "year": "1990",
     "height": "40",
@@ -141,6 +153,7 @@
   },
   {
     "id": 14,
+    "slug": "bien-avant",
     "title": "Bien avant",
     "year": "1993",
     "height": "38",
@@ -151,6 +164,7 @@
   },
   {
     "id": 15,
+    "slug": "bizaroide",
     "title": "Bizaroide",
     "year": "1969",
     "height": "26",
@@ -161,6 +175,7 @@
   },
   {
     "id": 16,
+    "slug": "bonjour-l-ami-autoportrait",
     "title": "Bonjour l ami autoportrait",
     "year": "1969",
     "height": "75",
@@ -171,6 +186,7 @@
   },
   {
     "id": 17,
+    "slug": "brumes-sur-le-fuji-yama",
     "title": "Brumes sur le fuji yama",
     "year": "1972",
     "height": "31",
@@ -181,6 +197,7 @@
   },
   {
     "id": 18,
+    "slug": "chez-le-psy",
     "title": "Chez le psy",
     "year": "2001",
     "height": "81",
@@ -191,6 +208,7 @@
   },
   {
     "id": 19,
+    "slug": "ciel-de-tarare",
     "title": "Ciel de tarare",
     "year": "1994",
     "height": "33",
@@ -201,6 +219,7 @@
   },
   {
     "id": 20,
+    "slug": "combat-de-taureaux",
     "title": "Combat de taureaux",
     "year": "1971",
     "height": "150",
@@ -211,6 +230,7 @@
   },
   {
     "id": 21,
+    "slug": "comedie",
     "title": "Comedie",
     "year": "1996",
     "height": "60",
@@ -221,6 +241,7 @@
   },
   {
     "id": 22,
+    "slug": "debut-de-siecle",
     "title": "Debut de siecle",
     "year": "2008",
     "height": "114",
@@ -231,6 +252,7 @@
   },
   {
     "id": 23,
+    "slug": "delphes",
     "title": "Delphes",
     "year": "1994",
     "height": "97",
@@ -241,6 +263,7 @@
   },
   {
     "id": 24,
+    "slug": "depart-gare-st-lazare",
     "title": "Depart gare st lazare",
     "year": "2001",
     "height": "60",
@@ -251,6 +274,7 @@
   },
   {
     "id": 25,
+    "slug": "destin-inconnu",
     "title": "Destin inconnu",
     "year": "1970",
     "height": "96",
@@ -261,6 +285,7 @@
   },
   {
     "id": 26,
+    "slug": "deuxieme-naissance",
     "title": "Deuxieme naissance",
     "year": "2007",
     "height": "60",
@@ -271,6 +296,7 @@
   },
   {
     "id": 27,
+    "slug": "ecriture",
     "title": "Ecriture",
     "year": "1999",
     "height": "50",
@@ -281,6 +307,7 @@
   },
   {
     "id": 28,
+    "slug": "empreinte-caraibe",
     "title": "Empreinte caraibe",
     "year": "1996",
     "height": "50",
@@ -291,6 +318,7 @@
   },
   {
     "id": 29,
+    "slug": "entre-les-lignes",
     "title": "Entre les lignes",
     "year": "2001",
     "height": "46",
@@ -301,6 +329,7 @@
   },
   {
     "id": 30,
+    "slug": "espace-ludique",
     "title": "Espace ludique",
     "year": "2001",
     "height": "65",
@@ -311,6 +340,7 @@
   },
   {
     "id": 31,
+    "slug": "etude",
     "title": "Etude",
     "year": "1973",
     "height": "210",
@@ -321,6 +351,7 @@
   },
   {
     "id": 32,
+    "slug": "exploration-numero-1",
     "title": "Exploration numero 1",
     "year": "2006",
     "height": "55",
@@ -331,6 +362,7 @@
   },
   {
     "id": 33,
+    "slug": "exploration-numero-2",
     "title": "Exploration numero 2",
     "year": "2006",
     "height": "33",
@@ -341,6 +373,7 @@
   },
   {
     "id": 34,
+    "slug": "femme-au-chapeau-rouge",
     "title": "Femme au chapeau rouge",
     "year": "1990",
     "height": "35",
@@ -351,6 +384,7 @@
   },
   {
     "id": 35,
+    "slug": "fin-de-siecle",
     "title": "Fin de siecle",
     "year": "2001",
     "height": "65",
@@ -361,6 +395,7 @@
   },
   {
     "id": 36,
+    "slug": "go",
     "title": "Go",
     "year": "1999",
     "height": "65",
@@ -371,6 +406,7 @@
   },
   {
     "id": 37,
+    "slug": "graphautel",
     "title": "Graphautel",
     "year": "2000",
     "height": "81",
@@ -381,6 +417,7 @@
   },
   {
     "id": 38,
+    "slug": "helle",
     "title": "Helle",
     "year": "1999",
     "height": "73",
@@ -391,6 +428,7 @@
   },
   {
     "id": 39,
+    "slug": "hello-clementine",
     "title": "Hello clementine",
     "year": "2008",
     "height": "96",
@@ -401,6 +439,7 @@
   },
   {
     "id": 40,
+    "slug": "hello-josephine-baker",
     "title": "Hello josephine baker",
     "year": "2011",
     "height": "97",
@@ -411,6 +450,7 @@
   },
   {
     "id": 41,
+    "slug": "ibiza",
     "title": "Ibiza",
     "year": "1969",
     "height": "65",
@@ -421,6 +461,7 @@
   },
   {
     "id": 42,
+    "slug": "isaac-sidel",
     "title": "Isaac sidel",
     "year": "1991",
     "height": "60",
@@ -431,6 +472,7 @@
   },
   {
     "id": 43,
+    "slug": "jan-vredeman-de-vries",
     "title": "Jan vredeman de vries",
     "year": "1992",
     "height": "146",
@@ -441,6 +483,7 @@
   },
   {
     "id": 44,
+    "slug": "je-voulais-etre-marin",
     "title": "Je voulais etre marin",
     "year": "1992",
     "height": "46",
@@ -451,6 +494,7 @@
   },
   {
     "id": 45,
+    "slug": "joie-interieure",
     "title": "Joie interieure",
     "year": "2009",
     "height": "130",
@@ -461,6 +505,7 @@
   },
   {
     "id": 46,
+    "slug": "jupiter",
     "title": "Jupiter",
     "year": "2000",
     "height": "62",
@@ -471,6 +516,7 @@
   },
   {
     "id": 47,
+    "slug": "l-accordeon-japonais",
     "title": "L accordeon japonais",
     "year": "1992",
     "height": "81",
@@ -481,6 +527,7 @@
   },
   {
     "id": 48,
+    "slug": "l-alchimiste",
     "title": "L alchimiste",
     "year": "1996",
     "height": "81",
@@ -491,6 +538,7 @@
   },
   {
     "id": 49,
+    "slug": "l-amour-c-est-pas-simple",
     "title": "L amour c est pas simple",
     "year": "2008",
     "height": "100",
@@ -501,6 +549,7 @@
   },
   {
     "id": 50,
+    "slug": "l-ange-de-la-paix",
     "title": "L ange de la paix",
     "year": "1994",
     "height": "60",
@@ -511,6 +560,7 @@
   },
   {
     "id": 51,
+    "slug": "l-ecclesiastique",
     "title": "L ecclesiastique",
     "year": "2012",
     "height": "130",
@@ -521,6 +571,7 @@
   },
   {
     "id": 52,
+    "slug": "l-egolastique",
     "title": "L egolastique",
     "year": "1996",
     "height": "65",
@@ -531,6 +582,7 @@
   },
   {
     "id": 53,
+    "slug": "l-homme-a-la-ducati",
     "title": "L homme a la ducati",
     "year": "1998",
     "height": "73",
@@ -541,6 +593,7 @@
   },
   {
     "id": 54,
+    "slug": "l-innocence",
     "title": "L innocence",
     "year": "2009",
     "height": "97",
@@ -551,6 +604,7 @@
   },
   {
     "id": 55,
+    "slug": "l-oeil-de-cain",
     "title": "L oeil de cain",
     "year": "1996",
     "height": "46",
@@ -561,6 +615,7 @@
   },
   {
     "id": 56,
+    "slug": "la-c-interferon",
     "title": "La c interferon",
     "year": "2002",
     "height": "73",
@@ -571,6 +626,7 @@
   },
   {
     "id": 57,
+    "slug": "la-cle-des-champs",
     "title": "La cle des champs",
     "year": "1996",
     "height": "92",
@@ -581,6 +637,7 @@
   },
   {
     "id": 58,
+    "slug": "la-corne-d-abondance",
     "title": "La corne d abondance",
     "year": "1990",
     "height": "22",
@@ -591,6 +648,7 @@
   },
   {
     "id": 59,
+    "slug": "la-creation-du-monde",
     "title": "La creation du monde",
     "year": "1991",
     "height": "51",
@@ -601,6 +659,7 @@
   },
   {
     "id": 60,
+    "slug": "la-danseuse-de-dusseldorf",
     "title": "La danseuse de dusseldorf",
     "year": "2002",
     "height": "80",
@@ -611,6 +670,7 @@
   },
   {
     "id": 61,
+    "slug": "la-fiancee-en-difficultee",
     "title": "La fiancee en difficultee",
     "year": "1991",
     "height": "97",
@@ -621,6 +681,7 @@
   },
   {
     "id": 62,
+    "slug": "la-japonaise",
     "title": "La japonaise",
     "year": "1995",
     "height": "73",
@@ -631,6 +692,7 @@
   },
   {
     "id": 63,
+    "slug": "la-joie-de-therese",
     "title": "La joie de therese",
     "year": "1997",
     "height": "65",
@@ -641,6 +703,7 @@
   },
   {
     "id": 64,
+    "slug": "la-legerete-c-est-facile",
     "title": "La legerete c est facile",
     "year": "2000",
     "height": "60",
@@ -651,6 +714,7 @@
   },
   {
     "id": 65,
+    "slug": "la-lune-bleue",
     "title": "La lune bleue",
     "year": "2000",
     "height": "64",
@@ -661,6 +725,7 @@
   },
   {
     "id": 66,
+    "slug": "la-lune-verte",
     "title": "La lune verte",
     "year": "2000",
     "height": "52",
@@ -671,6 +736,7 @@
   },
   {
     "id": 67,
+    "slug": "la-meditation",
     "title": "La meditation",
     "year": "1994",
     "height": "54",
@@ -681,6 +747,7 @@
   },
   {
     "id": 68,
+    "slug": "la-peintre-magalie-cazot",
     "title": "La peintre magalie cazot",
     "year": "2006",
     "height": "81",
@@ -691,6 +758,7 @@
   },
   {
     "id": 69,
+    "slug": "la-seconde-vie-de-l-alchimiste",
     "title": "La seconde vie de l alchimiste",
     "year": "1996",
     "height": "65",
@@ -701,6 +769,7 @@
   },
   {
     "id": 70,
+    "slug": "la-vache-irradieuse",
     "title": "La vache irradieuse",
     "year": "2011",
     "height": "60",
@@ -711,6 +780,7 @@
   },
   {
     "id": 71,
+    "slug": "la-ville",
     "title": "La ville",
     "year": "1992",
     "height": "65",
@@ -721,6 +791,7 @@
   },
   {
     "id": 72,
+    "slug": "le-bateau-ivre",
     "title": "Le bateau ivre",
     "year": "2000",
     "height": "46",
@@ -731,6 +802,7 @@
   },
   {
     "id": 73,
+    "slug": "le-bonheur",
     "title": "Le bonheur",
     "year": "1993",
     "height": "65",
@@ -741,6 +813,7 @@
   },
   {
     "id": 74,
+    "slug": "le-chevalet-du-peintre",
     "title": "Le chevalet du peintre",
     "year": "2007",
     "height": "73",
@@ -751,6 +824,7 @@
   },
   {
     "id": 75,
+    "slug": "le-clown",
     "title": "Le clown",
     "year": "1990",
     "height": "50",
@@ -761,6 +835,7 @@
   },
   {
     "id": 76,
+    "slug": "le-combat-des-seigneurs",
     "title": "Le combat des seigneurs",
     "year": "1992",
     "height": "89",
@@ -771,6 +846,7 @@
   },
   {
     "id": 77,
+    "slug": "le-debut-du-voyage",
     "title": "Le debut du voyage",
     "year": "1993",
     "height": "54",
@@ -781,6 +857,7 @@
   },
   {
     "id": 78,
+    "slug": "le-feu-de-tica",
     "title": "Le feu de tica",
     "year": "1992",
     "height": "73",
@@ -791,6 +868,7 @@
   },
   {
     "id": 79,
+    "slug": "le-germe-acoustique",
     "title": "Le germe acoustique",
     "year": "1996",
     "height": "73",
@@ -801,6 +879,7 @@
   },
   {
     "id": 80,
+    "slug": "le-maitre-a-danser",
     "title": "Le maitre a danser",
     "year": "1992",
     "height": "81",
@@ -811,6 +890,7 @@
   },
   {
     "id": 81,
+    "slug": "le-printemps",
     "title": "Le printemps",
     "year": "2007",
     "height": "100",
@@ -821,6 +901,7 @@
   },
   {
     "id": 82,
+    "slug": "le-reve-d-icare",
     "title": "Le reve d icare",
     "year": "2008",
     "height": "146",
@@ -831,6 +912,7 @@
   },
   {
     "id": 83,
+    "slug": "le-temps-des-kermene",
     "title": "Le temps des kermene",
     "year": "1970",
     "height": "28",
@@ -841,6 +923,7 @@
   },
   {
     "id": 84,
+    "slug": "les-7-jours-de-simon-labrosse-de-carole-frechette",
     "title": "Les 7 jours de simon labrosse de carole frechette",
     "year": "2008",
     "height": "71",
@@ -851,6 +934,7 @@
   },
   {
     "id": 85,
+    "slug": "les-difficultees-d-etre",
     "title": "Les difficultees d etre",
     "year": "1994",
     "height": "100",
@@ -861,6 +945,7 @@
   },
   {
     "id": 86,
+    "slug": "les-jumelles",
     "title": "Les jumelles",
     "year": "1993",
     "height": "73",
@@ -871,6 +956,7 @@
   },
   {
     "id": 87,
+    "slug": "les-routes",
     "title": "Les routes",
     "year": "1970",
     "height": "54",
@@ -881,6 +967,7 @@
   },
   {
     "id": 88,
+    "slug": "libertes-en-70",
     "title": "Libertes en 70",
     "year": "1970",
     "height": "140",
@@ -891,6 +978,7 @@
   },
   {
     "id": 89,
+    "slug": "litterature",
     "title": "Litterature",
     "year": "2003",
     "height": "54",
@@ -901,6 +989,7 @@
   },
   {
     "id": 90,
+    "slug": "lune-2000",
     "title": "Lune 2000",
     "year": "2000",
     "height": "33",
@@ -911,6 +1000,7 @@
   },
   {
     "id": 91,
+    "slug": "ma-cathedrale",
     "title": "Ma cathedrale",
     "year": "2008",
     "height": "130",
@@ -921,6 +1011,7 @@
   },
   {
     "id": 92,
+    "slug": "mademoiselle-titi",
     "title": "Mademoiselle titi",
     "year": "1972",
     "height": "54",
@@ -931,6 +1022,7 @@
   },
   {
     "id": 93,
+    "slug": "marie-laforet",
     "title": "Marie laforet",
     "year": "1967",
     "height": "46",
@@ -941,6 +1033,7 @@
   },
   {
     "id": 94,
+    "slug": "marlene-a-l-oiseau",
     "title": "Marlene a l oiseau",
     "year": "2001",
     "height": "44",
@@ -951,6 +1044,7 @@
   },
   {
     "id": 95,
+    "slug": "marlene-a-la-boule",
     "title": "Marlene a la boule",
     "year": "2001",
     "height": "38",
@@ -961,6 +1055,7 @@
   },
   {
     "id": 96,
+    "slug": "marlene-et-l-orient-express",
     "title": "Marlene et l orient express",
     "year": "2001",
     "height": "60",
@@ -971,6 +1066,7 @@
   },
   {
     "id": 97,
+    "slug": "mercure",
     "title": "Mercure",
     "year": "2001",
     "height": "73",
@@ -981,6 +1077,7 @@
   },
   {
     "id": 98,
+    "slug": "messager-sarko",
     "title": "Messager sarko",
     "year": "2007",
     "height": "73",
@@ -991,6 +1088,7 @@
   },
   {
     "id": 99,
+    "slug": "metaphore",
     "title": "Metaphore",
     "year": "1992",
     "height": "100",
@@ -1001,6 +1099,7 @@
   },
   {
     "id": 100,
+    "slug": "millenium",
     "title": "Millenium",
     "year": "1970",
     "height": "51",
@@ -1011,6 +1110,7 @@
   },
   {
     "id": 101,
+    "slug": "miniature-erreur-fatale",
     "title": "Miniature erreur fatale",
     "year": "1973",
     "height": "92",
@@ -1021,6 +1121,7 @@
   },
   {
     "id": 102,
+    "slug": "mon-ami-dino-papatakis",
     "title": "Mon ami dino papatakis",
     "year": "1994",
     "height": "89",
@@ -1031,6 +1132,7 @@
   },
   {
     "id": 103,
+    "slug": "monsieur-karl",
     "title": "Monsieur karl",
     "year": "2008",
     "height": "100",
@@ -1041,6 +1143,7 @@
   },
   {
     "id": 104,
+    "slug": "mysticisme",
     "title": "Mysticisme",
     "year": "1971",
     "height": "73",
@@ -1051,6 +1154,7 @@
   },
   {
     "id": 105,
+    "slug": "nature-morte",
     "title": "Nature morte",
     "year": "2007",
     "height": "65",
@@ -1061,6 +1165,7 @@
   },
   {
     "id": 106,
+    "slug": "nebuleuse",
     "title": "Nebuleuse",
     "year": "1969",
     "height": "46",
@@ -1071,6 +1176,7 @@
   },
   {
     "id": 107,
+    "slug": "nuit-a-venasque",
     "title": "Nuit a venasque",
     "year": "1970",
     "height": "38",
@@ -1081,6 +1187,7 @@
   },
   {
     "id": 108,
+    "slug": "origamie",
     "title": "Origamie",
     "year": "1993",
     "height": "50",
@@ -1091,6 +1198,7 @@
   },
   {
     "id": 109,
+    "slug": "ouverture-dans-la-ville",
     "title": "Ouverture dans la ville",
     "year": "1995",
     "height": "92",
@@ -1101,6 +1209,7 @@
   },
   {
     "id": 110,
+    "slug": "page-numero-7",
     "title": "Page numero 7",
     "year": "1999",
     "height": "81",
@@ -1111,6 +1220,7 @@
   },
   {
     "id": 111,
+    "slug": "par-la-force-des-choses",
     "title": "Par la force des choses",
     "year": "1996",
     "height": "50",
@@ -1121,6 +1231,7 @@
   },
   {
     "id": 112,
+    "slug": "paysage-ancien",
     "title": "Paysage ancien",
     "year": "1970",
     "height": "130",
@@ -1131,6 +1242,7 @@
   },
   {
     "id": 113,
+    "slug": "paysage-potin",
     "title": "Paysage potin",
     "year": "1970",
     "height": "30",
@@ -1141,6 +1253,7 @@
   },
   {
     "id": 114,
+    "slug": "paysage-potin-numero-2",
     "title": "Paysage potin numero 2",
     "year": "1970",
     "height": "30",
@@ -1151,6 +1264,7 @@
   },
   {
     "id": 115,
+    "slug": "pegase",
     "title": "Pegase",
     "year": "1998",
     "height": "73",
@@ -1161,6 +1275,7 @@
   },
   {
     "id": 116,
+    "slug": "phage-of-georgia",
     "title": "Phage of georgia",
     "year": "2006",
     "height": "61",
@@ -1171,6 +1286,7 @@
   },
   {
     "id": 117,
+    "slug": "photographie",
     "title": "Photographie",
     "year": "1995",
     "height": "25",
@@ -1181,6 +1297,7 @@
   },
   {
     "id": 118,
+    "slug": "place-vendome",
     "title": "Place vendome",
     "year": "1998",
     "height": "46",
@@ -1191,6 +1308,7 @@
   },
   {
     "id": 119,
+    "slug": "planete-nasa",
     "title": "Planete nasa",
     "year": "2000",
     "height": "63",
@@ -1201,6 +1319,7 @@
   },
   {
     "id": 120,
+    "slug": "plenitude",
     "title": "Plenitude",
     "year": "2000",
     "height": "60",
@@ -1211,6 +1330,7 @@
   },
   {
     "id": 121,
+    "slug": "point-d-equilibre",
     "title": "Point d equilibre",
     "year": "2001",
     "height": "38",
@@ -1221,6 +1341,7 @@
   },
   {
     "id": 122,
+    "slug": "portrait-d-artiste",
     "title": "Portrait d artiste",
     "year": "2006",
     "height": "65",
@@ -1231,6 +1352,7 @@
   },
   {
     "id": 123,
+    "slug": "portrait-feminin",
     "title": "Portrait feminin",
     "year": "2001",
     "height": "54",
@@ -1241,6 +1363,7 @@
   },
   {
     "id": 124,
+    "slug": "question-de-jeunesse",
     "title": "Question de jeunesse",
     "year": "1994",
     "height": "92",
@@ -1251,6 +1374,7 @@
   },
   {
     "id": 125,
+    "slug": "realite-x-y",
     "title": "Realite x y",
     "year": "2011",
     "height": "100",
@@ -1261,6 +1385,7 @@
   },
   {
     "id": 126,
+    "slug": "rencontre",
     "title": "Rencontre",
     "year": "2009",
     "height": "116",
@@ -1271,6 +1396,7 @@
   },
   {
     "id": 127,
+    "slug": "retour-de-voyage",
     "title": "Retour de voyage",
     "year": "1999",
     "height": "81",
@@ -1281,6 +1407,7 @@
   },
   {
     "id": 128,
+    "slug": "reve-d-une-nuit",
     "title": "Reve d une nuit",
     "year": "2011",
     "height": "100",
@@ -1291,6 +1418,7 @@
   },
   {
     "id": 129,
+    "slug": "scene-de-theatre",
     "title": "Scene de theatre",
     "year": "2000",
     "height": "81",
@@ -1301,6 +1429,7 @@
   },
   {
     "id": 130,
+    "slug": "seduction",
     "title": "Seduction",
     "year": "2000",
     "height": "73",
@@ -1311,6 +1440,7 @@
   },
   {
     "id": 131,
+    "slug": "sejour-a-formentera",
     "title": "Sejour a formentera",
     "year": "1967",
     "height": "27",
@@ -1321,6 +1451,7 @@
   },
   {
     "id": 132,
+    "slug": "solitude-rencontre",
     "title": "Solitude rencontre",
     "year": "1998",
     "height": "65",
@@ -1331,6 +1462,7 @@
   },
   {
     "id": 133,
+    "slug": "st-joseph-a-l-oiseau",
     "title": "St joseph a l oiseau",
     "year": "1998",
     "height": "97",
@@ -1341,6 +1473,7 @@
   },
   {
     "id": 134,
+    "slug": "sur-la-passerelle-des-arts",
     "title": "Sur la passerelle des arts",
     "year": "1992",
     "height": "65",
@@ -1351,6 +1484,7 @@
   },
   {
     "id": 135,
+    "slug": "sur-un-air-de-wagner",
     "title": "Sur un air de wagner",
     "year": "1992",
     "height": "73",
@@ -1361,6 +1495,7 @@
   },
   {
     "id": 136,
+    "slug": "surprise-russe",
     "title": "Surprise russe",
     "year": "2006",
     "height": "65",
@@ -1371,6 +1506,7 @@
   },
   {
     "id": 137,
+    "slug": "ton-etoile",
     "title": "Ton etoile",
     "year": "1970",
     "height": "40",
@@ -1381,6 +1517,7 @@
   },
   {
     "id": 138,
+    "slug": "un-autre-voyage",
     "title": "Un autre voyage",
     "year": "1999",
     "height": "54",
@@ -1391,6 +1528,7 @@
   },
   {
     "id": 139,
+    "slug": "un-charon",
     "title": "Un charon",
     "year": "1992",
     "height": "35",
@@ -1401,6 +1539,7 @@
   },
   {
     "id": 140,
+    "slug": "un-classique-du",
     "title": "Un classique du",
     "year": "1991",
     "height": "54",
@@ -1411,6 +1550,7 @@
   },
   {
     "id": 141,
+    "slug": "un-tonnelier",
     "title": "Un tonnelier",
     "year": "1992",
     "height": "35",
@@ -1421,6 +1561,7 @@
   },
   {
     "id": 142,
+    "slug": "uranie",
     "title": "Uranie",
     "year": "1994",
     "height": "46",
@@ -1431,6 +1572,7 @@
   },
   {
     "id": 143,
+    "slug": "utopie",
     "title": "Utopie",
     "year": "2001",
     "height": "65",
@@ -1441,6 +1583,7 @@
   },
   {
     "id": 144,
+    "slug": "vision-ou-realite",
     "title": "Vision ou realite",
     "year": "2011",
     "height": "73",
@@ -1451,6 +1594,7 @@
   },
   {
     "id": 145,
+    "slug": "visite-chez-brancusi",
     "title": "Visite chez brancusi",
     "year": "2003",
     "height": "38",
@@ -1461,6 +1605,7 @@
   },
   {
     "id": 146,
+    "slug": "voyage-au-costa-rica",
     "title": "Voyage au costa rica",
     "year": "2008",
     "height": "100",
@@ -1471,6 +1616,7 @@
   },
   {
     "id": 147,
+    "slug": "voyage-cadmium",
     "title": "Voyage cadmium",
     "year": "1971",
     "height": "46",
@@ -1481,6 +1627,7 @@
   },
   {
     "id": 148,
+    "slug": "voyage-cellulaire",
     "title": "Voyage cellulaire",
     "year": "1970",
     "height": "62",
@@ -1491,6 +1638,7 @@
   },
   {
     "id": 149,
+    "slug": "voyage-en-ville",
     "title": "Voyage en ville",
     "year": "2001",
     "height": "33",
@@ -1501,6 +1649,7 @@
   },
   {
     "id": 150,
+    "slug": "voyage-immobile",
     "title": "Voyage immobile",
     "year": "2001",
     "height": "73",
@@ -1511,6 +1660,7 @@
   },
   {
     "id": 151,
+    "slug": "voyage-numero-3",
     "title": "Voyage numero 3",
     "year": "1996",
     "height": "46",
@@ -1521,6 +1671,7 @@
   },
   {
     "id": 152,
+    "slug": "voyage-placentaire",
     "title": "Voyage placentaire",
     "year": "1969",
     "height": "50",
@@ -1531,6 +1682,7 @@
   },
   {
     "id": 153,
+    "slug": "voyage-royal",
     "title": "Voyage royal",
     "year": "1996",
     "height": "55",
@@ -1541,6 +1693,7 @@
   },
   {
     "id": 154,
+    "slug": "voyages",
     "title": "Voyages",
     "year": "1969",
     "height": "60",

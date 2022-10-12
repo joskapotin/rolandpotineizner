@@ -6,6 +6,14 @@ const regextitle = new RegExp(/[^-]*/)
 const regexYear = new RegExp(/-\d{4}-/gm)
 const regexFormat = new RegExp(/-\d+x\d+/gm)
 
+const slugify = str =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+
 readdir(directory, (err, files) => {
   const tableaux = files.map((file, index) => {
     const extractedTitle = file.match(regextitle)
@@ -23,6 +31,7 @@ readdir(directory, (err, files) => {
 
     const tableau = {
       id: index,
+      slug: slugify(title),
       title,
       year,
       height,
