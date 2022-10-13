@@ -10,7 +10,7 @@ const About = lazy(() => import("./pages/about"))
 const Home = lazy(() => import("./pages/home"))
 const Works = lazy(() => import("./pages/works"))
 const Work = lazy(() => import("./pages/works/work"))
-const ErrorFallback = lazy(() => import("./components/error-fallback/error-fallback"))
+const ErrorBoundaryFallback = lazy(() => import("./pages/error-boundary-fallback"))
 
 function App() {
   const element = useRoutes([
@@ -48,7 +48,7 @@ function App() {
   ])
 
   return (
-    <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => alert("reset")}>
+    <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
       <Suspense fallback={<Loader />}>{element}</Suspense>
     </ErrorBoundary>
   )

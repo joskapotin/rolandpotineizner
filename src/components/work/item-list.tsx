@@ -10,7 +10,7 @@ function ItemList() {
   if (isLoading) return <Loader />
 
   return (
-    <div className="flex flex-wrap">
+    <div className="grid grid-cols-2 gap-2 px-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
       {works.map(work => (
         <Item key={work.id} work={work} />
       ))}
