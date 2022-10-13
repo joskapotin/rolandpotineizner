@@ -1,5 +1,5 @@
 import { API } from "../constants/constants"
-import { setWithExpiry, getWithExpiry } from "../helpers/storage"
+import { getWithExpiry, setWithExpiry } from "../helpers/storage"
 import type { WorkInterface } from "../hooks/useWork"
 
 export const getWorks = async () => {
@@ -18,13 +18,6 @@ export const getWorks = async () => {
   })
 
   return data as Promise<WorkInterface[]>
-}
-
-export const getWorkById = async (id: number) => {
-  const works = await getWorks()
-  const work = works.find(item => item.id === id)
-  if (!work) throw new Error("Introuvable")
-  return work
 }
 
 export const getWorkBySlug = async (slug: string) => {

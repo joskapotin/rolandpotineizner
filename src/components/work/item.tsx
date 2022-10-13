@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import type { WorkInterface } from "../../hooks/useWork"
 import { PATH } from "../../constants/constants"
+import type { WorkInterface } from "../../hooks/useWork"
 
 type Props = {
   work: WorkInterface

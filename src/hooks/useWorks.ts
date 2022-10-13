@@ -1,12 +1,12 @@
 import useSWR from "swr"
+import workFactory from "../helpers/formatter"
 import { getWorks } from "../services/api"
-import { fallbackWork } from "./useWork"
 
 function useWorks() {
   const { data, error } = useSWR("getWorks", getWorks)
 
   return {
-    works: data ?? [fallbackWork],
+    works: data?.map(work => workFactory(work)) ?? [workFactory()],
     isLoading: !error && !data,
     isError: error,
   }
