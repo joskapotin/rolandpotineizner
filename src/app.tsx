@@ -16,7 +16,7 @@ const ErrorBoundaryFallback = lazy(() => import("./pages/error-boundary-fallback
 function App() {
   const element = useRoutes([
     {
-      path: ROUTES.ROOT,
+      path: ROUTES.ROOT.URL,
       element: <Layout />,
       children: [
         {
@@ -24,11 +24,11 @@ function App() {
           element: <Home />,
         },
         {
-          path: ROUTES.ABOUT,
+          path: ROUTES.ABOUT.URL,
           element: <About />,
         },
         {
-          path: ROUTES.WORKS,
+          path: ROUTES.WORKS.URL,
           children: [
             {
               index: true,
@@ -41,7 +41,7 @@ function App() {
           ],
         },
         {
-          path: ROUTES.TOOLS,
+          path: ROUTES.TOOLS.URL,
           element: <Tools />,
         },
         {
