@@ -7,7 +7,7 @@ type Props = {
 }
 
 function Item({ work }: Props) {
-  const { slug, title, year, width, height, filename } = work
+  const { slug, title, year, width, height, filename, imageWidth, imageHeight } = work
 
   return (
     <article className="group flex-auto">
@@ -16,8 +16,8 @@ function Item({ work }: Props) {
           className="aspect-square w-full  object-cover object-center"
           src={`${PATH.WORKS.SMALL}/${filename}`}
           alt={title}
-          width={400}
-          height={400}
+          width={imageWidth}
+          height={imageHeight}
           loading="lazy"
         />
         <div className="absolute bottom-1 left-1 right-1 flex flex-col bg-gray-50 bg-opacity-90 p-2 text-center text-gray-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100">

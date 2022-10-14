@@ -6,12 +6,15 @@ export interface WorkInterface {
   id: number
   slug: string
   title: string
-  year: number
-  height: number
-  width: number
+  year: string
+  height: string
+  width: string
   filename: string
   order: number
   visible: boolean
+  blurhash: string
+  imageWidth: number
+  imageHeight: number
 }
 
 function useWork(slug: string) {

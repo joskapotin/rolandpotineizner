@@ -1,0 +1,79 @@
+import encodeImageToBlurhash from "./blurhash"
+
+const extractTitle = (filename: string) => {
+  const regextitle = /[^-]*/
+  const extractedTitle = filename.match(regextitle)
+  const rawTitle = extractedTitle ? extractedTitle[0] : "Untitled"
+  const title =
+    rawTitle[0].toUpperCase() +
+    rawTitle.substring(1, filename.lastIndexOf(".")).replaceAll("_", " ")
+
+  return title
+}
+
+const extractYear = (filename: string) => {
+  const regexYear = /-\d{4}-/gm
+  const extractedYear = filename.match(regexYear)
+  const year = extractedYear ? extractedYear[0].slice(1, 5) : "NC"
+  return year
+}
+
+const extractDimensions = (filename: string) => {
+  const regexFormat = /-\d+x\d+/gm
+  const extractedFormat = filename.match(regexFormat)
+  const format = extractedFormat ? extractedFormat[0].slice(1) : "NCxNC"
+  const formatArr = format.split("x")
+  const height = formatArr[0]
+  const width = formatArr[1]
+  return { height, width }
+}
+
+const slugify = (string: string) =>
+  string
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+
+const extractData = (filenames: string[]) => {
+  const data = filenames.map((filename, index) => ({
+    id: index + 1,
+    filename,
+    title: extractTitle(filename),
+    year: extractYear(filename),
+    ...extractDimensions(filename),
+    slug: slugify(extractTitle(filename)),
+    order: index + 1,
+    visible: true,
+  }))
+  return data
+}
+
+const addBlurHash = async (data: any[]) => {
+  const newData = data.map(async item => {
+    const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
+      `tableaux/source/${item.filename}`,
+    )
+    console.log("filename", item.filename)
+    console.log("blurhash", blurhash)
+    return { ...item, blurhash, imageWidth, imageHeight }
+  })
+
+  return Promise.allSettled(newData)
+}
+
+const processFilenames = async (filenames: string[]) => {
+  const extractedData = extractData(filenames)
+  const results = await addBlurHash(extractedData)
+  const data = results.map(item => item.value)
+  const jsonData = JSON.stringify(data, null, 4)
+  console.log(
+    "Errors",
+    results.filter(item => item.status === "rejected"),
+  )
+  console.log("Done", data)
+  return jsonData
+}
+
+export default processFilenames

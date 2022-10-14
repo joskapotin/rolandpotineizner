@@ -31,6 +31,11 @@ function NavMenu() {
             Works
           </NavLink>
         </li>
+        <li>
+          <NavLink className="block" to={ROUTES.TOOLS} onClick={toggleIsOpen}>
+            Tools
+          </NavLink>
+        </li>
       </ul>
     </nav>
   )
