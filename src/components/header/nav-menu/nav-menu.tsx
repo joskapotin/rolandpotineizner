@@ -12,8 +12,8 @@ function NavMenu() {
 
       <ul
         className={`${
-          isOpen ? "visible" : "invisible"
-        } fixed inset-0 flex flex-grow flex-col justify-center bg-gray-50 text-center sm:visible sm:static sm:flex-row sm:gap-2`}
+          isOpen ? "visible translate-x-0" : "translate-x-full "
+        } fixed inset-x-0 top-11 bottom-0 flex flex-grow flex-col justify-center bg-gray-50 text-center transition-transform duration-300 ease-in-out sm:visible sm:static sm:translate-x-0 sm:flex-row sm:gap-2`}
       >
         <li>
           <NavLink className="block" to={ROUTES.HOME.URL} onClick={toggleIsOpen}>

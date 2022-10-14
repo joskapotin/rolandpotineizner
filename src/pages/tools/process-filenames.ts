@@ -52,12 +52,18 @@ const extractData = (filenames: string[]) => {
 
 const addBlurHash = async (data: any[]) => {
   const newData = data.map(async item => {
-    const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
-      `tableaux/source/${item.filename}`,
-    )
-    console.log("filename", item.filename)
-    console.log("blurhash", blurhash)
-    return { ...item, blurhash, imageWidth, imageHeight }
+    try {
+      const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
+        `tableaux/source/${item.filename}`,
+      )
+      console.log("filename", item.filename)
+      console.log("blurhash", blurhash)
+      return { ...item, blurhash, imageWidth, imageHeight }
+    } catch (error) {
+      console.error("error on file", item.filename)
+      console.error(error)
+      return item
+    }
   })
 
   return Promise.allSettled(newData)

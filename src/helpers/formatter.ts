@@ -15,9 +15,6 @@ const fallbackWork: WorkInterface = {
   visible: true,
 }
 
-const workFactory = (work?: WorkInterface) => {
-  if (work) return { ...fallbackWork, ...work }
-  return fallbackWork
-}
+const workFactory = (work?: WorkInterface) => ({ ...fallbackWork, ...work })
 
 export default workFactory
