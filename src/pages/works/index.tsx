@@ -1,5 +1,5 @@
 import Heading from "../../components/heading/heading"
-import WorkList from "../../components/work/work-list"
+import WorkList from "../../components/work-list/work-list"
 
 function Work() {
   return (

@@ -1,7 +1,7 @@
 import useWorks from "../../hooks/useWorks"
 import Loader from "../loader/loader"
 import NotFound from "../not-found"
-import WorkDetails from "./work-details"
+import WorkDetails from "./work-item"
 
 function WorkList() {
   const { works, isLoading, isError } = useWorks()
