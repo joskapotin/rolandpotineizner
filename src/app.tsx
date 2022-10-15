@@ -11,7 +11,7 @@ const Home = lazy(() => import("./pages/home"))
 const Works = lazy(() => import("./pages/works"))
 const Work = lazy(() => import("./pages/works/work"))
 const Tools = lazy(() => import("./pages/tools"))
-const ErrorBoundaryFallback = lazy(() => import("./pages/error-boundary-fallback"))
+const ErrorBoundaryFallback = lazy(() => import("./components/error-boundary-fallback"))
 
 function App() {
   const element = useRoutes([
