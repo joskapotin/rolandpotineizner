@@ -1,11 +1,11 @@
 import Heading from "../../components/heading/heading"
-import ItemList from "../../components/work/item-list"
+import WorkList from "../../components/work/work-list"
 
 function Work() {
   return (
     <>
       <Heading>Works</Heading>
-      <ItemList />
+      <WorkList />
     </>
   )
 }

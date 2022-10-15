@@ -6,7 +6,7 @@ type Props = {
   work: WorkInterface
 }
 
-function Item({ work }: Props) {
+function workDetails({ work }: Props) {
   const { slug, title, year, width, height, filename, imageWidth, imageHeight } = work
 
   return (
@@ -33,4 +33,4 @@ function Item({ work }: Props) {
   )
 }
 
-export default Item
+export default workDetails

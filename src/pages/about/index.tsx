@@ -17,7 +17,13 @@ function About() {
   return (
     <>
       <Heading>About me</Heading>
-      <img src={image} alt="Roland souriant devant des tableaux" className="w-full object-cover" />
+      <img
+        src={image}
+        alt="Roland souriant devant des tableaux"
+        className="w-full object-cover"
+        width={300}
+        height={201}
+      />
       <Story />
       <Youtube embedId={YOUTUBE_ID.STORY} />
       {bio?.map(item => (
