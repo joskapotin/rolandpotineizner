@@ -20,5 +20,5 @@
     "react/jsx-props-no-spreading": ["warn"],
     "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }]
   },
-  "ignorePatterns": ["src/**/*.test.ts", "*.config.cjs", "utils/**/*"]
+  "ignorePatterns": ["src/**/*.test.ts", "*.config.ts", "*.config.cjs", "utils/**/*"]
 }
