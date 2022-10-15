@@ -17,7 +17,7 @@ export const API = {
 export const PATH = {
   WORKS: {
     SOURCE: "/tableaux/source",
-    SMALL: "/tableaux/small",
+    SMALL: "/tableaux/square",
   },
 } as const
 

@@ -56,9 +56,12 @@ const addBlurHash = async (data: ReturnType<typeof extractData>) => {
       const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
         `tableaux/source/${item.filename}`
       )
+      const { blurhash: blurhashSquare } = await encodeImageToBlurhash(
+        `tableaux/square/${item.filename}`
+      )
       console.log("filename", item.filename)
       console.log("blurhash", blurhash)
-      return { ...item, blurhash, imageWidth, imageHeight }
+      return { ...item, blurhash, imageWidth, imageHeight, blurhashSquare }
     } catch (error) {
       console.error("error on file", item.filename)
       console.error(error)

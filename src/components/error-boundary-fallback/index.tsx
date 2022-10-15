@@ -5,6 +5,7 @@ type ErrorBoundaryFallbackProps = {
 }
 
 function ErrorBoundaryFallback({ error }: ErrorBoundaryFallbackProps) {
+  // TODO: handle reset function
   const resetErrorBoundary = useCallback(
     () => console.error("Oop's something went wrong", error),
     [error]

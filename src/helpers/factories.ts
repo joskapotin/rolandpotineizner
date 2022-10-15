@@ -14,6 +14,7 @@ const fallbackWork: WorkInterface = {
   imageHeight: 400,
   order: 1,
   visible: true,
+  blurhashSquare: "UBIDH+5=re-:Bz#9,]so4T}s$i9u$*s*0~Fe",
 }
 
 export const workFactory = (work?: WorkInterface) => ({ ...fallbackWork, ...work })

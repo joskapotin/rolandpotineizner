@@ -15,6 +15,7 @@ export interface WorkInterface {
   blurhash: string
   imageWidth: number
   imageHeight: number
+  blurhashSquare: string
 }
 
 function useWork(slug: string) {
