@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import type { WorkInterface } from "../hooks/useWork"
 
 const fallbackWork: WorkInterface = {
@@ -15,6 +16,4 @@ const fallbackWork: WorkInterface = {
   visible: true,
 }
 
-const workFactory = (work?: WorkInterface) => ({ ...fallbackWork, ...work })
-
-export default workFactory
+export const workFactory = (work?: WorkInterface) => ({ ...fallbackWork, ...work })

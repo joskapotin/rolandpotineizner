@@ -50,11 +50,11 @@ const extractData = (filenames: string[]) => {
   return data
 }
 
-const addBlurHash = async (data: any[]) => {
+const addBlurHash = async (data: ReturnType<typeof extractData>) => {
   const newData = data.map(async item => {
     try {
       const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
-        `tableaux/source/${item.filename}`,
+        `tableaux/source/${item.filename}`
       )
       console.log("filename", item.filename)
       console.log("blurhash", blurhash)
@@ -72,11 +72,11 @@ const addBlurHash = async (data: any[]) => {
 const processFilenames = async (filenames: string[]) => {
   const extractedData = extractData(filenames)
   const results = await addBlurHash(extractedData)
-  const data = results.map(item => item.value)
+  const data = results.filter(item => item.status === "fulfilled").map(item => item.value)
   const jsonData = JSON.stringify(data, null, 4)
   console.log(
     "Errors",
-    results.filter(item => item.status === "rejected"),
+    results.filter(item => item.status === "rejected")
   )
   console.log("Done", data)
   return jsonData

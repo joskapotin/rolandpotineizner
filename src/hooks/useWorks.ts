@@ -1,5 +1,5 @@
 import useSWR from "swr"
-import workFactory from "../helpers/formatter"
+import { workFactory } from "../helpers/factories"
 import { getWorks } from "../services/api"
 
 function useWorks() {

@@ -1,5 +1,5 @@
 import useSWR from "swr"
-import workFactory from "../helpers/formatter"
+import workFactory from "../helpers/formatters"
 import { getWorkBySlug } from "../services/api"
 
 export interface WorkInterface {

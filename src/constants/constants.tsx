@@ -9,13 +9,14 @@ export const ROUTES = {
 
 export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.WORKS, ROUTES.TOOLS]
 
-export const API = Object.freeze({
-  URL: "/tableaux/tableaux.json",
-})
+export const API = {
+  TABLEAUX: "/data/tableaux.json",
+  BIOGRAPHIE: "/data/bio.json",
+} as const
 
-export const PATH = Object.freeze({
+export const PATH = {
   WORKS: {
     SOURCE: "/tableaux/source",
     SMALL: "/tableaux/small",
   },
-})
+} as const
