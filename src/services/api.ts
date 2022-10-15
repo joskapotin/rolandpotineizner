@@ -1,6 +1,6 @@
 import { API } from "../constants/constants"
 import { getWithExpiry, setWithExpiry } from "../helpers/storage"
-import type { BioInterface } from "../hooks/useBio"
+import type { ResumeInterface } from "../hooks/useResume"
 import type { WorkInterface } from "../hooks/useWork"
 
 export const getWorks = async () => {
@@ -9,7 +9,7 @@ export const getWorks = async () => {
   if (localData) return Promise.resolve(JSON.parse(localData)) as Promise<WorkInterface[]>
 
   // fetch data
-  const response = await fetch(API.TABLEAUX)
+  const response = await fetch(API.WORKS)
   const data = await response.json()
 
   // store local data
@@ -28,19 +28,19 @@ export const getWorkBySlug = async (slug: string) => {
   return work
 }
 
-export const getBio = async () => {
-  const localData = getWithExpiry("bio")
-  if (localData) return Promise.resolve(JSON.parse(localData)) as Promise<BioInterface[]>
+export const getResume = async () => {
+  const localData = getWithExpiry("resume")
+  if (localData) return Promise.resolve(JSON.parse(localData)) as Promise<ResumeInterface[]>
 
   // fetch data
-  const response = await fetch(API.BIOGRAPHIE)
+  const response = await fetch(API.RESUME)
   const data = await response.json()
 
   // store local data
   setWithExpiry({
-    key: "bio",
+    key: "resume",
     value: JSON.stringify(data),
   })
 
-  return data as Promise<BioInterface[]>
+  return data as Promise<ResumeInterface[]>
 }

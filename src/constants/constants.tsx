@@ -10,8 +10,8 @@ export const ROUTES = {
 export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.WORKS, ROUTES.TOOLS]
 
 export const API = {
-  TABLEAUX: "/data/tableaux.json",
-  BIOGRAPHIE: "/data/bio.json",
+  WORKS: "/data/tableaux.json",
+  RESUME: "/data/resume.json",
 } as const
 
 export const PATH = {
@@ -20,3 +20,7 @@ export const PATH = {
     SMALL: "/tableaux/small",
   },
 } as const
+
+export const YOUTUBE_ID = {
+  STORY: "vxuYESnmbaU",
+}
