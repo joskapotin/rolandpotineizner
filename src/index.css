@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Daniel";
-  src: url("./assets/fonts/daniel.ttf");
-}
-
-@font-face {
-  font-family: "Danielbd";
-  src: url("./assets/fonts/danielbd.ttf");
+@layer base {
+  @font-face {
+    font-family: "Daniel";
+    src: url("./assets/fonts/daniel.ttf");
+  }
+  @font-face {
+    font-family: "Danielbd";
+    src: url("./assets/fonts/danielbd.ttf");
+  }
 }
 
 html,

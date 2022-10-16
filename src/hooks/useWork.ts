@@ -12,10 +12,12 @@ export interface WorkInterface {
   filename: string
   order: number
   visible: boolean
-  blurhash: string
+  imageBlurhash: string
   imageWidth: number
   imageHeight: number
-  blurhashSquare: string
+  thumbWidth: number
+  thumbHeight: number
+  thumbBlurhash: string
 }
 
 function useWork(slug: string) {

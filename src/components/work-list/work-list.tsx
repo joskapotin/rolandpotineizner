@@ -1,7 +1,7 @@
 import useWorks from "../../hooks/useWorks"
 import Loader from "../loader/loader"
 import NotFound from "../not-found"
-import WorkDetails from "./work-item"
+import WorkListItem from "./work-list-item"
 
 function WorkList() {
   const { works, isLoading, isError } = useWorks()
@@ -12,7 +12,7 @@ function WorkList() {
   return (
     <div className="grid grid-cols-2 gap-2 px-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
       {works.map(work => (
-        <WorkDetails key={work.id} work={work} />
+        <WorkListItem key={work.id} work={work} />
       ))}
     </div>
   )

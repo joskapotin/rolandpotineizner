@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid"
 import encodeImageToBlurhash from "./blurhash"
 
 const extractTitle = (filename: string) => {
@@ -37,16 +38,23 @@ const slugify = (string: string) =>
     .replace(/^-+|-+$/g, "")
 
 const extractData = (filenames: string[]) => {
-  const data = filenames.map((filename, index) => ({
-    id: index + 1,
-    filename,
-    title: extractTitle(filename),
-    year: extractYear(filename),
-    ...extractDimensions(filename),
-    slug: slugify(extractTitle(filename)),
-    order: index + 1,
-    visible: true,
-  }))
+  const data = filenames.map((filename, index) => {
+    const title = extractTitle(filename)
+    const year = extractYear(filename)
+    const { height, width } = extractDimensions(filename)
+    const slug = slugify(extractTitle(title))
+    return {
+      id: uuidv4(),
+      filename,
+      title,
+      year,
+      height,
+      width,
+      slug,
+      order: index + 1,
+      visible: true,
+    }
+  })
   return data
 }
 
@@ -56,12 +64,14 @@ const addBlurHash = async (data: ReturnType<typeof extractData>) => {
       const { blurhash, imageWidth, imageHeight } = await encodeImageToBlurhash(
         `tableaux/source/${item.filename}`
       )
-      const { blurhash: blurhashSquare } = await encodeImageToBlurhash(
-        `tableaux/square/${item.filename}`
-      )
+      const {
+        blurhash: thumbBlurhash,
+        imageWidth: thumbWidth,
+        imageHeight: thumbHeight,
+      } = await encodeImageToBlurhash(`tableaux/square/${item.filename}`)
       console.log("filename", item.filename)
       console.log("blurhash", blurhash)
-      return { ...item, blurhash, imageWidth, imageHeight, blurhashSquare }
+      return { ...item, blurhash, imageWidth, imageHeight, thumbBlurhash, thumbWidth, thumbHeight }
     } catch (error) {
       console.error("error on file", item.filename)
       console.error(error)
