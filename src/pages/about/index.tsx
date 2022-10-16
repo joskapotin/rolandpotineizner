@@ -17,18 +17,20 @@ function About() {
   return (
     <>
       <Heading>About me</Heading>
-      <img
-        src={image}
-        alt="Roland souriant devant des tableaux"
-        className="w-full object-cover"
-        width={300}
-        height={201}
-      />
-      <Story />
-      <Youtube embedId={YOUTUBE_ID.STORY} />
-      {bio?.map(item => (
-        <Year key={item.year} year={item.year} events={item.events} />
-      ))}
+      <div className="container mx-auto">
+        <img
+          src={image}
+          alt="Roland souriant devant des tableaux"
+          className="mx-auto object-cover"
+          width={300}
+          height={201}
+        />
+        <Story />
+        <Youtube embedId={YOUTUBE_ID.STORY} />
+        {bio?.map(item => (
+          <Year key={item.year} year={item.year} events={item.events} />
+        ))}
+      </div>
     </>
   )
 }

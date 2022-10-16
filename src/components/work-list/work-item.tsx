@@ -20,7 +20,7 @@ function workDetails({ work }: Props) {
     <article className="group flex-auto">
       <Link to={slug} className="relative flex flex-col">
         <img
-          className={`w-full  object-cover object-center transition-opacity duration-300 ease-in-out ${
+          className={`w-full  object-cover object-center transition-opacity duration-500 ease-in-out ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
           src={`${PATH.WORKS.SMALL}/${filename}`}
@@ -31,16 +31,16 @@ function workDetails({ work }: Props) {
           onLoad={handleOnLoad}
         />
         <Blurhash
-          className={`absolute h-full w-full object-cover object-center transition-opacity duration-300 ease-in-out ${
+          className={`absolute h-full w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
             isLoaded ? "opacity-0" : "opacity-100"
           }`}
           hash={blurhashSquare}
         />
-        <div className="absolute bottom-1 left-1 right-1 flex flex-col bg-gray-50 bg-opacity-90 p-2 text-center text-gray-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="absolute bottom-1 left-1 right-1 flex flex-col bg-gray-50 bg-opacity-90 p-2 text-center text-gray-700 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
           <h2>{title}</h2>
           <p>
             <time dateTime={year.toString()}>{year}</time> &middot; {height}
-            <small>x</small>
+            <small> x </small>
             {width}
           </p>
         </div>

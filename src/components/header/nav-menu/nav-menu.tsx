@@ -13,11 +13,15 @@ function NavMenu() {
       <ul
         className={`${
           isOpen ? "scale-y-100" : "scale-y-0"
-        } absolute inset-x-0 top-11 flex origin-top flex-col justify-center bg-gray-50 text-center transition-transform duration-300 ease-in-out sm:static sm:flex sm:flex-grow sm:scale-y-100 sm:flex-row sm:gap-2`}
+        } xl:gap-13 absolute inset-x-0 top-11 flex origin-top flex-col justify-center bg-gray-50 text-center transition-transform duration-300 ease-in-out sm:static sm:flex sm:flex-grow sm:scale-y-100 sm:flex-row sm:gap-4 md:gap-7 lg:gap-10 2xl:gap-16`}
       >
         {NAV_MENU.map(item => (
           <li key={item.URL}>
-            <NavLink className="block" to={item.URL} onClick={toggleIsOpen}>
+            <NavLink
+              className="block md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+              to={item.URL}
+              onClick={toggleIsOpen}
+            >
               {item.NAME}
             </NavLink>
           </li>

@@ -23,13 +23,13 @@ function Work() {
   const { title, year, width, height, filename, blurhash, imageWidth, imageHeight } = work
 
   return (
-    <section>
+    <>
       <Heading>{title}</Heading>
 
-      <div className="flex justify-center">
-        <picture className="relative">
+      <div className="flex flex-col justify-center">
+        <picture className="relative border-gray-900">
           <img
-            className={`mx-auto object-cover object-center transition-opacity duration-300 ease-in-out ${
+            className={`mx-auto object-cover object-center transition-opacity duration-500 ease-in-out ${
               isLoaded ? "opacity-100" : "opacity-0"
             }`}
             src={`${PATH.WORKS.SOURCE}/${filename}`}
@@ -40,15 +40,16 @@ function Work() {
             onLoad={handleOnLoad}
           />
           <Blurhash
-            className={`absolute top-0 mx-auto h-full w-full object-cover object-center transition-opacity duration-300 ease-in-out ${
+            className={`absolute top-0 mx-auto h-full w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
               isLoaded ? "opacity-0" : "opacity-100"
             }`}
             hash={blurhash}
           />
         </picture>
       </div>
+
       <div className="text-center">
-        <h2>Titre: {title}</h2>
+        <p>Titre: {title}</p>
         <p>
           <time dateTime={year}>Année: {year}</time>
         </p>
@@ -56,7 +57,7 @@ function Work() {
           Format: {height}&#8593; / {width}&#8594;
         </p>
       </div>
-    </section>
+    </>
   )
 }
 

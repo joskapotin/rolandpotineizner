@@ -5,7 +5,9 @@ function Work() {
   return (
     <>
       <Heading>Works</Heading>
-      <WorkList />
+      <div className="container mx-auto">
+        <WorkList />
+      </div>
     </>
   )
 }
