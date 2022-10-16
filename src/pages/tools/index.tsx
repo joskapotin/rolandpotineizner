@@ -15,6 +15,7 @@ function Tools() {
 
   return (
     <div>
+      <h1>Tools</h1>
       <label htmlFor="files">
         Select files
         <input type="file" multiple onChange={handleChange} />

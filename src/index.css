@@ -11,13 +11,19 @@
     font-family: "Danielbd";
     src: url("./assets/fonts/danielbd.ttf");
   }
-}
-
-html,
-body,
-#root {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  html {
+    @apply flex min-h-full flex-col;
+  }
+  body {
+    @apply flex min-h-full flex-grow flex-col;
+  }
+  #root {
+    @apply flex min-h-full flex-grow flex-col;
+  }
+  h1 {
+    @apply mb-2 bg-gray-900 px-2 py-4 text-center text-sm uppercase tracking-wider text-gray-50 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
 }

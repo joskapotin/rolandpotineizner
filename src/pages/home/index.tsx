@@ -3,7 +3,7 @@ import Loader from "../../components/loader/loader"
 function Home() {
   return (
     <>
-      <p>this is the home</p>
+      <h1>this is the home</h1>
       <Loader />
     </>
   )

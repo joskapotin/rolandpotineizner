@@ -1,5 +1,4 @@
 import image from "../../assets/images/roland.jpg"
-import Heading from "../../components/heading/heading"
 import Loader from "../../components/loader/loader"
 import NotFound from "../../components/not-found"
 import Youtube from "../../components/youtube/youtube"
@@ -16,7 +15,7 @@ function About() {
 
   return (
     <>
-      <Heading>About me</Heading>
+      <h1>About me</h1>
       <div className="container mx-auto">
         <img
           src={image}
