@@ -5,7 +5,7 @@ import Heading from "../../components/heading/heading"
 import { PATH } from "../../constants/constants"
 import useWork from "../../hooks/useWork"
 
-const Loader = lazy(() => import("../../components/loader/loader"))
+const Loader = lazy(() => import("../../components/spinner/spinner"))
 const NotFound = lazy(() => import("../../components/not-found"))
 
 function Work() {

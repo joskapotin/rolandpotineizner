@@ -1,6 +1,6 @@
 import image from "../../assets/images/roland.jpg"
-import Loader from "../../components/loader/loader"
 import NotFound from "../../components/not-found"
+import Loader from "../../components/spinner/spinner"
 import Youtube from "../../components/youtube/youtube"
 import { YOUTUBE_ID } from "../../constants/constants"
 import useResume from "../../hooks/useResume"

@@ -1,10 +1,10 @@
-import Loader from "../../components/loader/loader"
+import Spinner from "../../components/spinner/spinner"
 
 function Home() {
   return (
     <>
       <h1>this is the home</h1>
-      <Loader />
+      <Spinner />
     </>
   )
 }

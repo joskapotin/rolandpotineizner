@@ -4,7 +4,7 @@ import { useRoutes } from "react-router-dom"
 import { ROUTES } from "./constants/constants"
 
 const Layout = lazy(() => import("./components/layout/layout"))
-const Loader = lazy(() => import("./components/loader/loader"))
+const Spinner = lazy(() => import("./components/spinner/spinner"))
 const NotFound = lazy(() => import("./components/not-found"))
 const About = lazy(() => import("./pages/about"))
 const Home = lazy(() => import("./pages/home"))
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
-      <Suspense fallback={<Loader />}>{element}</Suspense>
+      <Suspense fallback={<Spinner />}>{element}</Suspense>
     </ErrorBoundary>
   )
 }

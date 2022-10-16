@@ -1,6 +1,10 @@
-function Loader() {
+function Spinner() {
   return (
-    <div aria-label="Loading..." role="status">
+    <div
+      aria-label="Loading..."
+      role="status"
+      className="grid h-full w-full place-content-center opacity-50"
+    >
       <svg className="h-6 w-6 animate-spin" viewBox="3 3 18 18">
         <path
           className="fill-gray-200"
@@ -15,4 +19,4 @@ function Loader() {
   )
 }
 
-export default Loader
+export default Spinner

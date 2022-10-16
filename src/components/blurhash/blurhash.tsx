@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BlurhashCanvas from "./blurhash-canvas"
+import BlurhashSpinner from "./blurhash-spinner"
 
 type BlurhashProps = {
   title: string
@@ -13,6 +14,10 @@ function Blurhash(props: BlurhashProps) {
   const { title, url, hash, width, height } = props
   const [isLoaded, setIsLoaded] = useState(false)
 
+  const handleOnLoad = () => {
+    setIsLoaded(true)
+  }
+
   return (
     <picture className="relative">
       <img
@@ -24,9 +29,10 @@ function Blurhash(props: BlurhashProps) {
         width={width}
         height={height}
         loading="lazy"
-        onLoad={() => setIsLoaded(true)}
+        onLoad={handleOnLoad}
       />
       <BlurhashCanvas hash={hash} isLoaded={isLoaded} />
+      <BlurhashSpinner isLoaded={isLoaded} />
     </picture>
   )
 }

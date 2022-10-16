@@ -1,6 +1,6 @@
 import useWorks from "../../hooks/useWorks"
-import Loader from "../loader/loader"
 import NotFound from "../not-found"
+import Loader from "../spinner/spinner"
 import WorkListItem from "./work-list-item"
 
 function WorkList() {
