@@ -1,4 +1,5 @@
-import image from "../../assets/images/roland.jpg"
+import image from "../../assets/images/roland01.jpg"
+import Blurhash from "../../components/blurhash/blurhash"
 import NotFound from "../../components/not-found"
 import Loader from "../../components/spinner/spinner"
 import Youtube from "../../components/youtube/youtube"
@@ -17,12 +18,12 @@ function About() {
     <>
       <h1>{ROUTES.ABOUT.NAME}</h1>
       <div className="container mx-auto px-2 sm:px-0">
-        <img
-          src={image}
-          alt="Roland souriant devant des tableaux"
-          className="mx-auto object-cover"
-          width={300}
-          height={201}
+        <Blurhash
+          hash="LOIhjQ_Nx[%NMbRP%LIVOtkW%Mtm"
+          url={image}
+          title="Roland souriant devant des tableaux"
+          width={604}
+          height={403}
         />
         <Story />
         <Youtube embedId={YOUTUBE_ID.STORY} />

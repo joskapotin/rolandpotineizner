@@ -1,7 +1,6 @@
 import { lazy } from "react"
 import { useParams } from "react-router-dom"
 import Blurhash from "../../components/blurhash/blurhash"
-import Heading from "../../components/heading/heading"
 import { PATH } from "../../constants/constants"
 import useWork from "../../hooks/useWork"
 
@@ -19,7 +18,7 @@ function Work() {
 
   return (
     <>
-      <Heading>{title}</Heading>
+      <h1>{title}</h1>
 
       <div className="container mx-auto grid justify-center lg:grid-cols-2 lg:items-center lg:justify-items-end">
         <Blurhash
