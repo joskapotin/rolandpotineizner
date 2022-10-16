@@ -18,7 +18,9 @@ function NavMenu() {
         {NAV_MENU.map(item => (
           <li key={item.URL}>
             <NavLink
-              className="block md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+              className={`${
+                isOpen ? "opacity-100" : "opacity-0"
+              } block transition-opacity duration-300 ease-in-out sm:opacity-100 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl`}
               to={item.URL}
               onClick={toggleIsOpen}
             >

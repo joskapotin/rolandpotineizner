@@ -42,7 +42,7 @@ const extractData = (filenames: string[]) => {
     const title = extractTitle(filename)
     const year = extractYear(filename)
     const { height, width } = extractDimensions(filename)
-    const slug = slugify(extractTitle(title))
+    const slug = slugify(title)
     return {
       id: uuidv4(),
       filename,
