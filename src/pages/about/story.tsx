@@ -1,6 +1,6 @@
 function Story() {
   return (
-    <div className="px-2 sm:px-0">
+    <div>
       <p>
         Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
         et le monde fut immédiatement trop grand.

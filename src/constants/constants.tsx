@@ -1,10 +1,10 @@
 export const ROUTES = {
-  HOME: { URL: "/", NAME: "home" },
-  ABOUT: { URL: "about", NAME: "about" },
-  WORKS: { URL: "works", NAME: "works" },
-  WORK: { URL: ":slug", NAME: "work" },
+  HOME: { URL: "/", NAME: "Accueil" },
+  ABOUT: { URL: "about", NAME: "Biographie" },
+  WORKS: { URL: "works", NAME: "Œuvres" },
+  WORK: { URL: ":slug", NAME: "Œuvre" },
   TOOLS: { URL: "tools", NAME: "tools" },
-  NOT_FOUND: { URL: "not-found", NAME: "not-found" },
+  NOT_FOUND: { URL: "not-found", NAME: "Introuvable" },
 } as const
 
 export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.WORKS, ROUTES.TOOLS]

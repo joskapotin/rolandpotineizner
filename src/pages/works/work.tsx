@@ -21,7 +21,7 @@ function Work() {
     <>
       <Heading>{title}</Heading>
 
-      <div className="grid justify-center">
+      <div className="container mx-auto grid justify-center lg:grid-cols-2 lg:items-center lg:justify-items-end">
         <Blurhash
           title={title}
           url={`${PATH.WORKS.SOURCE}/${filename}`}
@@ -29,16 +29,15 @@ function Work() {
           width={imageWidth}
           height={imageHeight}
         />
-      </div>
-
-      <div className="text-center">
-        <p>Titre: {title}</p>
-        <p>
-          <time dateTime={year}>Année: {year}</time>
-        </p>
-        <p>
-          Format: {height}&#8593; / {width}&#8594;
-        </p>
+        <div className="justify-self-center">
+          <p>Titre: {title}</p>
+          <p>
+            <time dateTime={year}>Année: {year}</time>
+          </p>
+          <p>
+            Format: {height}&#8593; / {width}&#8594;
+          </p>
+        </div>
       </div>
     </>
   )

@@ -2,21 +2,21 @@ import image from "../../assets/images/roland.jpg"
 import NotFound from "../../components/not-found"
 import Loader from "../../components/spinner/spinner"
 import Youtube from "../../components/youtube/youtube"
-import { YOUTUBE_ID } from "../../constants/constants"
+import { ROUTES, YOUTUBE_ID } from "../../constants/constants"
 import useResume from "../../hooks/useResume"
+import Resume from "./resume"
 import Story from "./story"
-import Year from "./year"
 
 function About() {
-  const { bio, isLoading, isError } = useResume()
+  const { resume, isLoading, isError } = useResume()
 
   if (isError) return <NotFound />
   if (isLoading) return <Loader />
 
   return (
     <>
-      <h1>About me</h1>
-      <div className="container mx-auto">
+      <h1>{ROUTES.ABOUT.NAME}</h1>
+      <div className="container mx-auto px-2 sm:px-0">
         <img
           src={image}
           alt="Roland souriant devant des tableaux"
@@ -26,9 +26,11 @@ function About() {
         />
         <Story />
         <Youtube embedId={YOUTUBE_ID.STORY} />
-        {bio?.map(item => (
-          <Year key={item.year} year={item.year} events={item.events} />
-        ))}
+        <div className="mt-10 flex flex-col gap-10">
+          {resume?.map(item => (
+            <Resume key={item.years[0]} years={item.years} events={item.events} />
+          ))}
+        </div>
       </div>
     </>
   )

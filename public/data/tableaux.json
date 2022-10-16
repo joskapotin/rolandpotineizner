@@ -36,7 +36,7 @@
   {
     "id": "10b21c52-0704-4462-b439-8e2bef9a1dd1",
     "filename": "annonciata_d_apres_antonnello-1969-33x43.jpg",
-    "title": "Annonciata d apres antonnello",
+    "title": "Annonciata d'après Antonnello",
     "year": "1969",
     "height": "33",
     "width": "43",
@@ -53,7 +53,7 @@
   {
     "id": "5f531131-677c-4421-9752-b38b528db2a7",
     "filename": "antagonisme_d_andrea-1994-120x120.jpg",
-    "title": "Antagonisme d andrea",
+    "title": "Antagonisme d'Andrea",
     "year": "1994",
     "height": "120",
     "width": "120",
@@ -70,7 +70,7 @@
   {
     "id": "5d14ef84-670d-4189-8eef-b923f432d44b",
     "filename": "antropo_ou_le_reve_du_cordonnier-2010-100x81.jpg",
-    "title": "Antropo ou le reve du cordonnier",
+    "title": "Antropo ou le rêve du cordonnier",
     "year": "2010",
     "height": "100",
     "width": "81",
@@ -104,7 +104,7 @@
   {
     "id": "5a71c2e9-eb0b-4862-a6b5-a5148f82f41a",
     "filename": "auberge_des_trois_freres_yanis_amorgos-2000-162x130.jpg",
-    "title": "Auberge des trois freres yanis amorgos",
+    "title": "Auberge des trois frères Yanis Amorgos",
     "year": "2000",
     "height": "162",
     "width": "130",
@@ -155,7 +155,7 @@
   {
     "id": "1cee1c7a-b700-4efb-9456-f2b8bd74250e",
     "filename": "azulejo_lisbonne-1992-60x45.jpg",
-    "title": "Azulejo lisbonne",
+    "title": "Azulejo Lisbonne",
     "year": "1992",
     "height": "60",
     "width": "45",
@@ -172,7 +172,7 @@
   {
     "id": "ca8ed997-6742-4078-9dee-92b6b9cd65a1",
     "filename": "azulejo_lisbonne_numero_2-1992-60x45.jpg",
-    "title": "Azulejo lisbonne numero 2",
+    "title": "Azulejo Lisbonne numéro 2",
     "year": "1992",
     "height": "60",
     "width": "45",
@@ -188,12 +188,12 @@
   },
   {
     "id": "d321d23a-5aeb-4d06-a60f-b6151129b42d",
-    "filename": "balade_dans_l_egot-1972-72x130.jpg",
-    "title": "Balade dans l egot",
+    "filename": "balade_dans_l_ego-1972-72x130.jpg",
+    "title": "Balade dans l’ego",
     "year": "1972",
     "height": "72",
     "width": "130",
-    "slug": "balade-dans-l-egot",
+    "slug": "balade-dans-l-ego",
     "order": 12,
     "visible": true,
     "blurhash": "UHDvfxxUo%xa00jct6R*?4E1IUV[?d%Kxtt6",
@@ -206,7 +206,7 @@
   {
     "id": "21d3a9b1-e9cf-410a-849b-bd55dd1de0d7",
     "filename": "belzebuth-1969-59x20.jpg",
-    "title": "Belzebuth",
+    "title": "Belzébuth",
     "year": "1969",
     "height": "59",
     "width": "20",
@@ -256,12 +256,12 @@
   },
   {
     "id": "f610d180-b310-4f33-9d1a-a3afd15b42d4",
-    "filename": "bizaroide-1969-26x32.jpg",
-    "title": "Bizaroide",
+    "filename": "bizarroide-1969-26x32.jpg",
+    "title": "Bizarroïde",
     "year": "1969",
     "height": "26",
     "width": "32",
-    "slug": "bizaroide",
+    "slug": "bizarroide",
     "order": 16,
     "visible": true,
     "blurhash": "U68M~w0oAe^i}Q9uM_xY5Z-nxuafM_ogM{=s",
@@ -274,7 +274,7 @@
   {
     "id": "fe46cd13-80e9-4a8c-9655-dcb194d211f3",
     "filename": "bonjour_l_ami_autoportrait-1969-75x66.jpg",
-    "title": "Bonjour l ami autoportrait",
+    "title": "Bonjour l'ami. Autoportrait",
     "year": "1969",
     "height": "75",
     "width": "66",
@@ -291,7 +291,7 @@
   {
     "id": "33a9422d-f5b6-478a-8b30-c800da135e0c",
     "filename": "brumes_sur_le_fuji_yama-1972-31x50.jpg",
-    "title": "Brumes sur le fuji yama",
+    "title": "Brumes sur le Fuji Yama",
     "year": "1972",
     "height": "31",
     "width": "50",
@@ -359,7 +359,7 @@
   {
     "id": "f283571d-4b9a-44e6-8f1e-730a492df37d",
     "filename": "comedie-1996-60x73.jpg",
-    "title": "Comedie",
+    "title": "Comédie",
     "year": "1996",
     "height": "60",
     "width": "73",
@@ -409,12 +409,12 @@
   },
   {
     "id": "080685fd-ce71-46fb-a165-a657f5364cf8",
-    "filename": "depart_gare_st_lazare-2001-60x73.jpg",
-    "title": "Depart gare st lazare",
+    "filename": "depart_gare_saint_lazare-2001-60x73.jpg",
+    "title": "Départ gare Saint-Lazare",
     "year": "2001",
     "height": "60",
     "width": "73",
-    "slug": "depart-gare-st-lazare",
+    "slug": "depart-gare-saint-lazare",
     "order": 25,
     "visible": true,
     "blurhash": "U99Qm=ngDjRp1Bi{-qW;x8TKI^w@#5V@Xnfm",
@@ -444,7 +444,7 @@
   {
     "id": "3ae0cda1-9859-444a-9ada-a5f6fbdf0cbc",
     "filename": "deuxieme_naissance-2007-60x73.jpg",
-    "title": "Deuxieme naissance",
+    "title": "Deuxième naissance",
     "year": "2007",
     "height": "60",
     "width": "73",
@@ -461,7 +461,7 @@
   {
     "id": "dd4d766b-8565-4bf9-bb33-f97974d23326",
     "filename": "ecriture-1999-50x65.jpg",
-    "title": "Ecriture",
+    "title": "Écriture",
     "year": "1999",
     "height": "50",
     "width": "65",
@@ -478,7 +478,7 @@
   {
     "id": "1ffdb0c9-5e45-43d3-bf7a-29cb69f709f5",
     "filename": "empreinte_caraibe-1996-50x65.jpg",
-    "title": "Empreinte caraibe",
+    "title": "Empreinte caraïbe",
     "year": "1996",
     "height": "50",
     "width": "65",
@@ -546,7 +546,7 @@
   {
     "id": "d8e06cbf-f358-4f1d-8ce9-6611ff9fd7af",
     "filename": "exploration_numero_1-2006-55x38.jpg",
-    "title": "Exploration numero 1",
+    "title": "Exploration numéro 1",
     "year": "2006",
     "height": "55",
     "width": "38",
@@ -563,7 +563,7 @@
   {
     "id": "09775cad-4213-4e7b-a446-63e326d4e9bf",
     "filename": "exploration_numero_2-2006-33x46.jpg",
-    "title": "Exploration numero 2",
+    "title": "Exploration numéro 2",
     "year": "2006",
     "height": "33",
     "width": "46",
@@ -597,7 +597,7 @@
   {
     "id": "62af51e4-881b-4da5-8866-c43b8acb39d1",
     "filename": "fin_de_siecle-2001-65x81.jpg",
-    "title": "Fin de siecle",
+    "title": "Fin de siècle",
     "year": "2001",
     "height": "65",
     "width": "81",
@@ -648,7 +648,7 @@
   {
     "id": "0f83957e-45c0-4991-b9b9-62ff16260f29",
     "filename": "helle-1999-73x60.jpg",
-    "title": "Helle",
+    "title": "Hellé",
     "year": "1999",
     "height": "73",
     "width": "60",
@@ -665,7 +665,7 @@
   {
     "id": "2955c937-efda-40aa-8420-de1a988b6d96",
     "filename": "hello_clementine-2008-96x75.jpg",
-    "title": "Hello clementine",
+    "title": "Hello Clementine",
     "year": "2008",
     "height": "96",
     "width": "75",
@@ -682,7 +682,7 @@
   {
     "id": "038a0009-718e-4324-bbb9-a3ccc0e1c269",
     "filename": "hello_josephine_baker-2011-97x73.jpg",
-    "title": "Hello josephine baker",
+    "title": "Hello Josephine Baker",
     "year": "2011",
     "height": "97",
     "width": "73",
@@ -716,7 +716,7 @@
   {
     "id": "77f7478a-66c6-46d9-8217-e32cf2643d29",
     "filename": "isaac_sidel-1991-60x73.jpg",
-    "title": "Isaac sidel",
+    "title": "Isaac Sidel",
     "year": "1991",
     "height": "60",
     "width": "73",
@@ -732,12 +732,12 @@
   },
   {
     "id": "0c36b66a-b3f2-42b3-a7f5-247a0591c08b",
-    "filename": "jan_vredeman_de_vries-1992-146x114.jpg",
-    "title": "Jan vredeman de vries",
+    "filename": "hans_vredeman_de_vries-1992-146x114.jpg",
+    "title": "Hans Vredeman de Vries",
     "year": "1992",
     "height": "146",
     "width": "114",
-    "slug": "jan-vredeman-de-vries",
+    "slug": "hans-vredeman-de-vries",
     "order": 44,
     "visible": true,
     "blurhash": "U2JESA0O00vxDO-AK*%200NYLfxv3?xu*dD%",
@@ -750,7 +750,7 @@
   {
     "id": "942d7b88-2479-4b29-ba74-485a3221ffd9",
     "filename": "je_voulais_etre_marin-1992-46x38.jpg",
-    "title": "Je voulais etre marin",
+    "title": "Je voulais être marin",
     "year": "1992",
     "height": "46",
     "width": "38",
@@ -767,7 +767,7 @@
   {
     "id": "fbee2b58-9a51-44a0-929b-662f784fcba6",
     "filename": "joie_interieure-2009-130x97.jpg",
-    "title": "Joie interieure",
+    "title": "Joie intérieure",
     "year": "2009",
     "height": "130",
     "width": "97",
@@ -801,7 +801,7 @@
   {
     "id": "67cb08d5-93fb-4f14-821e-34a8edb0bff9",
     "filename": "l_accordeon_japonais-1992-81x100.jpg",
-    "title": "L accordeon japonais",
+    "title": "L'accordéon japonais",
     "year": "1992",
     "height": "81",
     "width": "100",
@@ -835,7 +835,7 @@
   {
     "id": "5d41b5eb-60cf-4e9f-a260-ba7f582e77df",
     "filename": "la_cle_des_champs-1996-92x73.jpg",
-    "title": "La cle des champs",
+    "title": "La clé des champs",
     "year": "1996",
     "height": "92",
     "width": "73",
@@ -852,7 +852,7 @@
   {
     "id": "6dbebf2f-e392-4e51-82c8-c60ee8092a5d",
     "filename": "la_corne_d_abondance-1990-22x35.jpg",
-    "title": "La corne d abondance",
+    "title": "La corne d'abondance",
     "year": "1990",
     "height": "22",
     "width": "35",
@@ -869,7 +869,7 @@
   {
     "id": "a9bcafe6-ebc4-40a3-b460-9c969b66ac85",
     "filename": "la_creation_du_monde-1991-51x43.jpg",
-    "title": "La creation du monde",
+    "title": "La création du monde",
     "year": "1991",
     "height": "51",
     "width": "43",
@@ -886,7 +886,7 @@
   {
     "id": "8caeda06-3cc7-4f15-8eeb-28c771a3b70e",
     "filename": "la_danseuse_de_dusseldorf-2002-80x65.jpg",
-    "title": "La danseuse de dusseldorf",
+    "title": "La danseuse de Dusseldorf",
     "year": "2002",
     "height": "80",
     "width": "65",
@@ -903,7 +903,7 @@
   {
     "id": "3574e309-02a4-4747-9ca8-5cc2b5fd4f9f",
     "filename": "la_fiancee_en_difficultee-1991-97x130.jpg",
-    "title": "La fiancee en difficultee",
+    "title": "La fiancée en difficultée",
     "year": "1991",
     "height": "97",
     "width": "130",
@@ -937,7 +937,7 @@
   {
     "id": "d7d936c0-77ee-456c-94d5-63fc9c51c869",
     "filename": "la_joie_de_therese-1997-65x100.jpg",
-    "title": "La joie de therese",
+    "title": "La joie de Thérèse",
     "year": "1997",
     "height": "65",
     "width": "100",
@@ -954,7 +954,7 @@
   {
     "id": "47e6422d-8d25-47bc-8879-6d3300e90956",
     "filename": "l_alchimiste-1996-81x100.jpg",
-    "title": "L alchimiste",
+    "title": "L'alchimiste",
     "year": "1996",
     "height": "81",
     "width": "100",
@@ -971,7 +971,7 @@
   {
     "id": "b27aa361-18de-4c1c-b0c4-f5c4416c1165",
     "filename": "la_legerete_c_est_facile-2000-60x73.jpg",
-    "title": "La legerete c est facile",
+    "title": "La légèreté c'est facile",
     "year": "2000",
     "height": "60",
     "width": "73",
@@ -1022,7 +1022,7 @@
   {
     "id": "366c2a3f-f55f-49c4-b96a-f87518e56173",
     "filename": "la_meditation-1994-54x73.jpg",
-    "title": "La meditation",
+    "title": "La méditation",
     "year": "1994",
     "height": "54",
     "width": "73",
@@ -1039,7 +1039,7 @@
   {
     "id": "e441d4ad-3658-49e3-b19b-b701499e68ec",
     "filename": "l_amour_c_est_pas_simple-2008-100x81.jpg",
-    "title": "L amour c est pas simple",
+    "title": "L'amour c'est pas simple",
     "year": "2008",
     "height": "100",
     "width": "81",
@@ -1056,7 +1056,7 @@
   {
     "id": "f3ba40c5-b1b1-459e-a892-01e97a27664a",
     "filename": "l_ange_de_la_paix-1994-60x72.jpg",
-    "title": "L ange de la paix",
+    "title": "L'ange de la paix",
     "year": "1994",
     "height": "60",
     "width": "72",
@@ -1073,7 +1073,7 @@
   {
     "id": "f7c873c8-a233-416c-978e-2f19758e0417",
     "filename": "la_peintre_magalie_cazot-2006-81x65.jpg",
-    "title": "La peintre magalie cazot",
+    "title": "La peintre Magalie Cazot",
     "year": "2006",
     "height": "81",
     "width": "65",
@@ -1090,7 +1090,7 @@
   {
     "id": "fbcb52d8-19c7-42c9-ab41-5ac449ce3319",
     "filename": "la_seconde_vie_de_l_alchimiste-1996-65x81.jpg",
-    "title": "La seconde vie de l alchimiste",
+    "title": "La seconde vie de l'alchimiste",
     "year": "1996",
     "height": "65",
     "width": "81",
@@ -1175,7 +1175,7 @@
   {
     "id": "0747b05e-8d04-4f38-bf8e-8bdf0645743f",
     "filename": "l_ecclesiastique-2012-130x97.jpg",
-    "title": "L ecclesiastique",
+    "title": "L'ecclésiastique",
     "year": "2012",
     "height": "130",
     "width": "97",
@@ -1260,7 +1260,7 @@
   {
     "id": "a4d09832-b2dc-4319-912c-d28cef441586",
     "filename": "le_feu_de_tica-1992-73x60.jpg",
-    "title": "Le feu de tica",
+    "title": "Le feu de Tica",
     "year": "1992",
     "height": "73",
     "width": "60",
@@ -1294,7 +1294,7 @@
   {
     "id": "1bacf0c1-9e3a-42c1-8c67-df7685db2ba4",
     "filename": "l_egolastique-1996-65x81.jpg",
-    "title": "L egolastique",
+    "title": "L'égolastique",
     "year": "1996",
     "height": "65",
     "width": "81",
@@ -1311,7 +1311,7 @@
   {
     "id": "70d2fdd3-e4ca-4fd5-9302-6520e215c056",
     "filename": "le_maitre_a_danser-1992-81x65.jpg",
-    "title": "Le maitre a danser",
+    "title": "Le maitre à danser",
     "year": "1992",
     "height": "81",
     "width": "65",
@@ -1345,7 +1345,7 @@
   {
     "id": "0b659cc5-1776-47b1-8f47-844df7d64d5e",
     "filename": "le_reve_d_icare-2008-146x114.jpg",
-    "title": "Le reve d icare",
+    "title": "Le rêve d'Icare",
     "year": "2008",
     "height": "146",
     "width": "114",
@@ -1362,7 +1362,7 @@
   {
     "id": "ff9c29a2-5bfc-4bcb-a300-e110e250aa15",
     "filename": "les_7_jours_de_simon_labrosse_de_carole_frechette-2008-71x61.jpg",
-    "title": "Les 7 jours de simon labrosse de carole frechette",
+    "title": "Les Sept jours de Simon Labrosse de Carole Fréchette ",
     "year": "2008",
     "height": "71",
     "width": "61",
@@ -1379,7 +1379,7 @@
   {
     "id": "7b25a1c7-bc16-4b12-9824-0366c4496137",
     "filename": "les_difficultees_d_etre-1994-100x73.jpg",
-    "title": "Les difficultees d etre",
+    "title": "Les difficultées d'être",
     "year": "1994",
     "height": "100",
     "width": "73",
@@ -1430,7 +1430,7 @@
   {
     "id": "629d63bb-668f-4cbd-b615-abfb5a0d329e",
     "filename": "le_temps_des_kermene-1970-28x42.jpg",
-    "title": "Le temps des kermene",
+    "title": "Le temps des Kermene",
     "year": "1970",
     "height": "28",
     "width": "42",
@@ -1447,7 +1447,7 @@
   {
     "id": "45e16603-2209-4425-a979-b3f77f6c010d",
     "filename": "l_homme_a_la_ducati-1998-73x92.jpg",
-    "title": "L homme a la ducati",
+    "title": "L'homme à la Ducati",
     "year": "1998",
     "height": "73",
     "width": "92",
@@ -1464,7 +1464,7 @@
   {
     "id": "f5f42769-4de0-44e2-90fb-ab1e3a85e468",
     "filename": "libertes_en_70-1970-140x200.jpg",
-    "title": "Libertes en 70",
+    "title": "Libertés en 70",
     "year": "1970",
     "height": "140",
     "width": "200",
@@ -1481,7 +1481,7 @@
   {
     "id": "63d2699e-fe19-4ad4-9ded-3049f4941095",
     "filename": "l_innocence-2009-97x130.jpg",
-    "title": "L innocence",
+    "title": "L'innocence",
     "year": "2009",
     "height": "97",
     "width": "130",
@@ -1498,7 +1498,7 @@
   {
     "id": "19c8e9c6-4d4d-4a77-8e10-d3e4f471ecf0",
     "filename": "litterature-2003-54x81.jpg",
-    "title": "Litterature",
+    "title": "littérature",
     "year": "2003",
     "height": "54",
     "width": "81",
@@ -1515,7 +1515,7 @@
   {
     "id": "81630cc2-5e24-4122-81a6-461e7edee949",
     "filename": "l_oeil_de_cain-1996-46x61.jpg",
-    "title": "L oeil de cain",
+    "title": "L'œil de Caïn",
     "year": "1996",
     "height": "46",
     "width": "61",
@@ -1549,7 +1549,7 @@
   {
     "id": "20bf57ef-740e-4d55-873c-896689993c2a",
     "filename": "ma_cathedrale-2008-130x97.jpg",
-    "title": "Ma cathedrale",
+    "title": "Ma cathédrale",
     "year": "2008",
     "height": "130",
     "width": "97",
@@ -1566,7 +1566,7 @@
   {
     "id": "22a4b4e0-9fe2-44bc-9f9b-c106e6ef5b7d",
     "filename": "mademoiselle_titi-1972-54x73.jpg",
-    "title": "Mademoiselle titi",
+    "title": "Mademoiselle Titi",
     "year": "1972",
     "height": "54",
     "width": "73",
@@ -1583,7 +1583,7 @@
   {
     "id": "770cc666-0d57-48b5-b8c1-e9dc50bd440d",
     "filename": "marie_laforet-1967-46x38.jpg",
-    "title": "Marie laforet",
+    "title": "Marie Laforêt",
     "year": "1967",
     "height": "46",
     "width": "38",
@@ -1600,7 +1600,7 @@
   {
     "id": "575541e1-1cb3-448f-bc6d-9bae25ebd81f",
     "filename": "marlene_a_la_boule-2001-38x31.jpg",
-    "title": "Marlene a la boule",
+    "title": "Marlène à la boule",
     "year": "2001",
     "height": "38",
     "width": "31",
@@ -1617,7 +1617,7 @@
   {
     "id": "4c11e0da-189a-4e88-8d8a-6bc2befa39f0",
     "filename": "marlene_a_l_oiseau-2001-44x38.jpg",
-    "title": "Marlene a l oiseau",
+    "title": "Marlène à l'oiseau",
     "year": "2001",
     "height": "44",
     "width": "38",
@@ -1634,7 +1634,7 @@
   {
     "id": "60925b25-75ce-4108-8ea7-1b979c5e7d52",
     "filename": "marlene_et_l_orient_express-2001-60x72.jpg",
-    "title": "Marlene et l orient express",
+    "title": "Marlène et l'orient express",
     "year": "2001",
     "height": "60",
     "width": "72",
@@ -1668,7 +1668,7 @@
   {
     "id": "65340ef3-0899-4b92-b77c-e647c8a0b6ed",
     "filename": "messager_sarko-2007-73x60.jpg",
-    "title": "Messager sarko",
+    "title": "Messager Sarko",
     "year": "2007",
     "height": "73",
     "width": "60",
@@ -1685,7 +1685,7 @@
   {
     "id": "85e25418-495c-43d0-8456-6029843e6cc9",
     "filename": "metaphore-1992-100x81.jpg",
-    "title": "Metaphore",
+    "title": "Métaphore",
     "year": "1992",
     "height": "100",
     "width": "81",
@@ -1736,7 +1736,7 @@
   {
     "id": "758546ee-53e1-4684-b1f9-0389874c5a02",
     "filename": "mon_ami_dino_papatakis-1994-89x116.jpg",
-    "title": "Mon ami dino papatakis",
+    "title": "Mon ami Dino Papatakis",
     "year": "1994",
     "height": "89",
     "width": "116",
@@ -1753,7 +1753,7 @@
   {
     "id": "80c7a655-15ab-428c-8cb9-3e5e6889bbf0",
     "filename": "monsieur_karl-2008-100x81.jpg",
-    "title": "Monsieur karl",
+    "title": "Monsieur Karl",
     "year": "2008",
     "height": "100",
     "width": "81",
@@ -1804,7 +1804,7 @@
   {
     "id": "6d6dc6a2-3537-4826-96d3-b11d4708ec62",
     "filename": "nebuleuse-1969-46x61.jpg",
-    "title": "Nebuleuse",
+    "title": "Nébuleuse",
     "year": "1969",
     "height": "46",
     "width": "61",
@@ -1821,7 +1821,7 @@
   {
     "id": "e6c06f04-6886-4896-947e-4f1513afddee",
     "filename": "nuit_a_venasque-1970-38x55.jpg",
-    "title": "Nuit a venasque",
+    "title": "Nuit à Venasque",
     "year": "1970",
     "height": "38",
     "width": "55",
@@ -1872,7 +1872,7 @@
   {
     "id": "8bbd0f3d-b452-4643-b91b-4e911f4bf91f",
     "filename": "page_numero_7-1999-81x65.jpg",
-    "title": "Page numero 7",
+    "title": "Page numéro 7",
     "year": "1999",
     "height": "81",
     "width": "65",
@@ -1923,7 +1923,7 @@
   {
     "id": "385536af-6830-42a2-9958-bf079e04f54b",
     "filename": "paysage_potin-1970-30x45.jpg",
-    "title": "Paysage potin",
+    "title": "Paysage Potin",
     "year": "1970",
     "height": "30",
     "width": "45",
@@ -1957,7 +1957,7 @@
   {
     "id": "8cb3260a-8bff-402e-b966-c3fada52abd0",
     "filename": "pegase-1998-73x92.jpg",
-    "title": "Pegase",
+    "title": "Pégase",
     "year": "1998",
     "height": "73",
     "width": "92",
@@ -1974,7 +1974,7 @@
   {
     "id": "e08185e9-3144-414d-bab5-f7a8c4568ace",
     "filename": "phage_of_georgia-2006-61x50.jpg",
-    "title": "Phage of georgia",
+    "title": "Phage of Georgia",
     "year": "2006",
     "height": "61",
     "width": "50",
@@ -2008,7 +2008,7 @@
   {
     "id": "23fc8df9-2697-4ad2-9483-f059e89c0d12",
     "filename": "place_vendome-1998-46x61.jpg",
-    "title": "Place vendome",
+    "title": "Place Vendôme",
     "year": "1998",
     "height": "46",
     "width": "61",
@@ -2025,7 +2025,7 @@
   {
     "id": "4215bdd3-e693-4656-9427-6ee377efc9f5",
     "filename": "planete_nasa-2000-63x59.jpg",
-    "title": "Planete nasa",
+    "title": "Planète NASA",
     "year": "2000",
     "height": "63",
     "width": "59",
@@ -2042,7 +2042,7 @@
   {
     "id": "e7c67f0d-168a-4634-96f9-5ac5eb7f8597",
     "filename": "plenitude-2000-60x73.jpg",
-    "title": "Plenitude",
+    "title": "Plénitude",
     "year": "2000",
     "height": "60",
     "width": "73",
@@ -2059,7 +2059,7 @@
   {
     "id": "2cd5a733-2dbf-41b8-b254-471c8652a316",
     "filename": "point_d_equilibre-2001-38x60.jpg",
-    "title": "Point d equilibre",
+    "title": "Point d'équilibre",
     "year": "2001",
     "height": "38",
     "width": "60",
@@ -2076,7 +2076,7 @@
   {
     "id": "6591e420-5b4a-4078-8ea9-4c7129b717b7",
     "filename": "portrait_d_artiste-2006-65x81.jpg",
-    "title": "Portrait d artiste",
+    "title": "Portrait d'artiste",
     "year": "2006",
     "height": "65",
     "width": "81",
@@ -2127,7 +2127,7 @@
   {
     "id": "6e76de7c-9fad-47af-9c72-6635530368fb",
     "filename": "realite_x_y-2011-100x81.jpg",
-    "title": "Realite x y",
+    "title": "Réalité x y",
     "year": "2011",
     "height": "100",
     "width": "81",
@@ -2178,7 +2178,7 @@
   {
     "id": "1e5a9c6e-afd5-4796-ab0d-702ac457daa0",
     "filename": "reve_d_une_nuit-2011-100x81.jpg",
-    "title": "Reve d une nuit",
+    "title": "Rêve d'une nuit",
     "year": "2011",
     "height": "100",
     "width": "81",
@@ -2195,7 +2195,7 @@
   {
     "id": "fdfb585f-9f37-4539-b91c-55df6e3e2cfc",
     "filename": "scene_de_theatre-2000-81x60.jpg",
-    "title": "Scene de theatre",
+    "title": "Scène de théatre",
     "year": "2000",
     "height": "81",
     "width": "60",
@@ -2212,7 +2212,7 @@
   {
     "id": "154a274f-d118-45e9-ab1a-dc6f58a8670d",
     "filename": "seduction-2000-73x60.jpg",
-    "title": "Seduction",
+    "title": "Séduction",
     "year": "2000",
     "height": "73",
     "width": "60",
@@ -2229,7 +2229,7 @@
   {
     "id": "195db8c1-0580-4544-bd6f-154b2cc371eb",
     "filename": "sejour_a_formentera-1967-27x41.jpg",
-    "title": "Sejour a formentera",
+    "title": "Séjour à Formentera",
     "year": "1967",
     "height": "27",
     "width": "41",
@@ -2263,7 +2263,7 @@
   {
     "id": "7ddb14de-2f2d-40b9-b1d7-831866d0583a",
     "filename": "st_joseph_a_l_oiseau-1998-97x130.jpg",
-    "title": "St joseph a l oiseau",
+    "title": "Saint Joseph à l'oiseau",
     "year": "1998",
     "height": "97",
     "width": "130",
@@ -2314,7 +2314,7 @@
   {
     "id": "4e88a31a-634e-47ad-9346-b45876736483",
     "filename": "sur_un_air_de_wagner-1992-73x60.jpg",
-    "title": "Sur un air de wagner",
+    "title": "Sur un air de Wagner",
     "year": "1992",
     "height": "73",
     "width": "60",
@@ -2331,7 +2331,7 @@
   {
     "id": "b40de51e-1a32-4210-b272-6115c1e8dd08",
     "filename": "ton_etoile-1970-40x50.jpg",
-    "title": "Ton etoile",
+    "title": "Ton étoile",
     "year": "1970",
     "height": "40",
     "width": "50",
@@ -2381,12 +2381,12 @@
   },
   {
     "id": "f0ec4722-251d-49d5-ad0e-60e4537c627e",
-    "filename": "un_classique_du-genre-1991-54x65.jpg",
-    "title": "Un classique du",
+    "filename": "un_classique_du_genre-1991-54x65.jpg",
+    "title": "Un classique du genre",
     "year": "1991",
     "height": "54",
     "width": "65",
-    "slug": "un-classique-du",
+    "slug": "un-classique-du-genre",
     "order": 141,
     "visible": true,
     "blurhash": "U2Kv.e9t00~S000q3?030GH[D6?t03~l%e~3",
@@ -2450,7 +2450,7 @@
   {
     "id": "5d4775e3-6d88-4f67-9d12-fec8678dd0a1",
     "filename": "vision_ou_realite-2011-73x60.jpg",
-    "title": "Vision ou realite",
+    "title": "Vision ou réalité",
     "year": "2011",
     "height": "73",
     "width": "60",
@@ -2467,7 +2467,7 @@
   {
     "id": "d2d37b7b-de93-409e-9074-395cc651f8fc",
     "filename": "visite_chez_brancusi-2003-38x55.jpg",
-    "title": "Visite chez brancusi",
+    "title": "Visite chez Brancusi",
     "year": "2003",
     "height": "38",
     "width": "55",
@@ -2484,7 +2484,7 @@
   {
     "id": "36cf66f9-14cf-49ab-80b0-538f84a8f05b",
     "filename": "voyage_au_costa_rica-2008-100x100.jpg",
-    "title": "Voyage au costa rica",
+    "title": "Voyage au Costa Rica",
     "year": "2008",
     "height": "100",
     "width": "100",
@@ -2569,7 +2569,7 @@
   {
     "id": "840786bb-193d-48f8-b6e6-6ed7d541804b",
     "filename": "voyage_numero_3-1996-46x55.jpg",
-    "title": "Voyage numero 3",
+    "title": "Voyage numéro 3",
     "year": "1996",
     "height": "46",
     "width": "55",

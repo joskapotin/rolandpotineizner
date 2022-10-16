@@ -2,7 +2,7 @@ import useSWR from "swr"
 import { getResume } from "../services/api"
 
 export interface ResumeInterface {
-  year: string
+  years: string[]
   events: string[]
 }
 
@@ -10,7 +10,7 @@ function useResume() {
   const { data, error } = useSWR("getResume", () => getResume())
 
   return {
-    bio: data,
+    resume: data,
     isLoading: !error && !data,
     isError: error,
   }

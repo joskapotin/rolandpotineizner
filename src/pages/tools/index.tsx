@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import { ROUTES } from "../../constants/constants"
 import processFilenames from "./process-filenames"
 
 function Tools() {
@@ -15,7 +16,7 @@ function Tools() {
 
   return (
     <div>
-      <h1>Tools</h1>
+      <h1>{ROUTES.TOOLS.NAME}</h1>
       <label htmlFor="files">
         Select files
         <input type="file" multiple onChange={handleChange} />

@@ -1,9 +1,10 @@
 import Spinner from "../../components/spinner/spinner"
+import { ROUTES } from "../../constants/constants"
 
 function Home() {
   return (
     <>
-      <h1>this is the home</h1>
+      <h1>{ROUTES.HOME.NAME}</h1>
       <Spinner />
     </>
   )
