@@ -1,6 +1,6 @@
 function Story() {
   return (
-    <div>
+    <>
       <p>
         Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
         et le monde fut immédiatement trop grand.
@@ -42,7 +42,7 @@ function Story() {
         quotidien.
       </p>
       <p className="text-end">Roland Potin-Eizner</p>
-    </div>
+    </>
   )
 }
 
