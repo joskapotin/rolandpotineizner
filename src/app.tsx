@@ -10,7 +10,6 @@ const About = lazy(() => import("./pages/about"))
 const Home = lazy(() => import("./pages/home"))
 const Works = lazy(() => import("./pages/works"))
 const Work = lazy(() => import("./pages/works/work"))
-const Tools = lazy(() => import("./pages/tools"))
 const ErrorBoundaryFallback = lazy(() => import("./components/error-boundary-fallback"))
 
 function App() {
@@ -39,10 +38,6 @@ function App() {
               element: <Work />,
             },
           ],
-        },
-        {
-          path: ROUTES.TOOLS.URL,
-          element: <Tools />,
         },
         {
           path: "*",
