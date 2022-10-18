@@ -7,21 +7,20 @@ type BlurhashCanvasProps = HTMLAttributes<HTMLDivElement> & {
   isLoaded?: boolean
 }
 
-const resolution = 32
-
 function BlurhashCanvas(props: BlurhashCanvasProps) {
   const { hash, isLoaded = false } = props
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
+  const resolution = 32
   const draw = useCallback(() => {
-    if (canvasRef) {
+    if (canvasRef?.current) {
       const pixels = decode(hash, resolution, resolution, 1)
-      const ctx = (canvasRef.current as HTMLCanvasElement).getContext(
-        "2d"
-      ) as CanvasRenderingContext2D
-      const imageData = ctx.createImageData(resolution, resolution)
-      imageData.data.set(pixels)
-      ctx.putImageData(imageData, 0, 0)
+      const ctx = canvasRef.current.getContext("2d")
+      if (ctx) {
+        const imageData = ctx.createImageData(resolution, resolution)
+        imageData.data.set(pixels)
+        ctx.putImageData(imageData, 0, 0)
+      }
     }
   }, [hash, canvasRef])
 
