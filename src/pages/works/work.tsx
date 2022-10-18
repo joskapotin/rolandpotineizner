@@ -20,7 +20,7 @@ function Work() {
     <>
       <h1>{title}</h1>
 
-      <div className="container mx-auto grid justify-center lg:grid-cols-2 lg:items-center lg:justify-items-end">
+      <div className="container grid justify-center mx-auto lg:grid-cols-2 lg:items-center lg:justify-items-end">
         <Blurhash
           title={title}
           url={`${PATH.WORKS.SOURCE}/${filename}`}

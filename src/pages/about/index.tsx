@@ -17,7 +17,7 @@ function About() {
   return (
     <>
       <h1>{ROUTES.ABOUT.NAME}</h1>
-      <div className="container mx-auto px-2 sm:px-0 md:grid md:grid-cols-2 md:gap-6 lg:gap-7 xl:gap-8 2xl:gap-9 ">
+      <div className="container px-2 mx-auto sm:px-0 md:grid md:grid-cols-2 md:gap-6 lg:gap-7 xl:gap-8 2xl:gap-9 ">
         <section>
           <div className="md:border md:border-gray-500 md:p-2">
             <Blurhash

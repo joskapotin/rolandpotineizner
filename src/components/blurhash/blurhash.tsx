@@ -19,7 +19,7 @@ function Blurhash(props: BlurhashProps) {
   }
 
   return (
-    <picture className="relative isolate block">
+    <picture className="relative block isolate">
       <img
         className={`w-full  object-cover object-center transition-opacity duration-500 ease-in-out ${
           isLoaded ? "opacity-100" : "opacity-0"

@@ -12,7 +12,7 @@ function WorkListItem({ work }: WorkListItemProps) {
     work
 
   return (
-    <article className="group flex-auto">
+    <article className="flex-auto group">
       <Link to={slug} className="relative flex flex-col">
         <Blurhash
           title={title}
@@ -21,7 +21,7 @@ function WorkListItem({ work }: WorkListItemProps) {
           width={thumbWidth}
           height={thumbHeight}
         />
-        <div className="absolute bottom-1 left-1 right-1 flex flex-col bg-gray-50 bg-opacity-90 p-2 text-center text-gray-700 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+        <div className="absolute flex flex-col p-2 text-center text-gray-700 transition-opacity duration-500 ease-in-out opacity-0 bottom-1 left-1 right-1 bg-gray-50 bg-opacity-90 group-hover:opacity-100">
           <h2>{title}</h2>
           <p>
             <time dateTime={year.toString()}>{year}</time> &middot; {height}
