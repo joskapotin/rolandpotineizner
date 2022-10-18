@@ -26,7 +26,10 @@
   h2 {
     @apply text-lg;
   }
-  p + p {
-    @apply mt-2;
+  .link {
+    @apply relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300;
+  }
+  nav [aria-current="page"] {
+    @apply sm:bg-gray-900 sm:text-gray-50;
   }
 }

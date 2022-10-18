@@ -1,11 +1,11 @@
-import Spinner from "../../components/spinner/spinner"
+import Loader from "../../components/Loader/loader"
 import { ROUTES } from "../../constants/constants"
 
 function Home() {
   return (
     <>
       <h1>{ROUTES.HOME.NAME}</h1>
-      <Spinner />
+      <Loader />
     </>
   )
 }

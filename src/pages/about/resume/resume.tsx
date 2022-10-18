@@ -1,5 +1,5 @@
+import Loader from "../../../components/Loader/loader"
 import NotFound from "../../../components/not-found"
-import Loader from "../../../components/spinner/spinner"
 import useResume from "../../../hooks/useResume"
 import ResumeItem from "./resume-item"
 

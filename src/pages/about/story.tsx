@@ -1,13 +1,13 @@
 import image from "../../assets/images/roland01.jpg"
 import Blurhash from "../../components/blurhash/blurhash"
-import Quote from "../../components/quote/quote"
+import QuoteSvg from "../../components/quote/quote"
 import Youtube from "../../components/youtube/youtube"
 import { YOUTUBE_ID } from "../../constants/constants"
 
 function Story() {
   return (
     <section className="mt-10 flex flex-col gap-20 max-w-md mx-auto items-center text-gray-600">
-      <Quote>
+      <QuoteSvg>
         <p>
           Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
           et le monde fut immédiatement trop grand.
@@ -29,7 +29,7 @@ function Story() {
           sculptures, des objets multiples me font face, s’animent et me parlent. Ces jours là je
           parle avec eux, complice et joyeux, je suis dans mon monde.
         </p>
-      </Quote>
+      </QuoteSvg>
 
       <div className="aspect-square overflow-hidden rounded-full border-4 border-gray-100 shadow-2xl">
         <Blurhash
@@ -41,7 +41,7 @@ function Story() {
         />
       </div>
 
-      <Quote>
+      <QuoteSvg>
         <p>
           Plus tard, j’apprendrais que toutes ces œuvres étaient signées. Les signatures étaient
           entre autre, celles de Georges Braque, Constantin Brancusi, Marcel Duchamp, Pablo Picasso,
@@ -62,7 +62,7 @@ function Story() {
         <cite className="mt-10 block">
           <p className="text-end">Roland Potin-Eizner</p>
         </cite>
-      </Quote>
+      </QuoteSvg>
 
       <Youtube embedId={YOUTUBE_ID.STORY} />
     </section>
