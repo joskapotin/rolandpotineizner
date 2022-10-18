@@ -21,7 +21,7 @@ export interface WorkInterface {
 }
 
 function useWork(slug: string) {
-  const { data, error } = useSWR("getWorkBySlug", () => getWorkBySlug(slug))
+  const { data, error } = useSWR("getWorkBySlug", () => getWorkBySlug(slug), { suspense: true })
 
   return {
     work: workFactory(data),

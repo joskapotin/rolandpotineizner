@@ -1,18 +1,11 @@
-import { lazy } from "react"
 import { useParams } from "react-router-dom"
 import Blurhash from "../../components/blurhash/blurhash"
 import { PATH } from "../../constants/constants"
 import useWork from "../../hooks/useWork"
 
-const Loader = lazy(() => import("../../components/spinner/spinner"))
-const NotFound = lazy(() => import("../../components/not-found"))
-
 function Work() {
   const { slug } = useParams()
-  const { work, isLoading, isError } = useWork(slug as string)
-
-  if (isError) return <NotFound />
-  if (isLoading) return <Loader />
+  const { work } = useWork(slug as string)
 
   const { title, year, width, height, filename, imageBlurhash, imageWidth, imageHeight } = work
 

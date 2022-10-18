@@ -7,7 +7,7 @@ export interface ResumeInterface {
 }
 
 function useResume() {
-  const { data, error } = useSWR("getResume", () => getResume())
+  const { data, error } = useSWR("getResume", () => getResume(), { suspense: true })
 
   return {
     resume: data,

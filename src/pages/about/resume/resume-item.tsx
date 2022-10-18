@@ -1,11 +1,11 @@
-import { slugify } from "../../helpers/formatters"
+import { slugify } from "../../../helpers/formatters"
 
-type ResumeProps = {
+type ResumeItemProps = {
   years: string[]
   events: string[]
 }
 
-function Resume({ years, events }: ResumeProps) {
+function ResumeItem({ years, events }: ResumeItemProps) {
   return (
     <article className="flex">
       <h2 className="px-3 py-1 font-semibold border-t border-gray-500 border-solid">
@@ -27,4 +27,4 @@ function Resume({ years, events }: ResumeProps) {
     </article>
   )
 }
-export default Resume
+export default ResumeItem
