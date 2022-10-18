@@ -1,6 +1,6 @@
 import { decode } from "blurhash"
 import type { HTMLAttributes } from "react"
-import { useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef } from "react"
 
 type BlurhashCanvasProps = HTMLAttributes<HTMLDivElement> & {
   hash: string
@@ -11,21 +11,23 @@ const resolution = 32
 
 function BlurhashCanvas(props: BlurhashCanvasProps) {
   const { hash, isLoaded = false } = props
-  const canvas = useRef<HTMLCanvasElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  const draw = () => {
-    if (canvas) {
+  const draw = useCallback(() => {
+    if (canvasRef) {
       const pixels = decode(hash, resolution, resolution, 1)
-      const ctx = (canvas.current as HTMLCanvasElement).getContext("2d") as CanvasRenderingContext2D
+      const ctx = (canvasRef.current as HTMLCanvasElement).getContext(
+        "2d"
+      ) as CanvasRenderingContext2D
       const imageData = ctx.createImageData(resolution, resolution)
       imageData.data.set(pixels)
       ctx.putImageData(imageData, 0, 0)
     }
-  }
+  }, [hash, canvasRef])
 
   useEffect(() => {
     draw()
-  }, [canvas])
+  }, [canvasRef, draw])
 
   return (
     <canvas
@@ -34,7 +36,7 @@ function BlurhashCanvas(props: BlurhashCanvasProps) {
       }`}
       height={resolution}
       width={resolution}
-      ref={canvas}
+      ref={canvasRef}
     />
   )
 }
