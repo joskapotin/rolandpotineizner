@@ -1,6 +1,11 @@
 function GitHubLogoSvg() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="auto" viewBox="0 0 42.607 41.555">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 42.607 41.555"
+      fill="currentColor"
+      className="w-6 h-6"
+    >
       <path
         fill="#1b1817"
         fillRule="evenodd"

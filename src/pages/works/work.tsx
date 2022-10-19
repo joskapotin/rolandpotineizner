@@ -21,15 +21,22 @@ function Work() {
           width={imageWidth}
           height={imageHeight}
         />
-        <div className="justify-self-center">
-          <p>Titre: {title}</p>
-          <p>
-            <time dateTime={year}>Année: {year}</time>
-          </p>
-          <p>
-            Format: {height}&#8593; / {width}&#8594;
-          </p>
-        </div>
+        <ul className="justify-self-center">
+          <li>
+            <span className="mb-4 tracking-widest text-amber-900">Titre:</span> {title}
+          </li>
+          <li>
+            <time dateTime={year}>
+              <span className="mb-4 tracking-widest text-amber-900">Année:</span> {year}
+            </time>
+          </li>
+          <li>
+            <span className="mb-4 tracking-widest text-amber-900">Hauteur:</span> {height} cm
+          </li>
+          <li>
+            <span className="mb-4 tracking-widest text-amber-900">Largeur:</span> {width} cm
+          </li>
+        </ul>
       </div>
     </>
   )
