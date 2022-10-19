@@ -1,12 +1,13 @@
 import image from "../../assets/images/roland01.jpg"
 import Blurhash from "../../components/blurhash/blurhash"
 import QuoteSvg from "../../components/quote/quote"
-import Youtube from "../../components/youtube/youtube"
+import Vimeo from "../../components/video/vimeo/vimeo"
+import Youtube from "../../components/video/youtube/youtube"
 import { YOUTUBE_ID } from "../../constants/constants"
 
 function Story() {
   return (
-    <section className="mt-10 flex flex-col gap-20 max-w-md mx-auto items-center text-gray-600">
+    <section className="flex flex-col items-center max-w-md gap-20 mx-auto mt-10 text-gray-600">
       <QuoteSvg>
         <p>
           Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
@@ -27,9 +28,8 @@ function Story() {
           Un jour, je pénètre dans l’appartement puis le château du collectionneur Henri-Pierre
           Roché, et là, merveille, je fais des rencontres extraordinaires : des tableaux, des
           sculptures, des objets multiples me font face, s’animent et me parlent. Ces jours là je
-          parle avec eux, complice et joyeux, je suis dans mon monde.
+          parle avec eux, complice et joyeux, je suis dans mon monde. [...]
         </p>
-        <p>...</p>
       </QuoteSvg>
 
       <div className="aspect-square overflow-hidden [&>*]:h-full rounded-full border-4 border-gray-100 shadow-2xl">
@@ -43,12 +43,11 @@ function Story() {
       </div>
 
       <QuoteSvg>
-        <p>...</p>
         <p>
-          Plus tard, j’apprendrais que toutes ces œuvres étaient signées. Les signatures étaient
-          entre autre, celles de Georges Braque, Constantin Brancusi, Marcel Duchamp, Pablo Picasso,
-          Henry Moore, Etienne Martin, Marie Laurencin, Jean Tinguely, José Garcia Tella, Sanyu,
-          etc.
+          [...] Plus tard, j’apprendrais que toutes ces œuvres étaient signées. Les signatures
+          étaient entre autre, celles de Georges Braque, Constantin Brancusi, Marcel Duchamp, Pablo
+          Picasso, Henry Moore, Etienne Martin, Marie Laurencin, Jean Tinguely, José Garcia Tella,
+          Sanyu, etc.
         </p>
         <p>Je compris le sacré et la douleur et ma voie dans l’existence.</p>
         <p>
@@ -61,12 +60,16 @@ function Story() {
           La recherche du dialogue au travers de tableaux presque autobiographiques, mon Graal
           quotidien.
         </p>
-        <cite className="mt-10 block">
+        <cite className="block mt-10">
           <p className="text-end">Roland Potin-Eizner</p>
         </cite>
       </QuoteSvg>
 
       <Youtube embedId={YOUTUBE_ID.STORY} />
+      <Vimeo
+        title="Reportage France 3"
+        url="https://player.vimeo.com/video/761922175?h=863a6815c7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      />
     </section>
   )
 }

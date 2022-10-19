@@ -5,8 +5,10 @@ function Work() {
   return (
     <>
       <h1>{ROUTES.WORKS.NAME}</h1>
-      <div className="container mx-auto">
-        <WorkList />
+      <div className="container grid mx-auto">
+        <div className="mt-10">
+          <WorkList />
+        </div>
       </div>
     </>
   )

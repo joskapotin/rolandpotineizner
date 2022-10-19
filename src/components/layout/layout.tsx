@@ -10,7 +10,9 @@ function Layout() {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <OrnateLineBreakSvg />
+      <div className="overflow-hidden [&>*]:min-w-[500px] [&>*]:max-w-[1000px] flex justify-center">
+        <OrnateLineBreakSvg />
+      </div>
       <Footer />
     </>
   )

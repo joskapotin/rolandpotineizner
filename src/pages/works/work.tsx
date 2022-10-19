@@ -14,15 +14,17 @@ function Work() {
       <h1>{title}</h1>
 
       <div className="container grid justify-center mx-auto lg:grid-cols-2 lg:items-center lg:justify-items-end">
-        <Blurhash
-          title={title}
-          url={`${PATH.WORKS.SOURCE}/${filename}`}
-          hash={imageBlurhash}
-          width={imageWidth}
-          height={imageHeight}
-        />
-        <ul className="justify-self-center">
-          <li>
+        <div className="mt-10">
+          <Blurhash
+            title={title}
+            url={`${PATH.WORKS.SOURCE}/${filename}`}
+            hash={imageBlurhash}
+            width={imageWidth}
+            height={imageHeight}
+          />
+        </div>
+        <ul className="px-2 mt-10 justify-self-center sm:px-0 ">
+          <li className="mb-2 text-2xl">
             <span className="mb-4 tracking-widest text-amber-900">Titre:</span> {title}
           </li>
           <li>
