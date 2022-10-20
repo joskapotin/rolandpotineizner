@@ -51,7 +51,7 @@ function Home() {
             </cite>
           </Quote>
         </div>
-        <div className="max-w-sm mx-auto mt-10 ">
+        <div className="max-w-sm mx-auto mt-10 md:self-center">
           <Blurhash
             hash="UFChWYS$0*bIWBSNbHo20js,}qn%aLxFs.Nc"
             url={image}
@@ -61,7 +61,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="container mx-auto mt-10 overflow-hidden h-96">
+      <div className="container hidden mx-auto mt-10 md:block">
         <Carousel items={carouselItems} />
       </div>
     </>

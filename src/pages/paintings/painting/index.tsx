@@ -13,7 +13,7 @@ function Painting() {
     <>
       <h1>{title}</h1>
 
-      <div className="container grid justify-center mx-auto lg:grid-cols-2 lg:items-center lg:justify-items-end">
+      <div className="container grid justify-center mx-auto lg:gap-10 lg:grid-cols-2 lg:items-center lg:justify-items-end">
         <div className="mt-10">
           <Blurhash
             title={title}
