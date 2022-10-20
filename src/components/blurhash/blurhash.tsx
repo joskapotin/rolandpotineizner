@@ -21,7 +21,7 @@ function Blurhash(props: BlurhashProps) {
   return (
     <div className="relative block w-full isolate">
       <img
-        className={`w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out ${
+        className={`w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
         src={url}
@@ -31,7 +31,7 @@ function Blurhash(props: BlurhashProps) {
         loading="lazy"
         onLoad={handleOnLoad}
       />
-      <BlurhashCanvas hash={hash} isLoaded={isLoaded} />
+      <BlurhashCanvas hash={hash} isLoaded={isLoaded} width={width} height={height} />
       <BlurhashSpinner isLoaded={isLoaded} />
     </div>
   )

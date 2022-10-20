@@ -1,9 +1,27 @@
+import { useMemo } from "react"
 import image from "../../assets/images/helle-1999-73x60.jpg"
 import Blurhash from "../../components/blurhash/blurhash"
+import Carousel from "../../components/carousel/carousel"
 import Quote from "../../components/quote/quote"
-import { ROUTES } from "../../constants/constants"
+import { PATH, ROUTES } from "../../constants/constants"
+import usePaintings from "../../hooks/usePaintings"
 
 function Home() {
+  const { paintings } = usePaintings()
+
+  const carouselItems = useMemo(
+    () =>
+      paintings.map(painting => ({
+        link: `${ROUTES.PAINTINGS.URL}/${painting.slug}`,
+        title: painting.title,
+        imageUrl: `${PATH.PAINTINGS.SOURCE}/${painting.filename}`,
+        imageBlurhash: painting.imageBlurhash,
+        imageWidth: painting.imageWidth,
+        imageHeight: painting.imageHeight,
+      })),
+    [paintings]
+  )
+
   return (
     <>
       <h1>{ROUTES.HOME.NAME}</h1>
@@ -42,6 +60,9 @@ function Home() {
             height={480}
           />
         </div>
+      </div>
+      <div className="container mx-auto mt-10 overflow-hidden h-96">
+        <Carousel items={carouselItems} />
       </div>
     </>
   )

@@ -16,7 +16,7 @@ function PaintingCard({ painting }: PaintingCardProps) {
       <Link to={slug} className="relative flex flex-col">
         <Blurhash
           title={title}
-          url={`${PATH.PAINTINGS.SMALL}/${filename}`}
+          url={`${PATH.PAINTINGS.SQUARE}/${filename}`}
           hash={thumbBlurhash}
           width={thumbWidth}
           height={thumbHeight}

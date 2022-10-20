@@ -1,23 +1,33 @@
 import { decode } from "blurhash"
-import type { HTMLAttributes } from "react"
-import { useCallback, useEffect, useRef } from "react"
+import { HTMLAttributes, useCallback, useEffect, useMemo, useRef } from "react"
 
 type BlurhashCanvasProps = HTMLAttributes<HTMLDivElement> & {
   hash: string
   isLoaded?: boolean
+  width: number
+  height: number
 }
 
 function BlurhashCanvas(props: BlurhashCanvasProps) {
-  const { hash, isLoaded = false } = props
+  const { hash, isLoaded = false, width = 32, height = 32 } = props
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
-  const resolution = 32
+  const { resolutionX, resolutionY }: { resolutionX: number; resolutionY: number } = useMemo(() => {
+    const res = 64
+    const ratio = height / width
+
+    return {
+      resolutionX: res,
+      resolutionY: Math.round(res * ratio),
+    }
+  }, [width, height])
+
   const draw = useCallback(() => {
     if (canvasRef?.current) {
-      const pixels = decode(hash, resolution, resolution, 1)
+      const pixels = decode(hash, resolutionX, resolutionY, 1)
       const ctx = canvasRef.current.getContext("2d")
       if (ctx) {
-        const imageData = ctx.createImageData(resolution, resolution)
+        const imageData = ctx.createImageData(resolutionX, resolutionY)
         imageData.data.set(pixels)
         ctx.putImageData(imageData, 0, 0)
       }
@@ -30,11 +40,11 @@ function BlurhashCanvas(props: BlurhashCanvasProps) {
 
   return (
     <canvas
-      className={`absolute top-0 h-full w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
+      className={`absolute top-0 w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
         isLoaded ? "opacity-0" : "opacity-100"
       }`}
-      height={resolution}
-      width={resolution}
+      width={resolutionX}
+      height={resolutionY}
       ref={canvasRef}
     />
   )

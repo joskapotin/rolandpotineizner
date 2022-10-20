@@ -32,7 +32,7 @@ function Story() {
         </p>
       </QuoteSvg>
 
-      <div className="aspect-square overflow-hidden [&>*]:h-full rounded-full border-4 border-gray-100 shadow-2xl">
+      <div className="aspect-square overflow-hidden [&>div]:h-full [&_img]:h-full [&_canvas]:h-full rounded-full border-4 border-gray-100 shadow-2xl">
         <Blurhash
           hash="LOIhjQ_Nx[%NMbRP%LIVOtkW%Mtm"
           url={image}
