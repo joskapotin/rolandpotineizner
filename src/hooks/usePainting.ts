@@ -1,8 +1,8 @@
 import useSWR from "swr"
-import { workFactory } from "../helpers/factories"
-import { getWorkBySlug } from "../services/api"
+import { paintingFactory } from "../helpers/factories"
+import { getPaintingBySlug } from "../services/api"
 
-export interface WorkInterface {
+export interface PaintingInterface {
   id: number
   slug: string
   title: string
@@ -20,14 +20,16 @@ export interface WorkInterface {
   thumbBlurhash: string
 }
 
-function useWork(slug: string) {
-  const { data, error } = useSWR("getWorkBySlug", () => getWorkBySlug(slug), { suspense: true })
+function usePainting(slug: string) {
+  const { data, error } = useSWR("getPaintingBySlug", () => getPaintingBySlug(slug), {
+    suspense: true,
+  })
 
   return {
-    work: workFactory(data),
+    painting: paintingFactory(data),
     isLoading: !error && !data,
     isError: error,
   }
 }
 
-export default useWork
+export default usePainting

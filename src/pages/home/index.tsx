@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <h1>{ROUTES.HOME.NAME}</h1>
-      <div className="container px-2 mx-auto sm:px-0 md:grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:gap-7 xl:gap-8 2xl:gap-9">
+      <div className="container grid grid-cols-1 px-2 mx-auto sm:px-0 md:grid-cols-2 md:gap-6 lg:gap-7 xl:gap-8 2xl:gap-9">
         <div className="max-w-md mx-auto mt-10 ">
           <Quote>
             <p>
@@ -18,9 +18,8 @@ function Home() {
             </p>
             <p>
               De temps à autre une allusion au vivant comme cette construction dans laquelle se
-              détache un bec d&apos;oiseau
+              détache un bec d&apos;oiseau.
             </p>
-            .
             <p>
               Si Hellée, (1999) représente cette peinture dans laquelle la sculpture est implicite,
               il annonce une explicite sculpture de bois, peint, Hellée, (2009).
@@ -29,7 +28,9 @@ function Home() {
               Un portique laisse pendre, ossement acérés, des cadres et des boules dans une
               allégorie létale de tarlatane colorée. 2007
             </p>
-            <p className="text-end">Le Delarge</p>
+            <cite className="block mt-10">
+              <p className="text-end">Le Delarge</p>
+            </cite>
           </Quote>
         </div>
         <div className="max-w-sm mx-auto mt-10 ">

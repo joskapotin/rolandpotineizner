@@ -1,20 +1,20 @@
 export const ROUTES = {
   HOME: { URL: "/", NAME: "Accueil" },
   ABOUT: { URL: "about", NAME: "Biographie" },
-  WORKS: { URL: "works", NAME: "Œuvres" },
-  WORK: { URL: ":slug", NAME: "Œuvre" },
+  PAINTINGS: { URL: "paintings", NAME: "Œuvres" },
+  PAINTING: { URL: ":slug", NAME: "Œuvre" },
   NOT_FOUND: { URL: "not-found", NAME: "Introuvable" },
 } as const
 
-export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.WORKS]
+export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.PAINTINGS]
 
 export const API = {
-  WORKS: "/data/tableaux.json",
+  PAINTINGS: "/data/tableaux.json",
   RESUME: "/data/resume.json",
 } as const
 
 export const PATH = {
-  WORKS: {
+  PAINTINGS: {
     SOURCE: "/tableaux/source",
     SMALL: "/tableaux/square",
   },

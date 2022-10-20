@@ -1,6 +1,6 @@
 import Loader from "../../../components/Loader/loader"
-import NotFound from "../../../components/not-found"
 import useResume from "../../../hooks/useResume"
+import NotFound from "../../not-found"
 import ResumeItem from "./resume-item"
 
 function Resume() {

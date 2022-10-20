@@ -23,7 +23,7 @@ function NavMenu() {
               }  block  py-3 px-2 xl:py-5 transition-opacity  duration-300 ease-in-out sm:px-0 sm:opacity-100 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl relative sm:before:contents[""] sm:before:absolute sm:before:bg-gray-900 sm:before:rounded-t sm:before:transition-transform sm:before:scale-y-0 sm:before:duration-150 sm:before:ease-in-out hover:sm:before:scale-y-100 sm:before:origin-bottom sm:before:bottom-0 sm:before:left-0 sm:before:h-1/6 sm:before:right-0`}
               to={item.URL}
               onClick={toggleIsOpen}
-              end={item.URL === ROUTES.HOME.URL || item.URL === ROUTES.WORKS.URL}
+              end={item.URL === ROUTES.HOME.URL || item.URL === ROUTES.PAINTINGS.URL}
             >
               {item.NAME}
             </NavLink>

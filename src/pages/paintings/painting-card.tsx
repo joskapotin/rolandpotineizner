@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom"
+import Blurhash from "../../components/blurhash/blurhash"
 import { PATH } from "../../constants/constants"
-import type { WorkInterface } from "../../hooks/useWork"
-import Blurhash from "../blurhash/blurhash"
+import type { PaintingInterface } from "../../hooks/usePainting"
 
-type WorkListItemProps = {
-  work: WorkInterface
+type PaintingCardProps = {
+  painting: PaintingInterface
 }
 
-function WorkListItem({ work }: WorkListItemProps) {
+function PaintingCard({ painting }: PaintingCardProps) {
   const { slug, title, year, width, height, filename, thumbBlurhash, thumbWidth, thumbHeight } =
-    work
+    painting
 
   return (
     <article className="flex-auto group">
       <Link to={slug} className="relative flex flex-col">
         <Blurhash
           title={title}
-          url={`${PATH.WORKS.SMALL}/${filename}`}
+          url={`${PATH.PAINTINGS.SMALL}/${filename}`}
           hash={thumbBlurhash}
           width={thumbWidth}
           height={thumbHeight}
@@ -34,4 +34,4 @@ function WorkListItem({ work }: WorkListItemProps) {
   )
 }
 
-export default WorkListItem
+export default PaintingCard

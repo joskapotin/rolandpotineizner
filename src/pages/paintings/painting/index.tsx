@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom"
-import Blurhash from "../../components/blurhash/blurhash"
-import { PATH } from "../../constants/constants"
-import useWork from "../../hooks/useWork"
+import Blurhash from "../../../components/blurhash/blurhash"
+import { PATH } from "../../../constants/constants"
+import usePainting from "../../../hooks/usePainting"
 
-function Work() {
+function Painting() {
   const { slug } = useParams()
-  const { work } = useWork(slug as string)
+  const { painting } = usePainting(slug as string)
 
-  const { title, year, width, height, filename, imageBlurhash, imageWidth, imageHeight } = work
+  const { title, year, width, height, filename, imageBlurhash, imageWidth, imageHeight } = painting
 
   return (
     <>
@@ -17,7 +17,7 @@ function Work() {
         <div className="mt-10">
           <Blurhash
             title={title}
-            url={`${PATH.WORKS.SOURCE}/${filename}`}
+            url={`${PATH.PAINTINGS.SOURCE}/${filename}`}
             hash={imageBlurhash}
             width={imageWidth}
             height={imageHeight}
@@ -44,4 +44,4 @@ function Work() {
   )
 }
 
-export default Work
+export default Painting

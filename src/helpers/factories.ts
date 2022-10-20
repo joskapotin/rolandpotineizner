@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import type { WorkInterface } from "../hooks/useWork"
+import type { PaintingInterface } from "../hooks/usePainting"
 
-const fallbackWork: WorkInterface = {
+const fallbackPainting: PaintingInterface = {
   id: 0,
   slug: "fallback-slug",
   title: "This is a fallback",
@@ -19,4 +19,7 @@ const fallbackWork: WorkInterface = {
   thumbHeight: 200,
 }
 
-export const workFactory = (work?: WorkInterface) => ({ ...fallbackWork, ...work })
+export const paintingFactory = (painting?: PaintingInterface) => ({
+  ...fallbackPainting,
+  ...painting,
+})

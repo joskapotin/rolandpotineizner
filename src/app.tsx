@@ -5,11 +5,11 @@ import { ROUTES } from "./constants/constants"
 
 const Layout = lazy(() => import("./components/layout/layout"))
 const Loader = lazy(() => import("./components/Loader/loader"))
-const NotFound = lazy(() => import("./components/not-found"))
+const NotFound = lazy(() => import("./pages/not-found"))
 const About = lazy(() => import("./pages/about"))
 const Home = lazy(() => import("./pages/home"))
-const Works = lazy(() => import("./pages/works"))
-const Work = lazy(() => import("./pages/works/work"))
+const Paintings = lazy(() => import("./pages/paintings"))
+const Painting = lazy(() => import("./pages/paintings/painting"))
 const ErrorBoundaryFallback = lazy(() => import("./components/error-boundary-fallback"))
 
 function App() {
@@ -27,15 +27,15 @@ function App() {
           element: <About />,
         },
         {
-          path: ROUTES.WORKS.URL,
+          path: ROUTES.PAINTINGS.URL,
           children: [
             {
               index: true,
-              element: <Works />,
+              element: <Paintings />,
             },
             {
-              path: ROUTES.WORK.URL,
-              element: <Work />,
+              path: ROUTES.PAINTING.URL,
+              element: <Painting />,
             },
           ],
         },
