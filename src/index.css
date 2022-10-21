@@ -38,4 +38,7 @@
   nav [aria-current="page"] {
     @apply sm:before:scale-y-100;
   }
+  nav [aria-current="page"] i {
+    @apply opacity-100;
+  }
 }

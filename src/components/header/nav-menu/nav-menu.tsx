@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { NAV_MENU, ROUTES } from "../../../constants/constants"
 import useToggle from "../../../hooks/useToggle"
+import MapPin from "../../svg/map-pin-svg"
 import Burger from "./burger/burger"
 
 function NavMenu() {
@@ -26,6 +27,9 @@ function NavMenu() {
               end={item.URL === ROUTES.HOME.URL || item.URL === ROUTES.PAINTINGS.URL}
             >
               {item.NAME}
+              <i className="absolute hidden w-6 h-6 transition-opacity duration-300 ease-in-out -translate-x-1/2 opacity-0 md:block top-full left-1/2 text-gray-50">
+                <MapPin />
+              </i>
             </NavLink>
           </li>
         ))}

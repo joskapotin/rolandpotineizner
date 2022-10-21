@@ -1,8 +1,6 @@
 import { useMemo } from "react"
 import { Link, useParams } from "react-router-dom"
 import Blurhash from "../../../components/blurhash/blurhash"
-import ArrowNextSvg from "../../../components/svg/arrow-next-svg"
-import ArrowPrevSvg from "../../../components/svg/arrow-prev-svg"
 import { PATH, ROUTES } from "../../../constants/constants"
 import usePaintings from "../../../hooks/usePaintings"
 
@@ -58,13 +56,10 @@ function Painting() {
       </div>
       <nav className="relative grid grid-cols-2 gap-2 mt-24 justify-items-center">
         <Link
-          to={`/${ROUTES.PAINTINGS.URL}/${prevPainting.slug}`}
-          className="rounded-full items-center justify-items-center overflow-hidden border-4 [&>*]:col-span-full [&>*]:row-span-full border-gray-100 grid shadow-2xl"
+          to={`${ROUTES.PAINTINGS.URL}/${prevPainting.slug}`}
+          className="rounded-full items-center w-40 justify-items-center overflow-hidden border-4 [&>*]:col-span-full [&>*]:row-span-full border-gray-100 grid shadow-2xl"
         >
           <span className="sr-only">Previous</span>
-          <i className="z-10 block w-10 pointer-events-none">
-            <ArrowPrevSvg />
-          </i>
           <div className="transition-opacity duration-300 ease-in-out opacity-50 hover:opacity-70">
             <Blurhash
               title={prevPainting.title}
@@ -76,13 +71,10 @@ function Painting() {
           </div>
         </Link>
         <Link
-          to={`/${ROUTES.PAINTINGS.URL}/${nextPainting.slug}`}
-          className="rounded-full items-center justify-items-center overflow-hidden border-4 border-gray-100 [&>*]:col-span-full [&>*]:row-span-full grid shadow-2xl"
+          to={`${ROUTES.PAINTINGS.URL}/${nextPainting.slug}`}
+          className="rounded-full items-center w-40 justify-items-center overflow-hidden border-4 border-gray-100 [&>*]:col-span-full [&>*]:row-span-full grid shadow-2xl"
         >
           <span className="sr-only">Next</span>
-          <i className="z-10 block w-10 pointer-events-none">
-            <ArrowNextSvg />
-          </i>
           <div className="transition-opacity duration-300 ease-in-out opacity-50 hover:opacity-70">
             <Blurhash
               title={nextPainting.title}
