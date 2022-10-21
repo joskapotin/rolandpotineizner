@@ -9,15 +9,15 @@ export const ROUTES = {
 export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.PAINTINGS]
 
 export const API = {
-  PAINTINGS: "/data/tableaux.json",
+  PAINTINGS: "/data/paintings.json",
   RESUME: "/data/resume.json",
 } as const
 
 export const PATH = {
   PAINTINGS: {
-    SOURCE: "/tableaux/source",
-    SQUARE: "/tableaux/square",
-    SMALL: "/tableaux/small",
+    SOURCE: "/paintings/source",
+    SQUARE: "/paintings/square",
+    SMALL: "/paintings/small",
   },
 } as const
 
