@@ -2,7 +2,7 @@
 import type { PaintingInterface } from "../hooks/usePainting"
 
 const fallbackPainting: PaintingInterface = {
-  id: 0,
+  id: "0",
   slug: "fallback-slug",
   title: "This is a fallback",
   year: "nc",
