@@ -3,7 +3,7 @@ import { defineConfig } from "vite"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/joskapotin_14_27052022/",
+  base: "/rolandpotineizner/",
   server: {
     host: true,
   },
