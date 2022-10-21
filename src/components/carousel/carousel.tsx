@@ -20,11 +20,11 @@ function Carousel({ items }: CrouselProps) {
   }
 
   return (
-    <div className="relative grid grid-flow-col gap-6 px-1 overflow-hidden">
+    <div className="relative grid grid-flow-col gap-6 px-2 overflow-hidden">
       <button
         type="button"
         onClick={() => handleClick(-1)}
-        className="z-10 transition-transform duration-200 ease-out translate-x-0 active:-translate-x-1"
+        className="z-10 transition-transform duration-200 ease-in-out translate-x-0 active:-translate-x-2"
       >
         <span className="sr-only">Previous</span>
         <i className="inline-block w-10">
@@ -45,7 +45,7 @@ function Carousel({ items }: CrouselProps) {
       <button
         type="button"
         onClick={() => handleClick(1)}
-        className="z-10 transition-transform duration-200 ease-out translate-x-0 active:translate-x-1"
+        className="z-10 transition-transform duration-200 ease-in-out translate-x-0 active:translate-x-2"
       >
         <span className="sr-only">Next</span>
         <i className="inline-block w-10">
