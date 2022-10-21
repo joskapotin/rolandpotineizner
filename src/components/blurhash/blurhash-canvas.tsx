@@ -13,7 +13,7 @@ function BlurhashCanvas(props: BlurhashCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
   const { resolutionX, resolutionY }: { resolutionX: number; resolutionY: number } = useMemo(() => {
-    const res = 64
+    const res = 32
     const ratio = height / width
 
     return {

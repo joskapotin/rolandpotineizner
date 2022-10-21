@@ -12,6 +12,7 @@ function Home() {
   const carouselItems = useMemo(
     () =>
       paintings.map(painting => ({
+        id: painting.id,
         link: `${ROUTES.PAINTINGS.URL}/${painting.slug}`,
         title: painting.title,
         imageUrl: `${PATH.PAINTINGS.SOURCE}/${painting.filename}`,

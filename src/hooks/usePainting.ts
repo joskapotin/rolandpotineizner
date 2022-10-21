@@ -3,7 +3,7 @@ import { paintingFactory } from "../helpers/factories"
 import { getPaintingBySlug } from "../services/api"
 
 export interface PaintingInterface {
-  id: number
+  id: string
   slug: string
   title: string
   year: string
