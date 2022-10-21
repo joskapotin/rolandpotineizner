@@ -1,4 +1,6 @@
 import { useState } from "react"
+import ArrowNextSvg from "../svg/arrow-next-svg"
+import ArrowPrevSvg from "../svg/arrow-prev-svg"
 import type { CarouselItemType } from "./carousel-item"
 import CarouselItem from "./carousel-item"
 
@@ -18,11 +20,18 @@ function Carousel({ items }: CrouselProps) {
   }
 
   return (
-    <div className="relative grid grid-flow-col gap-6 overflow-hidden">
-      <button type="button" onClick={() => handleClick(-1)} className="z-10">
-        Previous
+    <div className="relative grid grid-flow-col gap-6 px-1 overflow-hidden">
+      <button
+        type="button"
+        onClick={() => handleClick(-1)}
+        className="z-10 transition-transform duration-200 ease-out translate-x-0 active:-translate-x-1"
+      >
+        <span className="sr-only">Previous</span>
+        <i className="inline-block w-10">
+          <ArrowPrevSvg />
+        </i>
       </button>
-      <div className="grid">
+      <div className="grid place-content-center">
         {items.map((item, index) => (
           <CarouselItem
             key={item.id}
@@ -33,8 +42,15 @@ function Carousel({ items }: CrouselProps) {
           />
         ))}
       </div>
-      <button type="button" onClick={() => handleClick(1)} className="z-10">
-        Next
+      <button
+        type="button"
+        onClick={() => handleClick(1)}
+        className="z-10 transition-transform duration-200 ease-out translate-x-0 active:translate-x-1"
+      >
+        <span className="sr-only">Next</span>
+        <i className="inline-block w-10">
+          <ArrowNextSvg />
+        </i>
       </button>
     </div>
   )

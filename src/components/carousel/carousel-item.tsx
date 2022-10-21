@@ -27,19 +27,25 @@ function CarouselItem({ item, index, currentIndex, length }: CarouselItemProps) 
     <Link
       to={item.link}
       className={`
-        ${isBefore ? "-translate-x-full" : "translate-x-0"} 
-        ${isCurrent ? "opacity-100 scale-100" : "opacity-0 scale-0"} 
-        ${isAfter ? "translate-x-full" : "translate-x-0"} 
-        row-span-full col-span-full [&>div]:h-full [&_img]:h-full [&_img]:w-auto [&_canvas]:h-full [&_img]:md:max-w-md  [&_canvas]:md:max-w-md [&_canvas]:w-auto flex-grow w-full mx-auto h-96 transition ease-in-out duration-500`}
+        ${isBefore ? "!-translate-x-full" : "translate-x-0"} 
+        ${isCurrent ? "scale-100" : "scale-0"} 
+        ${isAfter ? "!translate-x-full" : "translate-x-0"} 
+        row-span-full col-span-full flex-grow w-full mx-auto h-96 transition-transform ease-in duration-500`}
     >
-      <Blurhash
-        title={item.title}
-        url={item.imageUrl}
-        hash={item.imageBlurhash}
-        width={item.imageWidth}
-        height={item.imageHeight}
-      />
-      {/* <h4>{item.title}</h4> */}
+      <div
+        className={`${
+          isCurrent ? "opacity-100" : "opacity-0"
+        } transition-opacity h-full ease-linear duration-200 delay-300 [&>div]:h-full [&_img]:h-full [&_img]:w-auto [&_canvas]:h-full [&_img]:md:max-w-md  [&_canvas]:md:max-w-md [&_canvas]:w-auto`}
+      >
+        <Blurhash
+          title={item.title}
+          url={item.imageUrl}
+          hash={item.imageBlurhash}
+          width={item.imageWidth}
+          height={item.imageHeight}
+        />
+        {/* <h4>{item.title}</h4> */}
+      </div>
     </Link>
   )
 }

@@ -62,7 +62,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="container hidden mx-auto mt-10 md:block">
+      <div className="hidden md:container md:mx-auto md:mt-10 md:grid md:place-content-center">
         <Carousel items={carouselItems} />
       </div>
     </>
