@@ -25,6 +25,15 @@ function Home() {
 
   return (
     <>
+      <div className="max-w-sm mx-auto md:self-center">
+        <Blurhash
+          hash="UFChWYS$0*bIWBSNbHo20js,}qn%aLxFs.Nc"
+          url={image}
+          title="Roland souriant devant des tableaux"
+          width={393}
+          height={480}
+        />
+      </div>
       <div className="max-w-md mx-auto">
         <Quote>
           <p>
@@ -49,15 +58,6 @@ function Home() {
             <p className="text-end">Le Delarge</p>
           </cite>
         </Quote>
-      </div>
-      <div className="max-w-sm mx-auto md:self-center">
-        <Blurhash
-          hash="UFChWYS$0*bIWBSNbHo20js,}qn%aLxFs.Nc"
-          url={image}
-          title="Roland souriant devant des tableaux"
-          width={393}
-          height={480}
-        />
       </div>
       <div className="hidden md:mx-auto md:grid md:place-content-center col-span-full">
         <Carousel items={carouselItems} />

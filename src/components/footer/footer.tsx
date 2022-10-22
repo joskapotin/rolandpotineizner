@@ -32,7 +32,7 @@ function Footer() {
   )
 
   return (
-    <footer className="container flex flex-col gap-24 mx-auto items-center md:items-start md:flex md:flex-wrap md:flex-row md:w-full md:justify-around md:text-start md:gap-12">
+    <footer className="container flex flex-col items-center gap-24 mx-auto md:items-start md:flex md:flex-wrap md:flex-row md:w-full md:justify-around md:text-start md:gap-12">
       <section className="mb-12">
         <h4 className="mb-4 tracking-widest text-amber-900">Mes amis</h4>
         <ul className="flex flex-col gap-3">
@@ -55,7 +55,7 @@ function Footer() {
             <i>
               <PhoneSvg />
             </i>
-            <a href="text:00660835318">+33 6 60 83 53 18</a>
+            <a href="tel:00660835318">+33 6 60 83 53 18</a>
           </li>
           <li className="flex gap-2">
             <i>

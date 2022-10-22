@@ -7,7 +7,7 @@ import { YOUTUBE_ID } from "../../../constants/constants"
 
 function Story() {
   return (
-    <section className="flex flex-col items-center max-w-md gap-20 mx-auto text-gray-600">
+    <section className="flex flex-col items-center gap-20">
       <QuoteSvg>
         <p>
           Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
