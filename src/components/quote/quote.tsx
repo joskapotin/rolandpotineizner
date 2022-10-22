@@ -6,7 +6,7 @@ type QuoteProps = {
 
 function Quote({ children }: QuoteProps) {
   return (
-    <blockquote className="mx-auto">
+    <blockquote className="mx-auto text-justify">
       <QuoteSvg />
       {children}
     </blockquote>
