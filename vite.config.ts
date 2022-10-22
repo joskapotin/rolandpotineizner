@@ -3,7 +3,7 @@ import { defineConfig } from "vite"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/rolandpotineizner/",
+  base: "/rolandpotineizner-react/",
   server: {
     host: true,
   },
