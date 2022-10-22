@@ -1,10 +1,6 @@
 function OrnateLineBreakSvg() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 34.077 2.665"
-      className="container mx-auto my-24"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.077 2.665">
       <defs>
         <radialGradient
           id="gradient"

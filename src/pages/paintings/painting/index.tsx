@@ -25,36 +25,33 @@ function Painting() {
 
   return (
     <>
-      <h1>{title}</h1>
-
-      <div className="container grid justify-center mx-auto lg:gap-10 lg:grid-cols-2 lg:items-center">
-        <div className="mt-10 lg:justify-self-end">
-          <Blurhash
-            title={title}
-            url={`${PATH.PAINTINGS.SOURCE}/${filename}`}
-            hash={imageBlurhash}
-            width={imageWidth}
-            height={imageHeight}
-          />
-        </div>
-        <ul className="px-2 mt-10 justify-self-center sm:px-0 ">
-          <li className="mb-2 text-2xl">
-            <span className="mb-4 tracking-widest text-amber-900">Titre:</span> {title}
-          </li>
-          <li>
-            <time dateTime={year}>
-              <span className="mb-4 tracking-widest text-amber-900">Année:</span> {year}
-            </time>
-          </li>
-          <li>
-            <span className="mb-4 tracking-widest text-amber-900">Hauteur:</span> {height} cm
-          </li>
-          <li>
-            <span className="mb-4 tracking-widest text-amber-900">Largeur:</span> {width} cm
-          </li>
-        </ul>
+      <div className="lg:justify-self-end">
+        <Blurhash
+          title={title}
+          url={`${PATH.PAINTINGS.SOURCE}/${filename}`}
+          hash={imageBlurhash}
+          width={imageWidth}
+          height={imageHeight}
+        />
       </div>
-      <nav className="relative grid grid-cols-2 gap-2 mt-24 justify-items-center">
+      <ul className="self-center">
+        <li className="mb-2 text-2xl">
+          <span className="mb-4 tracking-widest text-amber-900">Titre:</span> {title}
+        </li>
+        <li>
+          <time dateTime={year}>
+            <span className="mb-4 tracking-widest text-amber-900">Année:</span> {year}
+          </time>
+        </li>
+        <li>
+          <span className="mb-4 tracking-widest text-amber-900">Hauteur:</span> {height} cm
+        </li>
+        <li>
+          <span className="mb-4 tracking-widest text-amber-900">Largeur:</span> {width} cm
+        </li>
+      </ul>
+
+      <nav className="relative grid grid-cols-2 gap-2 justify-items-center col-span-full">
         <Link
           to={`${ROUTES.PAINTINGS.URL}/${prevPainting.slug}`}
           className="rounded-full items-center w-40 justify-items-center overflow-hidden border-4 [&>*]:col-span-full [&>*]:row-span-full border-gray-100 grid shadow-2xl"

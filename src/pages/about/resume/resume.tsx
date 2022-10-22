@@ -10,7 +10,7 @@ function Resume() {
   if (isLoading) return <Loader />
 
   return (
-    <section className="mt-40 md:mt-10 flex flex-col gap-10">
+    <section className="flex flex-col gap-10">
       {resume?.map(item => (
         <ResumeItem key={item.years[0]} years={item.years} events={item.events} />
       ))}

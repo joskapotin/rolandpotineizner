@@ -1,13 +1,13 @@
-import image from "../../assets/images/roland01.jpg"
-import Blurhash from "../../components/blurhash/blurhash"
-import QuoteSvg from "../../components/quote/quote"
-import Vimeo from "../../components/video/vimeo/vimeo"
-import Youtube from "../../components/video/youtube/youtube"
-import { YOUTUBE_ID } from "../../constants/constants"
+import image from "../../../assets/images/roland01.jpg"
+import Blurhash from "../../../components/blurhash/blurhash"
+import QuoteSvg from "../../../components/quote/quote"
+import Vimeo from "../../../components/video/vimeo/vimeo"
+import Youtube from "../../../components/video/youtube/youtube"
+import { YOUTUBE_ID } from "../../../constants/constants"
 
 function Story() {
   return (
-    <section className="flex flex-col items-center max-w-md gap-20 mx-auto mt-10 text-gray-600">
+    <section className="flex flex-col items-center max-w-md gap-20 mx-auto text-gray-600">
       <QuoteSvg>
         <p>
           Je suis né très petit, recroquevillé sur un monde bizarre. On m’a fait crier tout de suite
