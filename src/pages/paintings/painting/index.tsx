@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import Blurhash from "../../../components/blurhash/blurhash"
 import { PATH, ROUTES } from "../../../constants/constants"
 import usePaintings from "../../../hooks/usePaintings"
-import PaintingNavItem from "./painting-nav-item"
+import PaintingNavItem from "../painting-nav-item"
 
 function Painting() {
   const { slug } = useParams()

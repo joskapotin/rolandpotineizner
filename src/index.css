@@ -18,7 +18,7 @@
     @apply flex flex-col flex-grow min-h-full text-gray-900 bg-gray-50;
   }
   #root {
-    @apply flex flex-col flex-grow min-h-full;
+    @apply flex flex-col flex-grow min-h-full gap-24;
   }
   h1 {
     @apply py-4 mb-2 text-sm tracking-wider text-center uppercase bg-gray-900 text-gray-50 sm:mb-5 sm:py-5 sm:text-base md:mb-6 md:py-6 md:text-lg lg:mb-7 lg:py-7 lg:text-xl xl:mb-8 xl:py-8 xl:text-2xl 2xl:mb-9 2xl:py-9 2xl:text-3xl;

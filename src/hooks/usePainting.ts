@@ -1,3 +1,4 @@
+import { useMemo } from "react"
 import useSWR from "swr"
 import { paintingFactory } from "../helpers/factories"
 import { getPaintingBySlug } from "../services/api"
@@ -25,10 +26,19 @@ function usePainting(slug: string) {
     suspense: true,
   })
 
+  const { painting, isLoading, isError } = useMemo(
+    () => ({
+      painting: paintingFactory(data),
+      isLoading: !error && !data,
+      isError: error,
+    }),
+    [data, error]
+  )
+
   return {
-    painting: paintingFactory(data),
-    isLoading: !error && !data,
-    isError: error,
+    painting,
+    isLoading,
+    isError,
   }
 }
 

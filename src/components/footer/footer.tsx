@@ -32,8 +32,8 @@ function Footer() {
   )
 
   return (
-    <footer className="container flex flex-col items-center gap-24 mx-auto md:items-start md:flex md:flex-wrap md:flex-row md:w-full md:justify-around md:text-start md:gap-12">
-      <section className="mb-12">
+    <footer className="container py-40 flex flex-col items-center gap-24 mx-auto md:items-start md:flex md:flex-wrap md:flex-row md:w-full md:justify-around md:text-start md:gap-12">
+      <section>
         <h4 className="mb-4 tracking-widest text-amber-900">Mes amis</h4>
         <ul className="flex flex-col gap-3">
           {friends.map(friend => (
@@ -41,40 +41,56 @@ function Footer() {
               <i>
                 <ExternalLinkSvg />
               </i>
-              <a className="link" href={friend.url} target="_blank" rel="noreferrer">
+              <a
+                className="link"
+                title={`Ouvrir un nouvel onglet vers ${friend.url}`}
+                href={friend.url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {friend.title}
               </a>
             </li>
           ))}
         </ul>
       </section>
-      <section className="mb-12">
+      <section>
         <h4 className="mb-4 tracking-widest text-amber-900">Pour me contacter</h4>
         <ul className="flex flex-col gap-3">
           <li className="flex gap-2">
             <i>
               <PhoneSvg />
             </i>
-            <a href="tel:00660835318">+33 6 60 83 53 18</a>
+            <a href="tel:00660835318" className="link" title="Pour m'appeller directement">
+              +33 6 60 83 53 18
+            </a>
           </li>
           <li className="flex gap-2">
             <i>
               <MailSvg />
             </i>
-            <a className="link" href="mailto:rolandpotin@gmail.com">
+            <a
+              className="link"
+              title="Pour me contacter par email"
+              href="mailto:rolandpotin@gmail.com"
+            >
               rolandpotin@gmail.com
             </a>
           </li>
         </ul>
       </section>
-      <section className="mb-12">
+      <section>
         <h4 className="mb-4 tracking-widest text-amber-900">Conception et réalisation</h4>
         <ul className="flex flex-col gap-3">
           <li className="flex gap-2">
             <i>
               <GitHubLogoSvg />
             </i>
-            <a className="link" href="https://github.com/joskapotin">
+            <a
+              className="link"
+              title="Visiter les autres projets du developpeur"
+              href="https://github.com/joskapotin"
+            >
               Joska Potin
             </a>
           </li>

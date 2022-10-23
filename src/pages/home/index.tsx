@@ -1,9 +1,8 @@
 import { useMemo } from "react"
-import image from "../../assets/images/helle-1999-73x60.jpg"
-import Blurhash from "../../components/blurhash/blurhash"
 import Carousel from "../../components/carousel/carousel"
 import Quote from "../../components/quote/quote"
 import { PATH, ROUTES } from "../../constants/constants"
+import { getRandomNumbers } from "../../helpers/math"
 import usePaintings from "../../hooks/usePaintings"
 
 function Home() {
@@ -11,29 +10,22 @@ function Home() {
 
   const carouselItems = useMemo(
     () =>
-      paintings.map(painting => ({
-        id: painting.id,
-        link: `${ROUTES.PAINTINGS.URL}/${painting.slug}`,
-        title: painting.title,
-        imageUrl: `${PATH.PAINTINGS.SOURCE}/${painting.filename}`,
-        imageBlurhash: painting.imageBlurhash,
-        imageWidth: painting.imageWidth,
-        imageHeight: painting.imageHeight,
+      getRandomNumbers(0, paintings.length - 1, 10).map(number => ({
+        id: paintings[number].id,
+        link: `${ROUTES.PAINTINGS.URL}/${paintings[number].slug}`,
+        title: paintings[number].title,
+        imageUrl: `${PATH.PAINTINGS.SOURCE}/${paintings[number].filename}`,
+        imageBlurhash: paintings[number].imageBlurhash,
+        imageWidth: paintings[number].imageWidth,
+        imageHeight: paintings[number].imageHeight,
       })),
     [paintings]
   )
 
   return (
     <>
-      <div className="max-w-sm mx-auto md:self-center">
-        <Blurhash
-          hash="UFChWYS$0*bIWBSNbHo20js,}qn%aLxFs.Nc"
-          url={image}
-          title="Roland souriant devant des tableaux"
-          width={393}
-          height={480}
-        />
-      </div>
+      <Carousel items={carouselItems} />
+
       <div className="max-w-md mx-auto">
         <Quote>
           <p>
@@ -58,9 +50,6 @@ function Home() {
             <p className="text-end">Le Delarge</p>
           </cite>
         </Quote>
-      </div>
-      <div className="hidden md:mx-auto md:grid md:place-content-center col-span-full">
-        <Carousel items={carouselItems} />
       </div>
     </>
   )
