@@ -16,3 +16,14 @@ export const getRandomNumbers = (min: number, max: number, amount: number) => {
 
   return randomNumbers
 }
+
+export const getXPositionInPercent = ({
+  element,
+  mouseX,
+}: {
+  element: HTMLElement
+  mouseX: number
+}) => {
+  const rect = element.getBoundingClientRect()
+  return Math.min(Math.max(0, mouseX - rect.x), rect.width) / rect.width
+}

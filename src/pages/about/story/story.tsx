@@ -1,9 +1,8 @@
 import image from "../../../assets/images/roland01.jpg"
+import video from "../../../assets/videos/reportage-fr3.mp4"
 import Blurhash from "../../../components/blurhash/blurhash"
 import QuoteSvg from "../../../components/quote/quote"
-import Vimeo from "../../../components/video/vimeo/vimeo"
-import Youtube from "../../../components/video/youtube/youtube"
-import { YOUTUBE_ID } from "../../../constants/constants"
+import VideoPlayer from "../../../components/video/player/video-player"
 
 function Story() {
   return (
@@ -65,11 +64,7 @@ function Story() {
         </cite>
       </QuoteSvg>
 
-      <Youtube embedId={YOUTUBE_ID.STORY} />
-      <Vimeo
-        title="Reportage France 3"
-        url="https://player.vimeo.com/video/761922175?h=863a6815c7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-      />
+      <VideoPlayer url={video} />
     </section>
   )
 }
