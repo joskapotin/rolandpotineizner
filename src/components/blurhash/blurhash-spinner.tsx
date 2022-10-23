@@ -9,7 +9,7 @@ function BlurhashSpinner({ isLoaded = false }: BlurhashSpinnerProps) {
     <div
       aria-label="Loading..."
       role="status"
-      className={`col-span-full row-span-full z-10 grid place-content-center transition-opacity duration-500 ease-in-out ${
+      className={`z-10 col-span-full row-span-full grid place-content-center transition-opacity duration-500 ease-in-out ${
         isLoaded ? "opacity-0" : "opacity-50"
       }`}
     >

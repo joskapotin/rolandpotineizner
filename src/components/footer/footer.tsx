@@ -32,7 +32,7 @@ function Footer() {
   )
 
   return (
-    <footer className="container py-40 flex flex-col items-center gap-24 mx-auto md:items-start md:flex md:flex-wrap md:flex-row md:w-full md:justify-around md:text-start md:gap-12">
+    <footer className="container mx-auto flex flex-col items-center gap-24 py-40 md:flex md:w-full md:flex-row md:flex-wrap md:items-start md:justify-around md:gap-12 md:text-start">
       <section>
         <h4 className="mb-4 tracking-widest text-amber-900">Mes amis</h4>
         <ul className="flex flex-col gap-3">

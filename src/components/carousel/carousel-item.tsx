@@ -26,7 +26,7 @@ function CarouselItem({ item, index, currentIndex }: CarouselItemProps) {
       title={item.title}
       className={`
         ${isCurrent ? "opacity-100" : "opacity-0"} 
-        row-span-full col-span-full transition-opacity ease-in duration-500 flex flex-col justify-start`}
+        col-span-full row-span-full flex flex-col justify-start transition-opacity duration-500 ease-in`}
     >
       <Blurhash
         title={item.title}

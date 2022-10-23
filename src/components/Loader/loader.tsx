@@ -5,7 +5,7 @@ function Loader() {
     <div
       aria-label="Loading..."
       role="status"
-      className="fixed inset-0 grid w-full h-full opacity-50 place-content-center"
+      className="fixed inset-0 grid h-full w-full place-content-center opacity-50"
     >
       <SpinnerSvg />
     </div>

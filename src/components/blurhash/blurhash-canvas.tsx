@@ -40,7 +40,7 @@ function BlurhashCanvas(props: BlurhashCanvasProps) {
 
   return (
     <canvas
-      className={`col-span-full row-span-full w-full h-full transition-opacity duration-500 ease-in-out ${
+      className={`col-span-full row-span-full h-full w-full transition-opacity duration-500 ease-in-out ${
         isLoaded ? "opacity-0" : "opacity-100"
       }`}
       width={resolutionX}

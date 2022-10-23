@@ -26,7 +26,7 @@ function Home() {
     <>
       <Carousel items={carouselItems} />
 
-      <div className="max-w-md mx-auto">
+      <div className="mx-auto max-w-md">
         <Quote>
           <p>
             Dans des huiles posées avec précision sur un décor soigné, support en bois ou portail en
@@ -46,7 +46,7 @@ function Home() {
             Un portique laisse pendre, ossement acérés, des cadres et des boules dans une allégorie
             létale de tarlatane colorée. 2007
           </p>
-          <cite className="block mt-10">
+          <cite className="mt-10 block">
             <p className="text-end">Le Delarge</p>
           </cite>
         </Quote>

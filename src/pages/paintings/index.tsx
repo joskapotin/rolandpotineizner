@@ -9,7 +9,7 @@ function Paintings() {
   const paintingsSorted = useMemo(() => sortByOrder(paintings), [paintings])
 
   return (
-    <div className="grid w-full gap-4 grid-cols-autofill col-span-full">
+    <div className="col-span-full grid w-full grid-cols-autofill gap-4">
       {paintingsSorted.map(painting => (
         <PaintingNavItem
           key={painting.id}

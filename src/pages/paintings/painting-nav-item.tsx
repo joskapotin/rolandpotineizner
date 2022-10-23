@@ -14,10 +14,10 @@ function PaintingNavItem({ url, painting, text }: PaintingNavItemProps) {
     <Link
       title={`Cliquez pour voir "${painting.title}"`}
       to={url}
-      className="rounded-full items-center w-40 justify-items-center overflow-hidden border-4 border-gray-100 [&>*]:col-span-full [&>*]:row-span-full grid shadow-2xl"
+      className="grid w-40 items-center justify-items-center overflow-hidden rounded-full border-4 border-gray-100 shadow-2xl [&>*]:col-span-full [&>*]:row-span-full"
     >
       <span className="sr-only">{text}</span>
-      <div className="transition-opacity duration-300 ease-in-out opacity-60 hover:opacity-100">
+      <div className="opacity-60 transition-opacity duration-300 ease-in-out hover:opacity-100">
         <Blurhash
           title={painting.title}
           url={`${PATH.PAINTINGS.SQUARE}/${painting.filename}`}

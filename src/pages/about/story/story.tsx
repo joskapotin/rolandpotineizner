@@ -32,7 +32,7 @@ function Story() {
         </p>
       </QuoteSvg>
 
-      <div className="aspect-square overflow-hidden [&>div]:h-full [&_img]:h-full [&_canvas]:h-full rounded-full border-4 border-gray-100 shadow-2xl">
+      <div className="aspect-square overflow-hidden rounded-full border-4 border-gray-100 shadow-2xl [&>div]:h-full [&_img]:h-full [&_canvas]:h-full">
         <Blurhash
           hash="LOIhjQ_Nx[%NMbRP%LIVOtkW%Mtm"
           url={image}
@@ -60,7 +60,7 @@ function Story() {
           La recherche du dialogue au travers de tableaux presque autobiographiques, mon Graal
           quotidien.
         </p>
-        <cite className="block mt-10">
+        <cite className="mt-10 block">
           <p className="text-end">Roland Potin-Eizner</p>
         </cite>
       </QuoteSvg>

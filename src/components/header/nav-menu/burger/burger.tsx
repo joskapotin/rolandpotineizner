@@ -9,7 +9,7 @@ function Burger({ isOpen, toggleIsOpen }: BurgerProps) {
       title={isOpen ? "Close the menu" : "Open the menu"}
       type="button"
       onClick={toggleIsOpen}
-      className="z-10 w-12 h-12 py-3 sm:hidden"
+      className="z-10 h-12 w-12 py-3 sm:hidden"
     >
       <span
         className={`relative right-0 ml-auto block h-0.5 w-6 select-none transition duration-300 before:absolute before:block before:h-0.5 before:w-6 before:bg-gray-900 before:transition before:duration-300 before:content-[''] after:absolute after:block after:h-0.5 after:w-6 after:bg-gray-900 after:transition after:duration-300 after:content-[''] ${

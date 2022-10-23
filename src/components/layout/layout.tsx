@@ -8,7 +8,7 @@ function Layout() {
       <Header />
       <main
         id="main-content"
-        className="container grid content-start flex-grow px-2 mx-auto justify-items-center gap-y-24 sm:px-0 md:grid-cols-2 md:gap-x-6 lg:gap-x-7 xl:gap-x-8 2xl:gap-x-9"
+        className="container mx-auto grid flex-grow content-start justify-items-center gap-y-24 px-2 sm:px-0 md:grid-cols-2 md:gap-x-6 lg:gap-x-7 xl:gap-x-8 2xl:gap-x-9"
       >
         <Outlet />
       </main>

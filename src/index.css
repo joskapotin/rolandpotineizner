@@ -12,16 +12,16 @@
     src: url("./assets/fonts/danielbd.ttf");
   }
   html {
-    @apply flex flex-col min-h-full;
+    @apply flex min-h-full flex-col;
   }
   body {
-    @apply flex flex-col flex-grow min-h-full text-gray-900 bg-gray-50;
+    @apply flex min-h-full flex-grow flex-col bg-gray-50 text-gray-900;
   }
   #root {
-    @apply flex flex-col flex-grow min-h-full gap-24;
+    @apply flex min-h-full flex-grow flex-col gap-24;
   }
   h1 {
-    @apply py-4 mb-2 text-sm tracking-wider text-center uppercase bg-gray-900 text-gray-50 sm:mb-5 sm:py-5 sm:text-base md:mb-6 md:py-6 md:text-lg lg:mb-7 lg:py-7 lg:text-xl xl:mb-8 xl:py-8 xl:text-2xl 2xl:mb-9 2xl:py-9 2xl:text-3xl;
+    @apply mb-2 bg-gray-900 py-4 text-center text-sm uppercase tracking-wider text-gray-50 sm:mb-5 sm:py-5 sm:text-base md:mb-6 md:py-6 md:text-lg lg:mb-7 lg:py-7 lg:text-xl xl:mb-8 xl:py-8 xl:text-2xl 2xl:mb-9 2xl:py-9 2xl:text-3xl;
   }
   h2 {
     @apply text-lg;
@@ -30,10 +30,10 @@
     @apply mt-8;
   }
   a:active {
-    @apply transition-transform duration-75 ease-linear translate-y-1;
+    @apply translate-y-1 transition-transform duration-75 ease-linear;
   }
   .link {
-    @apply relative after:absolute after:bg-gray-900 after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-left after:scale-x-100 after:bg-gray-900 after:transition-transform after:duration-300 after:ease-in-out hover:after:origin-bottom-right hover:after:scale-x-0;
   }
   nav [aria-current="page"] i {
     @apply text-gray-900;

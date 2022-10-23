@@ -53,7 +53,7 @@ function Painting() {
         </li>
       </ul>
 
-      <nav className="relative flex w-full gap-2 justify-evenly col-span-full">
+      <nav className="relative col-span-full flex w-full justify-evenly gap-2">
         <PaintingNavItem
           url={`${ROUTES.PAINTINGS.URL}/${prevPainting.slug}`}
           painting={prevPainting}

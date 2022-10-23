@@ -19,9 +19,9 @@ function Blurhash(props: BlurhashProps) {
   }
 
   return (
-    <div className="grid isolate">
+    <div className="isolate grid">
       <img
-        className={`row-span-full col-span-full object-cover object-center w-full h-auto transition-opacity duration-500 ease-in-out ${
+        className={`col-span-full row-span-full h-auto w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
         src={url}

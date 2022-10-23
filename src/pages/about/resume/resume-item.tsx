@@ -8,14 +8,14 @@ type ResumeItemProps = {
 function ResumeItem({ years, events }: ResumeItemProps) {
   return (
     <article className="flex">
-      <h2 className="px-3 py-1 font-semibold border-t border-gray-500 border-solid">
+      <h2 className="border-t border-solid border-gray-500 px-3 py-1 font-semibold">
         {years.map(year => (
           <span key={year} className="block">
             {year}
           </span>
         ))}
       </h2>
-      <ul className="flex-grow border-b border-l border-gray-500 border-solid">
+      <ul className="flex-grow border-b border-l border-solid border-gray-500">
         {events.map(event => (
           <li
             className="px-3 py-1"

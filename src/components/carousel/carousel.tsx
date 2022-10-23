@@ -37,7 +37,7 @@ function Carousel({ items }: CrouselProps) {
         ))}
       </div>
 
-      <div className="grid place-content-center mt-4">
+      <div className="mt-4 grid place-content-center">
         {items.map((item, index) => (
           <CarouselItem key={item.id} item={item} index={index} currentIndex={currentIndex} />
         ))}
