@@ -2,7 +2,6 @@ import { useMemo } from "react"
 import Carousel from "../../components/carousel/carousel"
 import Quote from "../../components/quote/quote"
 import { PATH, ROUTES } from "../../constants/constants"
-import { getRandomNumbers } from "../../helpers/math"
 import usePaintings from "../../hooks/usePaintings"
 
 function Home() {
@@ -10,14 +9,14 @@ function Home() {
 
   const carouselItems = useMemo(
     () =>
-      getRandomNumbers(0, paintings.length - 1, 5).map(number => ({
-        id: paintings[number].id,
-        link: `${ROUTES.PAINTINGS.URL}/${paintings[number].slug}`,
-        title: paintings[number].title,
-        imageUrl: `${PATH.PAINTINGS.SOURCE}/${paintings[number].filename}`,
-        imageBlurhash: paintings[number].imageBlurhash,
-        imageWidth: paintings[number].imageWidth,
-        imageHeight: paintings[number].imageHeight,
+      paintings.slice(0, 5).map(painting => ({
+        id: painting.id,
+        link: `${ROUTES.PAINTINGS.URL}/${painting.slug}`,
+        title: painting.title,
+        imageUrl: `${PATH.PAINTINGS.SOURCE}/${painting.filename}`,
+        imageBlurhash: painting.imageBlurhash,
+        imageWidth: painting.imageWidth,
+        imageHeight: painting.imageHeight,
       })),
     [paintings]
   )

@@ -8,7 +8,7 @@ function Header() {
       <NavLink
         title="Retourner sur la page d'accueil"
         to={ROUTES.HOME.URL}
-        className="flex-shrink-0 pt-2 font-daniel text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+        className="flex-shrink-0 pt-4 font-daniel text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
       >
         Roland <span className="font-danielbd font-bold">Potin</span> Eizner
       </NavLink>

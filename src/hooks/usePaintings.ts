@@ -1,6 +1,7 @@
 import { useMemo } from "react"
 import useSWR from "swr"
 import { paintingFactory } from "../helpers/factories"
+import { sortByDate } from "../helpers/sort"
 import { getPaintings } from "../services/api"
 
 function usePaintings() {
@@ -8,7 +9,9 @@ function usePaintings() {
 
   const { paintings, isLoading, isError } = useMemo(
     () => ({
-      paintings: data?.map(painting => paintingFactory(painting)) ?? [paintingFactory()],
+      paintings: sortByDate(
+        data?.map(painting => paintingFactory(painting)) ?? [paintingFactory()]
+      ),
       isLoading: !error && !data,
       isError: error,
     }),
