@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { formatDuration } from "../../../helpers/formatters"
 import { getXPositionInPercent } from "../../../helpers/math"
-import PlayControl from "./play-control"
 import "./styles.css"
-import TimelineControl from "./timeline-control"
 import VolumeControl from "./volume-control"
 
 /* eslint-disable jsx-a11y/media-has-caption */
@@ -26,18 +24,24 @@ function VideoPlayer({ url }: VideoPlayerProps) {
 
   // Play / Pause
   const togglePause = () => {
-    setIsPause(prevIsPause => !prevIsPause)
+    if (videoRef.current) {
+      if (isPause) {
+        setIsPause(false)
+        videoRef.current.play()
+      } else {
+        setIsPause(true)
+        videoRef.current.pause()
+      }
+    }
   }
 
   useEffect(() => {
-    if (videoRef.current) {
-      if (isPause) {
-        videoRef.current.pause()
-      } else {
-        videoRef.current.play()
-      }
+    if (videoRef.current) videoRef.current.addEventListener("click", togglePause)
+
+    return () => {
+      if (videoRef.current) videoRef.current.removeEventListener("click", togglePause)
     }
-  }, [isPause, videoRef.current])
+  }, [videoRef.current, togglePause])
 
   // Timeline
   const handleTimelineUpdate = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -108,7 +112,6 @@ function VideoPlayer({ url }: VideoPlayerProps) {
   }
 
   // View Modes
-
   const toggleFullScreenMode = () => {
     if (videoContainerRef.current) {
       if (document.fullscreenElement == null) {
@@ -128,14 +131,28 @@ function VideoPlayer({ url }: VideoPlayerProps) {
       ref={videoContainerRef}
     >
       <div className="group-hover/video:opacity-100 z-10 col-span-full row-span-full mt-auto origin-bottom opacity-0 transition-opacity duration-300 ease-in-out">
-        <TimelineControl
-          handleTimelineUpdate={handleTimelineUpdate}
-          handleJumTo={handleJumTo}
+        <button
+          type="button"
           ref={timelineRef}
-        />
+          className="group/timeline flex h-2 w-full cursor-pointer items-center px-2"
+          onMouseMove={handleTimelineUpdate}
+          onClick={handleJumTo}
+        >
+          <div className="timeline group-hover/timeline:before:block relative h-1 w-full bg-gray-400/50 before:absolute before:left-0 before:top-0 before:bottom-0 before:hidden before:bg-gray-400 before:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:bg-red-600 after:content-['']" />
+        </button>
 
         <div className="flex items-center gap-2 bg-gray-50/80 p-1 ">
-          <PlayControl isPause={isPause} togglePause={togglePause} />
+          <button type="button" className="h-8 w-8" onClick={togglePause}>
+            {isPause ? (
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+              </svg>
+            )}
+          </button>
 
           <VolumeControl
             toggleMute={toggleMute}

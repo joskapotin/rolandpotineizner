@@ -10,7 +10,7 @@ function Home() {
 
   const carouselItems = useMemo(
     () =>
-      getRandomNumbers(0, paintings.length - 1, 10).map(number => ({
+      getRandomNumbers(0, paintings.length - 1, 5).map(number => ({
         id: paintings[number].id,
         link: `${ROUTES.PAINTINGS.URL}/${paintings[number].slug}`,
         title: paintings[number].title,
