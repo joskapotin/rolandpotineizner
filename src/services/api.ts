@@ -3,10 +3,10 @@ import { getWithExpiry, setWithExpiry } from "../helpers/storage"
 import type { PaintingInterface } from "../hooks/usePainting"
 import type { ResumeInterface } from "../hooks/useResume"
 
-export const getPaintings = async () => {
+export const getPaintings = async (): Promise<PaintingInterface[]> => {
   // return local data if present and not expired
   const localData = getWithExpiry("paintings")
-  if (localData) return Promise.resolve(JSON.parse(localData)) as Promise<PaintingInterface[]>
+  if (localData) return Promise.resolve(JSON.parse(localData))
 
   // fetch data
   const response = await fetch(API.PAINTINGS)
@@ -18,7 +18,7 @@ export const getPaintings = async () => {
     value: JSON.stringify(data),
   })
 
-  return data as Promise<PaintingInterface[]>
+  return data
 }
 
 export const getPaintingBySlug = async (slug: string) => {
@@ -28,9 +28,9 @@ export const getPaintingBySlug = async (slug: string) => {
   return work
 }
 
-export const getResume = async () => {
+export const getResume = async (): Promise<ResumeInterface[]> => {
   const localData = getWithExpiry("resume")
-  if (localData) return Promise.resolve(JSON.parse(localData)) as Promise<ResumeInterface[]>
+  if (localData) return Promise.resolve(JSON.parse(localData))
 
   // fetch data
   const response = await fetch(API.RESUME)
@@ -42,5 +42,5 @@ export const getResume = async () => {
     value: JSON.stringify(data),
   })
 
-  return data as Promise<ResumeInterface[]>
+  return data
 }
