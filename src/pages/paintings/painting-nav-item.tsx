@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Blurhash from "../../components/blurhash/blurhash"
 import { PATH } from "../../constants/constants"
-import type { PaintingInterface } from "../../hooks/usePainting"
+import type { PaintingInterface } from "../../hooks/usePaintings"
 
 type PaintingNavItemProps = {
   url: string

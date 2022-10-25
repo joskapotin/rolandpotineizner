@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import type { PaintingInterface } from "../hooks/usePainting"
+import type { PaintingFromSheetInterface, PaintingInterface } from "../hooks/usePaintings"
 
 const fallbackPainting: PaintingInterface = {
   id: "0",
@@ -19,7 +19,34 @@ const fallbackPainting: PaintingInterface = {
   thumbHeight: 200,
 }
 
-export const paintingFactory = (painting?: PaintingInterface) => ({
-  ...fallbackPainting,
-  ...painting,
-})
+export const paintingFactory = (painting: PaintingFromSheetInterface): PaintingInterface => {
+  const order = typeof painting.order === "number" ? painting.order : parseInt(painting.order, 10)
+  const visible = painting.visible === "true"
+  const imageWidth =
+    typeof painting.imageWidth === "number"
+      ? painting.imageWidth
+      : parseInt(painting.imageWidth, 10)
+  const imageHeight =
+    typeof painting.imageHeight === "number"
+      ? painting.imageHeight
+      : parseInt(painting.imageHeight, 10)
+  const thumbWidth =
+    typeof painting.thumbWidth === "number"
+      ? painting.thumbWidth
+      : parseInt(painting.thumbWidth, 10)
+  const thumbHeight =
+    typeof painting.thumbHeight === "number"
+      ? painting.thumbHeight
+      : parseInt(painting.thumbHeight, 10)
+
+  return {
+    ...fallbackPainting,
+    ...painting,
+    order,
+    visible,
+    imageWidth,
+    imageHeight,
+    thumbWidth,
+    thumbHeight,
+  }
+}

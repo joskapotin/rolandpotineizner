@@ -130,7 +130,7 @@ function VideoPlayer({ url }: VideoPlayerProps) {
       data-volume-level="high"
       ref={videoContainerRef}
     >
-      <div className="group-hover/video:opacity-100 z-10 col-span-full row-span-full mt-auto origin-bottom opacity-0 transition-opacity duration-300 ease-in-out">
+      <div className="z-10 col-span-full row-span-full mt-auto origin-bottom opacity-0 transition-opacity duration-300 ease-in-out group-hover/video:opacity-100">
         <button
           type="button"
           ref={timelineRef}
@@ -138,7 +138,7 @@ function VideoPlayer({ url }: VideoPlayerProps) {
           onMouseMove={handleTimelineUpdate}
           onClick={handleJumTo}
         >
-          <div className="timeline group-hover/timeline:before:block relative h-1 w-full bg-gray-400/50 before:absolute before:left-0 before:top-0 before:bottom-0 before:hidden before:bg-gray-400 before:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:bg-red-600 after:content-['']" />
+          <div className="timeline relative h-1 w-full bg-gray-400/50 before:absolute before:left-0 before:top-0 before:bottom-0 before:hidden before:bg-gray-400 before:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:bg-red-600 after:content-[''] group-hover/timeline:before:block" />
         </button>
 
         <div className="flex items-center gap-2 bg-gray-50/80 p-1 ">

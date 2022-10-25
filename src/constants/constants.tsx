@@ -1,3 +1,10 @@
+const BASE_URL = "https://sheets.googleapis.com/v4/spreadsheets"
+const API_KEY = "AIzaSyAyRzN1qFx54eZC7tOWnuNdyrrmGy3PO-o"
+const SHEET_ID = "1dr9hLoZCBNTkpql2pfanrTIK3PDgMXswX1zZEJwNAQM"
+const SHEET_NAME = "paintings"
+const RANGE = "!A1:O156"
+const API_URL = `${BASE_URL}/${SHEET_ID}/values/${SHEET_NAME}${RANGE}?key=${API_KEY}`
+
 export const ROUTES = {
   HOME: { URL: "/", NAME: "Accueil" },
   ABOUT: { URL: "/about", NAME: "Biographie" },
@@ -9,7 +16,7 @@ export const ROUTES = {
 export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.PAINTINGS]
 
 export const API = {
-  PAINTINGS: "./data/paintings.json",
+  PAINTINGS: API_URL,
   RESUME: "./data/resume.json",
 } as const
 

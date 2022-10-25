@@ -1,31 +1,38 @@
 import { API } from "../constants/constants"
 import { getWithExpiry, setWithExpiry } from "../helpers/storage"
-import type { PaintingInterface } from "../hooks/usePainting"
 import type { ResumeInterface } from "../hooks/useResume"
 
-export const getPaintings = async (): Promise<PaintingInterface[]> => {
-  // return local data if present and not expired
+type Entries = string[]
+type Values = Entries[]
+
+type IncomingData = {
+  majorDimension: string
+  range: string
+  values: Values
+}
+
+export const getPaintings: () => Promise<IncomingData> = async () => {
   const localData = getWithExpiry("paintings")
   if (localData) return Promise.resolve(JSON.parse(localData))
 
-  // fetch data
-  const response = await fetch(API.PAINTINGS)
-  const data = await response.json()
+  try {
+    const response = await fetch(API.PAINTINGS)
+    if (!response.ok) {
+      throw new Error("Network response was not OK")
+    }
 
-  // store local data
-  setWithExpiry({
-    key: "paintings",
-    value: JSON.stringify(data),
-  })
+    const data = await response.json()
 
-  return data
-}
+    setWithExpiry({
+      key: "paintings",
+      value: JSON.stringify(data),
+    })
 
-export const getPaintingBySlug = async (slug: string) => {
-  const works = await getPaintings()
-  const work = works.find(item => item.slug === slug)
-  if (!work) throw new Error("Introuvable")
-  return work
+    return data
+  } catch (error) {
+    if (error instanceof Error) throw new Error(error.message)
+    throw new Error("Oops something went wrong!", { cause: error })
+  }
 }
 
 export const getResume = async (): Promise<ResumeInterface[]> => {

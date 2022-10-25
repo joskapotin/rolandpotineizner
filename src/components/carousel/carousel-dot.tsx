@@ -10,7 +10,9 @@ function CarouselDot({ title, handleClick, isCurrent }: CarouselDotProps) {
       title={title}
       type="button"
       onClick={handleClick}
-      className={`${isCurrent ? "bg-gray-900" : "bg-gray-400 "} h-6 w-6 rounded-full`}
+      className={`${
+        isCurrent ? "scale-100" : "scale-50 bg-gray-400"
+      } h-6 w-6 rounded-full bg-gray-400 transition duration-500 ease-in-out hover:bg-gray-900`}
     >
       <span className="sr-only">{title}</span>
     </button>
