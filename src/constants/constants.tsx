@@ -1,5 +1,5 @@
 const BASE_URL = "https://sheets.googleapis.com/v4/spreadsheets"
-const API_KEY = "AIzaSyAyRzN1qFx54eZC7tOWnuNdyrrmGy3PO-o"
+const API_KEY = "AIzaSyCa2UJMeexyt1oQcgq_Mg1_eyucTuzLY0o"
 const SHEET_ID = "1dr9hLoZCBNTkpql2pfanrTIK3PDgMXswX1zZEJwNAQM"
 const SHEET_NAME = "paintings"
 const RANGE = "!A1:O156"
