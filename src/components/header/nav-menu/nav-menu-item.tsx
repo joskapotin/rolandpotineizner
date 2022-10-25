@@ -20,7 +20,7 @@ function NavMenuItem({ children, isOpen, toggleIsOpen, url, title, end }: NavMen
       onClick={toggleIsOpen}
       end={end}
     >
-      <i className="mx-auto block h-12 w-12 p-2 text-gray-400 transition-colors duration-300 ease-in-out hover:text-gray-900 md:h-14 md:w-14 lg:h-16 lg:w-16">
+      <i className="mx-auto block h-20 w-20 p-2 text-gray-400 transition-colors duration-300 ease-in-out hover:text-gray-900 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16">
         {children}
       </i>
       <span className="sr-only">{title}</span>
