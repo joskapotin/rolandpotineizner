@@ -5,7 +5,7 @@ function Paintings() {
   const { paintings } = usePaintings()
 
   return (
-    <div className="col-span-full grid w-full grid-cols-autofill gap-4">
+    <div className="col-span-full grid w-full grid-cols-autofill justify-items-center gap-4">
       {paintings.map(painting => (
         <PaintingNavItem
           key={painting.id}
