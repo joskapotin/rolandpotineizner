@@ -1,9 +1,9 @@
 const BASE_URL = "https://sheets.googleapis.com/v4/spreadsheets"
-const API_KEY = "AIzaSyCa2UJMeexyt1oQcgq_Mg1_eyucTuzLY0o"
+const KEY = import.meta.env.VITE_API_KEY
 const SHEET_ID = "1dr9hLoZCBNTkpql2pfanrTIK3PDgMXswX1zZEJwNAQM"
 const SHEET_NAME = "paintings"
 const RANGE = "!A1:O156"
-const API_URL = `${BASE_URL}/${SHEET_ID}/values/${SHEET_NAME}${RANGE}?key=${API_KEY}`
+const API_URL = `${BASE_URL}/${SHEET_ID}/values/${SHEET_NAME}${RANGE}?key=${KEY}`
 
 export const ROUTES = {
   HOME: { URL: "/", NAME: "Accueil" },
