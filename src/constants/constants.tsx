@@ -9,7 +9,7 @@ export const ROUTES = {
   HOME: { URL: "/", NAME: "Accueil" },
   ABOUT: { URL: "/about", NAME: "Biographie" },
   PAINTINGS: { URL: "/paintings", NAME: "Œuvres" },
-  PAINTING: { URL: "/:slug", NAME: "Œuvre" },
+  PAINTING: { URL: ":slug", NAME: "Œuvre" },
   NOT_FOUND: { URL: "/not-found", NAME: "Introuvable" },
 } as const
 
