@@ -17,14 +17,14 @@ export const NAV_MENU = [ROUTES.HOME, ROUTES.ABOUT, ROUTES.PAINTINGS]
 
 export const API = {
   PAINTINGS: API_URL,
-  RESUME: "data/resume.json",
+  RESUME: "/data/resume.json",
 } as const
 
 export const PATH = {
   PAINTINGS: {
-    SOURCE: "paintings/source",
-    SQUARE: "paintings/square",
-    SMALL: "paintings/small",
+    SOURCE: "/paintings/source",
+    SQUARE: "/paintings/square",
+    SMALL: "/paintings/small",
   },
 } as const
 
