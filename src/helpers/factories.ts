@@ -1,5 +1,36 @@
-/* eslint-disable import/prefer-default-export */
-import type { PaintingFromSheetInterface, PaintingInterface } from "../hooks/usePaintings"
+import type { PaintingInterface } from "../hooks/usePaintings"
+import type { IncomingData } from "../services/api"
+
+interface FormatPaintingsSheetResponse {
+  id: string
+  slug: string
+  title: string
+  year: string
+  height: string
+  width: string
+  filename: string
+  order: string
+  visible: string
+  imageBlurhash: string
+  imageWidth: string
+  imageHeight: string
+  thumbWidth: string
+  thumbHeight: string
+  thumbBlurhash: string
+}
+
+export const formatPaintingsSheet = (data: IncomingData) => {
+  const labels = data.values[0] as (keyof FormatPaintingsSheetResponse)[] // I need to explicitly specified the type. TS can't know that
+  const entries = data.values.slice(1)
+
+  return entries.map(entry =>
+    entry.reduce((acc, current, index) => {
+      const property = labels[index]
+      acc[property] = current
+      return acc
+    }, {} as FormatPaintingsSheetResponse)
+  )
+}
 
 const fallbackPainting: PaintingInterface = {
   id: "0",
@@ -19,7 +50,7 @@ const fallbackPainting: PaintingInterface = {
   thumbHeight: 200,
 }
 
-export const paintingFactory = (painting: PaintingFromSheetInterface): PaintingInterface => {
+const paintingFactory = (painting: FormatPaintingsSheetResponse): PaintingInterface => {
   const order = typeof painting.order === "number" ? painting.order : parseInt(painting.order, 10)
   const visible = painting.visible === "true"
   const imageWidth =
@@ -50,3 +81,6 @@ export const paintingFactory = (painting: PaintingFromSheetInterface): PaintingI
     thumbHeight,
   }
 }
+
+export const paintingsFactory = (data: IncomingData) =>
+  formatPaintingsSheet(data).map(painting => paintingFactory(painting))

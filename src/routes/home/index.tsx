@@ -6,7 +6,7 @@ import { PATH, ROUTES } from "../../constants/constants"
 import usePaintings from "../../hooks/usePaintings"
 
 function Home() {
-  const { paintings } = usePaintings()
+  const paintings = usePaintings()
 
   const carouselItems = useMemo(
     () =>

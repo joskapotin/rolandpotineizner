@@ -1,8 +1,8 @@
 import { Suspense } from "react"
-import { Outlet } from "react-router-dom"
-import Footer from "../components/footer/footer"
-import Header from "../components/header/header"
-import Loader from "../components/Loader/loader"
+import { Outlet, ScrollRestoration } from "react-router-dom"
+import Footer from "../../components/footer/footer"
+import Header from "../../components/header/header"
+import Loader from "../../components/Loader/loader"
 
 function Layout() {
   return (
@@ -17,6 +17,7 @@ function Layout() {
         </Suspense>
       </main>
       <Footer />
+      <ScrollRestoration />
     </>
   )
 }

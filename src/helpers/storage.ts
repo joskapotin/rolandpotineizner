@@ -1,12 +1,10 @@
 import { LOCALSTORAGE_TTL } from "../constants/constants"
 
-type SetWithExpiryParams = { key: string; value: string; ttl?: number }
-
 export const setWithExpiry = ({
-  key,
-  value,
+  key = "defaultKey",
+  value = "default value",
   ttl = LOCALSTORAGE_TTL,
-}: SetWithExpiryParams): void => {
+}) => {
   const now = new Date()
 
   // `item` is an object which contains the original value
@@ -18,7 +16,7 @@ export const setWithExpiry = ({
   localStorage.setItem(key, JSON.stringify(item))
 }
 
-export const getWithExpiry = (key: string): string | null => {
+export const getWithExpiry = (key = "defaultKey") => {
   const itemStr = localStorage.getItem(key)
   // if the item doesn't exist, return null
   if (!itemStr) {

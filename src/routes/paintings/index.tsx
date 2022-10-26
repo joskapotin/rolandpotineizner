@@ -2,7 +2,7 @@ import usePaintings from "../../hooks/usePaintings"
 import PaintingNavItem from "./painting-nav-item"
 
 function Paintings() {
-  const { paintings } = usePaintings()
+  const paintings = usePaintings()
 
   return (
     <ul className="col-span-full grid w-full grid-cols-autofill justify-items-center gap-4">

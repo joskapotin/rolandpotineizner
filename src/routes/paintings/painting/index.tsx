@@ -7,7 +7,7 @@ import PaintingNavItem from "../painting-nav-item"
 
 function Painting() {
   const { slug } = useParams()
-  const { paintings } = usePaintings()
+  const paintings = usePaintings()
 
   const { prevPainting, currentPainting, nextPainting } = useMemo(() => {
     const currentIndex = paintings.findIndex(painting => painting.slug === slug)

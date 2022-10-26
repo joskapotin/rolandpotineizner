@@ -5,7 +5,7 @@ import type { ResumeInterface } from "../hooks/useResume"
 type Entries = string[]
 type Values = Entries[]
 
-type IncomingData = {
+export type IncomingData = {
   majorDimension: string
   range: string
   values: Values
