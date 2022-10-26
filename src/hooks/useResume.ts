@@ -6,7 +6,7 @@ export interface ResumeInterface {
   events: string[]
 }
 
-function useResume() {
+const useResume = () => {
   const { data, error } = useSWR("getResume", () => getResume(), { suspense: true })
 
   return {

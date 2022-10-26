@@ -43,7 +43,7 @@ type Keys = keyof PaintingFromSheetInterface
 
 type Labels = Keys[]
 
-function usePaintings() {
+const usePaintings = () => {
   const { data, error } = useSWR("getPaintings", getPaintings, { suspense: true })
 
   const { paintings, isLoading, isError } = useMemo(() => {

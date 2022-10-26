@@ -1,26 +1,21 @@
-import { lazy, Suspense } from "react"
+import { lazy } from "react"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Loader from "./components/Loader/loader"
 import { ROUTES } from "./constants/constants"
 import "./index.css"
 
 const RootErrorBoundary = lazy(() => import("./components/error-boundary/root-error-boundary"))
-const Layout = lazy(() => import("./components/layout/layout"))
-const Home = lazy(() => import("./pages/home"))
-const About = lazy(() => import("./pages/about"))
-const Paintings = lazy(() => import("./pages/paintings"))
-const Painting = lazy(() => import("./pages/paintings/painting"))
-const NotFound = lazy(() => import("./pages/not-found"))
+const Root = lazy(() => import("./routes/root"))
+const Home = lazy(() => import("./routes/home"))
+const About = lazy(() => import("./routes/about"))
+const Paintings = lazy(() => import("./routes/paintings"))
+const Painting = lazy(() => import("./routes/paintings/painting"))
+const NotFound = lazy(() => import("./routes/not-found"))
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <Suspense fallback={<Loader />}>
-        <Layout />
-      </Suspense>
-    ),
-    loader: Loader,
+    element: <Root />,
     errorElement: <RootErrorBoundary />,
     children: [
       {
