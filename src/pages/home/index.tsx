@@ -1,5 +1,6 @@
-import { useMemo } from "react"
+import { Suspense, useMemo } from "react"
 import Carousel from "../../components/carousel/carousel"
+import Loader from "../../components/Loader/loader"
 import Quote from "../../components/quote/quote"
 import { PATH, ROUTES } from "../../constants/constants"
 import usePaintings from "../../hooks/usePaintings"
@@ -23,7 +24,9 @@ function Home() {
 
   return (
     <>
-      <Carousel items={carouselItems} />
+      <Suspense fallback={<Loader />}>
+        <Carousel items={carouselItems} />
+      </Suspense>
 
       <div className="mx-auto max-w-md">
         <Quote>

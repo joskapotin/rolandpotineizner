@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import Loader from "../../../components/Loader/loader"
 import useResume from "../../../hooks/useResume"
 import NotFound from "../../not-found"
@@ -11,9 +12,11 @@ function Resume() {
 
   return (
     <section className="flex flex-col gap-10">
-      {resume?.map(item => (
-        <ResumeItem key={item.years[0]} years={item.years} events={item.events} />
-      ))}
+      <Suspense fallback={<Loader />}>
+        {resume?.map(item => (
+          <ResumeItem key={item.years[0]} years={item.years} events={item.events} />
+        ))}
+      </Suspense>
     </section>
   )
 }

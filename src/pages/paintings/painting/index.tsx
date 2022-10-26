@@ -1,6 +1,7 @@
-import { useMemo } from "react"
+import { Suspense, useMemo } from "react"
 import { useParams } from "react-router-dom"
 import Blurhash from "../../../components/blurhash/blurhash"
+import Loader from "../../../components/Loader/loader"
 import { PATH, ROUTES } from "../../../constants/constants"
 import usePaintings from "../../../hooks/usePaintings"
 import PaintingNavItem from "../painting-nav-item"
@@ -25,7 +26,7 @@ function Painting() {
     currentPainting
 
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <div className="md:justify-self-end">
         <Blurhash
           title={title}
@@ -65,7 +66,7 @@ function Painting() {
           text="Next"
         />
       </nav>
-    </>
+    </Suspense>
   )
 }
 
