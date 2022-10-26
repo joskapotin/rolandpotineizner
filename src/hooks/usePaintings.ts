@@ -58,7 +58,10 @@ function usePaintings() {
       }, {} as PaintingFromSheetInterface)
     )
 
-    const paintingsFormatted = paintingsArr?.map(painting => paintingFactory(painting)) ?? []
+    const paintingsFormatted =
+      paintingsArr
+        ?.filter(painting => painting.visible)
+        .map(painting => paintingFactory(painting)) ?? []
 
     const paintingsSorted = sortByDate(paintingsFormatted)
 
