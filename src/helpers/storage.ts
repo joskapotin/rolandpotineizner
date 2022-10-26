@@ -1,6 +1,12 @@
+import { LOCALSTORAGE_TTL } from "../constants/constants"
+
 type SetWithExpiryParams = { key: string; value: string; ttl?: number }
 
-export const setWithExpiry = ({ key, value, ttl = 216_000 }: SetWithExpiryParams): void => {
+export const setWithExpiry = ({
+  key,
+  value,
+  ttl = LOCALSTORAGE_TTL,
+}: SetWithExpiryParams): void => {
   const now = new Date()
 
   // `item` is an object which contains the original value

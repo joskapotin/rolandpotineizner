@@ -31,3 +31,5 @@ export const PATH = {
 export const YOUTUBE_ID = {
   STORY: "vxuYESnmbaU",
 }
+
+export const LOCALSTORAGE_TTL = import.meta.env.VITE_LOCALSTORAGE_TTL
