@@ -165,8 +165,6 @@ function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
     return () => document.removeEventListener("keydown", handleKeyboard)
   }, [])
 
-  console.log(videoRef?.current?.currentTime)
-
   return (
     <div
       className="group/video relative isolate grid w-full grid-cols-1 grid-rows-1 shadow-2xl"
