@@ -3,10 +3,12 @@ import { Outlet, ScrollRestoration } from "react-router-dom"
 import Footer from "../../components/footer/footer"
 import Header from "../../components/header/header"
 import Loader from "../../components/Loader/loader"
+import SkipToMainContent from "../../components/skip-to-main-content/skip-to-main-content"
 
 function Layout() {
   return (
     <>
+      <SkipToMainContent />
       <Header />
       <main
         id="main-content"
