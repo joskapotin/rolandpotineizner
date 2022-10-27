@@ -7,9 +7,10 @@ import VolumeControl from "./volume-control"
 /* eslint-disable jsx-a11y/media-has-caption */
 type VideoPlayerProps = {
   url: string
+  thumbnail: string
 }
 
-function VideoPlayer({ url }: VideoPlayerProps) {
+function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
   const videoContainerRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const timelineRef = useRef<HTMLButtonElement>(null)
@@ -164,9 +165,11 @@ function VideoPlayer({ url }: VideoPlayerProps) {
     return () => document.removeEventListener("keydown", handleKeyboard)
   }, [])
 
+  console.log(videoRef?.current?.currentTime)
+
   return (
     <div
-      className="group/video isolate grid w-full grid-cols-1 grid-rows-1 border-4 border-gray-100 shadow-2xl"
+      className="group/video relative isolate grid w-full grid-cols-1 grid-rows-1 shadow-2xl"
       data-volume-level="high"
       ref={videoContainerRef}
     >
@@ -237,9 +240,10 @@ function VideoPlayer({ url }: VideoPlayerProps) {
       </div>
 
       <video
+        poster={thumbnail}
         ref={videoRef}
         src={url}
-        className="col-span-full row-span-full w-full"
+        className="col-span-full row-span-full w-full object-cover"
         onLoadedData={handleOnLoadData}
         onTimeUpdate={handleOnTimeUpdate}
         onVolumeChange={handleOnVolumeChange}

@@ -1,4 +1,5 @@
 import image from "../../../assets/images/roland01.jpg"
+import videoThumbnail from "../../../assets/images/video-thumbnail.jpg"
 import video from "../../../assets/videos/reportage-fr3.mp4"
 import Blurhash from "../../../components/blurhash/blurhash"
 import QuoteSvg from "../../../components/quote/quote"
@@ -64,7 +65,7 @@ function Story() {
         </cite>
       </QuoteSvg>
 
-      <VideoPlayer url={video} />
+      <VideoPlayer url={video} thumbnail={videoThumbnail} />
     </section>
   )
 }
