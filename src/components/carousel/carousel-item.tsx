@@ -25,7 +25,7 @@ function CarouselItem({ item, index, currentIndex }: CarouselItemProps) {
       to={item.link}
       title={item.title}
       className={`
-        ${isCurrent ? "opacity-100" : "opacity-0"} 
+        ${isCurrent ? "opacity-100" : "pointer-events-none opacity-0"} 
         col-span-full row-span-full flex flex-col justify-start transition-opacity duration-500 ease-in`}
     >
       <Blurhash
