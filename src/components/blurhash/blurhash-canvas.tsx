@@ -46,6 +46,7 @@ function BlurhashCanvas(props: BlurhashCanvasProps) {
       width={resolutionX}
       height={resolutionY}
       ref={canvasRef}
+      title="Blured version of the image"
     />
   )
 }

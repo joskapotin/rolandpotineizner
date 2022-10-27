@@ -7,7 +7,7 @@ type CarouselDotProps = {
 function CarouselDot({ title, handleClick, isCurrent }: CarouselDotProps) {
   return (
     <button
-      title={title}
+      title={`Display ${title}`}
       type="button"
       onClick={handleClick}
       className={`${

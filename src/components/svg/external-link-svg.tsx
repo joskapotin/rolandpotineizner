@@ -5,6 +5,7 @@ function ExternalLinkSvg() {
       viewBox="0 0 24 24"
       fill="currentColor"
       className="h-6 w-6"
+      aria-label="External link"
     >
       <path
         fillRule="evenodd"

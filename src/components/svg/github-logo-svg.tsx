@@ -5,6 +5,7 @@ function GitHubLogoSvg() {
       viewBox="0 0 42.607 41.555"
       fill="currentColor"
       className="h-6 w-6"
+      aria-label="github icon"
     >
       <path
         fill="#1b1817"

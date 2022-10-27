@@ -5,6 +5,7 @@ function PhoneSvg() {
       viewBox="0 0 24 24"
       fill="currentColor"
       className="h-6 w-6"
+      aria-label="phone icon"
     >
       <path
         fillRule="evenodd"

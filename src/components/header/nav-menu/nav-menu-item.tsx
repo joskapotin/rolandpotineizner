@@ -12,7 +12,7 @@ type NavMenuItemProps = {
 function NavMenuItem({ children, isOpen, toggleIsOpen, url, title, end }: NavMenuItemProps) {
   return (
     <NavLink
-      title={title}
+      title={`Go to ${title}`}
       className={`${
         isOpen ? "opacity-100 delay-100" : "opacity-0"
       }  block transition-opacity  duration-300 ease-in-out sm:opacity-100 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl`}
