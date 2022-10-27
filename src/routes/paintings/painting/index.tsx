@@ -1,25 +1,24 @@
-import { useMemo } from "react"
 import { useParams } from "react-router-dom"
 import Blurhash from "../../../components/blurhash/blurhash"
 import { PATH, ROUTES } from "../../../constants/constants"
 import usePaintings from "../../../hooks/usePaintings"
+import NotFound from "../../not-found"
 import PaintingNavItem from "../painting-nav-item"
 
 function Painting() {
   const { slug } = useParams()
   const paintings = usePaintings()
 
-  const { prevPainting, currentPainting, nextPainting } = useMemo(() => {
-    const currentIndex = paintings.findIndex(painting => painting.slug === slug)
+  const currentIndex = paintings.findIndex(painting => painting.slug === slug)
+  if (currentIndex === -1) return <NotFound /> // array.findIndex return -1 if nothing is found
 
-    return {
-      currentPainting: paintings[currentIndex],
-      prevPainting:
-        currentIndex === 0 ? paintings[paintings.length - 1] : paintings[currentIndex - 1],
-      nextPainting:
-        currentIndex === paintings.length - 1 ? paintings[0] : paintings[currentIndex + 1],
-    }
-  }, [slug, paintings])
+  const currentPainting = paintings[currentIndex]
+
+  const prevPainting =
+    currentIndex === 0 ? paintings[paintings.length - 1] : paintings[currentIndex - 1]
+
+  const nextPainting =
+    currentIndex === paintings.length - 1 ? paintings[0] : paintings[currentIndex + 1]
 
   const { title, year, width, height, filename, imageBlurhash, imageWidth, imageHeight } =
     currentPainting
