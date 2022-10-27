@@ -1,6 +1,5 @@
 import { useState } from "react"
 import BlurhashCanvas from "./blurhash-canvas"
-import BlurhashSpinner from "./blurhash-spinner"
 
 type BlurhashProps = {
   title: string
@@ -32,7 +31,6 @@ function Blurhash(props: BlurhashProps) {
         onLoad={handleOnLoad}
       />
       <BlurhashCanvas hash={hash} isLoaded={isLoaded} width={width} height={height} />
-      <BlurhashSpinner isLoaded={isLoaded} />
     </div>
   )
 }

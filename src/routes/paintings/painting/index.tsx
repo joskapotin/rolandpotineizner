@@ -1,8 +1,7 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import Blurhash from "../../../components/blurhash/blurhash"
 import { PATH, ROUTES } from "../../../constants/constants"
 import usePaintings from "../../../hooks/usePaintings"
-import NotFound from "../../not-found"
 import PaintingNavItem from "../painting-nav-item"
 
 function Painting() {
@@ -10,7 +9,7 @@ function Painting() {
   const paintings = usePaintings()
 
   const currentIndex = paintings.findIndex(painting => painting.slug === slug)
-  if (currentIndex === -1) return <NotFound /> // array.findIndex return -1 if nothing is found
+  if (currentIndex === -1) return <Navigate to={ROUTES.NOT_FOUND.URL} replace /> // array.findIndex return -1 if nothing is found
 
   const currentPainting = paintings[currentIndex]
 
