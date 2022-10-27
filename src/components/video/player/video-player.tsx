@@ -60,6 +60,10 @@ function VideoPlayer({ url }: VideoPlayerProps) {
     }
   }
 
+  function skip(duration: number) {
+    if (videoRef.current) videoRef.current.currentTime += duration
+  }
+
   // Duration
   const handleOnLoadData = () => {
     if (totalTimeRef.current && videoRef.current)
@@ -124,13 +128,49 @@ function VideoPlayer({ url }: VideoPlayerProps) {
     }
   }
 
+  // Keyboard navigation
+  const handleKeyboard = (event: KeyboardEvent) => {
+    if (document.activeElement) {
+      const tagName = document.activeElement.tagName.toLowerCase()
+
+      if (tagName === "input") return
+
+      switch (event.key.toLowerCase()) {
+        case "k":
+          togglePause()
+          break
+        case "f":
+          toggleFullScreenMode()
+          break
+        case "m":
+          toggleMute()
+          break
+        case "arrowleft":
+        case "j":
+          skip(-5)
+          break
+        case "arrowright":
+        case "l":
+          skip(5)
+          break
+        default:
+          break
+      }
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("keydown", event => handleKeyboard(event))
+    return () => document.removeEventListener("keydown", handleKeyboard)
+  }, [])
+
   return (
     <div
-      className="group/video isolate grid w-full grid-cols-1 grid-rows-1"
+      className="group/video isolate grid w-full grid-cols-1 grid-rows-1 border-4 border-gray-100 shadow-2xl"
       data-volume-level="high"
       ref={videoContainerRef}
     >
-      <div className="z-10 col-span-full row-span-full mt-auto origin-bottom opacity-0 transition-opacity duration-300 ease-in-out group-hover/video:opacity-100">
+      <div className="z-10 col-span-full row-span-full mt-auto origin-bottom opacity-0 transition-opacity duration-300 ease-in-out focus-within:opacity-100 group-hover/video:opacity-100">
         <button
           type="button"
           ref={timelineRef}

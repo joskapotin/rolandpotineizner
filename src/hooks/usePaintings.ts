@@ -1,5 +1,5 @@
 import useSWR from "swr"
-import { paintingsFactory } from "../helpers/factories"
+import paintingsFactory from "../helpers/paintingsFactory"
 import { getPaintings } from "../services/api"
 
 export interface PaintingInterface {

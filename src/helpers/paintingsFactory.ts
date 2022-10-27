@@ -19,7 +19,7 @@ interface FormatPaintingsSheetResponse {
   thumbBlurhash: string
 }
 
-export const formatPaintingsSheet = (data: IncomingData) => {
+const formatPaintingsSheet = (data: IncomingData) => {
   const labels = data.values[0] as (keyof FormatPaintingsSheetResponse)[] // I need to explicitly specified the type. TS can't know that
   const entries = data.values.slice(1)
 
@@ -82,5 +82,7 @@ const paintingFactory = (painting: FormatPaintingsSheetResponse): PaintingInterf
   }
 }
 
-export const paintingsFactory = (data: IncomingData) =>
+const paintingsFactory = (data: IncomingData) =>
   formatPaintingsSheet(data).map(painting => paintingFactory(painting))
+
+export default paintingsFactory
