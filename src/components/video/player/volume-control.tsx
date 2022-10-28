@@ -8,7 +8,7 @@ type VolumeControlProps = {
 
 const VolumeControl = forwardRef<HTMLInputElement, VolumeControlProps>(
   ({ toggleMute, changeVolume, volumeStatus }, volumeSliderRef) => (
-    <div className="group flex items-center">
+    <div className="group/volume flex items-center">
       <button type="button" className="h-8 w-8" onClick={toggleMute}>
         {volumeStatus === "high" && (
           <svg className="volume-high-icon" viewBox="0 0 24 24">
@@ -40,11 +40,11 @@ const VolumeControl = forwardRef<HTMLInputElement, VolumeControlProps>(
 
       <input
         ref={volumeSliderRef}
-        className="w-0 origin-left scale-x-0 transition duration-150 ease-in-out focus-within:w-24 focus-within:scale-x-100 group-hover:w-24 group-hover:scale-x-100"
+        className="w-0 origin-left scale-x-0 transition duration-150 ease-in-out group-focus-within/volume:w-24 group-focus-within/volume:scale-x-100 group-hover/volume:w-24 group-hover/volume:scale-x-100"
         type="range"
         min="0"
         max="1"
-        step="any"
+        step={0.1}
         onInput={changeVolume}
       />
     </div>

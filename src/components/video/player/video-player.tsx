@@ -130,40 +130,21 @@ function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
   }
 
   // Keyboard navigation
-  const handleKeyboard = (event: KeyboardEvent) => {
-    if (document.activeElement) {
-      const tagName = document.activeElement.tagName.toLowerCase()
-
-      if (tagName === "input") return
-
-      switch (event.key.toLowerCase()) {
-        case "k":
-          togglePause()
-          break
-        case "f":
-          toggleFullScreenMode()
-          break
-        case "m":
-          toggleMute()
-          break
-        case "arrowleft":
-        case "j":
-          skip(-5)
-          break
-        case "arrowright":
-        case "l":
-          skip(5)
-          break
-        default:
-          break
-      }
+  const handleTimelineKeyboard = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+    switch (event.key.toLowerCase()) {
+      case " ":
+        togglePause()
+        break
+      case "arrowleft":
+        skip(-5)
+        break
+      case "arrowright":
+        skip(5)
+        break
+      default:
+        break
     }
   }
-
-  useEffect(() => {
-    document.addEventListener("keydown", event => handleKeyboard(event))
-    return () => document.removeEventListener("keydown", handleKeyboard)
-  }, [])
 
   return (
     <div
@@ -178,6 +159,7 @@ function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
           className="group/timeline flex h-2 w-full cursor-pointer items-center px-2"
           onMouseMove={handleTimelineUpdate}
           onClick={handleJumTo}
+          onKeyDown={handleTimelineKeyboard}
         >
           <div className="timeline relative h-1 w-full bg-gray-400/50 before:absolute before:left-0 before:top-0 before:bottom-0 before:hidden before:bg-gray-400 before:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:bg-red-600 after:content-[''] group-hover/timeline:before:block" />
         </button>
@@ -238,6 +220,7 @@ function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
       </div>
 
       <video
+        tabIndex={-1} // juste like youtube does
         poster={thumbnail}
         ref={videoRef}
         src={url}
@@ -245,6 +228,7 @@ function VideoPlayer({ url, thumbnail }: VideoPlayerProps) {
         onLoadedData={handleOnLoadData}
         onTimeUpdate={handleOnTimeUpdate}
         onVolumeChange={handleOnVolumeChange}
+        preload="metadata"
       />
     </div>
   )
